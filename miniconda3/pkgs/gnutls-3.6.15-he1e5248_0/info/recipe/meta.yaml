@@ -1,0 +1,83 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /tmp/build/80754af9/combined_recipe, last modified Wed Apr  7 16:46:40 2021
+# ------------------------------------------------
+
+package:
+  name: gnutls
+  version: 3.6.15
+source:
+  fn: gnutls-3.6.15.tar.xz
+  patches:
+    - 0003-Fix-libcrypto-test-it-must-always-fail.patch
+  sha256: 0ea8c3283de8d8335d7ae338ef27c53a916f15f382753b174c18b45ffd481558
+  url: https://www.gnupg.org/ftp/gcrypt/gnutls/v3.6/gnutls-3.6.15.tar.xz
+build:
+  number: '0'
+  run_exports:
+    - gnutls >=3.6.15,<3.7.0a0
+  string: he1e5248_0
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - autoconf 2.69 pl526hebd4dad_5
+    - automake 1.16.1 pl526_0
+    - binutils_impl_linux-64 2.33.1 he6710b0_7
+    - binutils_linux-64 2.33.1 h9595d00_15
+    - gcc_impl_linux-64 7.3.0 habb00fd_1
+    - gcc_linux-64 7.3.0 h553295d_15
+    - gxx_impl_linux-64 7.3.0 hdf63c60_1
+    - gxx_linux-64 7.3.0 h553295d_15
+    - ld_impl_linux-64 2.33.1 h53a641e_7
+    - libgcc-ng 9.1.0 hdf63c60_0
+    - libstdcxx-ng 9.1.0 hdf63c60_0
+    - libtool 2.4.6 h7b6447c_1005
+    - m4 1.4.18 h4e445db_0
+    - make 4.2.1 h1bed415_1
+    - perl 5.26.2 h14c3975_0
+    - pkg-config 0.29.2 h1bed415_8
+  host:
+    - _libgcc_mutex 0.1 main
+    - ca-certificates 2021.1.19 h06a4308_1
+    - gmp 6.1.2 h6c8ec71_1
+    - libgcc-ng 9.1.0 hdf63c60_0
+    - libidn2 2.3.0 h27cfd23_0
+    - libstdcxx-ng 9.1.0 hdf63c60_0
+    - libtasn1 4.16.0 h27cfd23_0
+    - libunistring 0.9.10 h27cfd23_0
+    - nettle 3.7.2 hbbd107a_1
+  run:
+    - ca-certificates
+    - gmp >=6.1.2
+    - libgcc-ng >=7.3.0
+    - libidn2 >=2,<3.0a0
+    - libstdcxx-ng >=7.3.0
+    - libtasn1 >=4.16.0,<5.0a0
+    - libunistring >=0,<1.0a0
+    - nettle >=3.7.2,<3.8.0a0
+test:
+  commands:
+    - test -f ${PREFIX}/lib/libgnutls${SHLIB_EXT}
+    - test -f ${PREFIX}/lib/libgnutlsxx${SHLIB_EXT}
+    - certtool --version
+    - gnutls-cli --version
+    - ocsptool --version
+    - psktool --version
+    - srptool --version
+about:
+  dev_url: https://gitlab.com/gnutls/gnutls/tree/master
+  doc_url: http://www.gnutls.org/documentation.html
+  home: http://www.gnutls.org/index.html
+  license: LGPL-2.1-or-later
+  license_family: LGPL
+  license_file: LICENSE
+  summary: GnuTLS is a secure communications library implementing the SSL, TLS and
+    DTLS protocols
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - mingwandroid
+    - sachalau
+    - scopatz
+    - sdvillal

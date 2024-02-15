@@ -1,0 +1,75 @@
+# This file created by conda-build 3.16.3
+# meta.yaml template originally from:
+# /remote/torchvision, last modified Wed May 22 19:19:27 2019
+# ------------------------------------------------
+
+package:
+    name: torchvision
+    version: 0.3.0
+source:
+    git_rev: v0.3.0
+    git_url: https://github.com/pytorch/vision.git
+build:
+    number: '1'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    script_env:
+        - CUDA_VERSION
+    string: py27_cu10.0.130_1
+requirements:
+    build:
+        - sqlite 3.28.0 h7b6447c_0
+        - blas 1.0 mkl
+        - pycparser 2.19 py27_0
+        - cudatoolkit 10.0.130 0
+        - pip 19.1.1 py27_0
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - pytorch 1.1.0 py2.7_cuda10.0.130_cudnn7.5.1_0
+        - mkl_random 1.0.2 py27hd81dba3_0
+        - mkl 2019.3 199
+        - mkl_fft 1.0.12 py27ha843d7b_0
+        - python 2.7.16 h9bab390_0
+        - tk 8.6.8 hbc83047_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - certifi 2019.3.9 py27_0
+        - numpy 1.16.3 py27h7e9f1db_0
+        - wheel 0.33.4 py27_0
+        - ncurses 6.1 he6710b0_1
+        - cffi 1.12.3 py27h2e261b9_0
+        - numpy-base 1.16.3 py27hde5b4d6_0
+        - ca-certificates 2019.1.23 0
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libffi 3.2.1 hd88cf55_4
+        - ninja 1.9.0 py27hfd86e86_0
+        - readline 7.0 h7b6447c_5
+        - libedit 3.1.20181209 hc058e9b_0
+        - zlib 1.2.11 h7b6447c_3
+        - openssl 1.1.1b h7b6447c_1
+        - intel-openmp 2019.3 199
+        - future 0.17.1 py27_0
+        - setuptools 41.0.1 py27_0
+    run:
+        - cudatoolkit >=10.0,<10.1
+        - numpy >=1.11
+        - pillow >=4.1.1
+        - python >=2.7,<2.8.0a0
+        - pytorch >=1.1.0
+        - six
+test:
+    commands: pytest .
+    imports:
+        - torchvision
+        - torchvision.datasets
+        - torchvision.transforms
+    requires:
+        - pytest
+        - scipy
+    source_files:
+        - test
+about:
+    home: https://github.com/pytorch/vision
+    license: BSD
+    license_file: LICENSE
+    summary: image and video datasets and models for torch deep learning
+extra:
+    copy_test_source_files: true
+    final: true

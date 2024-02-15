@@ -1,0 +1,57 @@
+base_url: http://developer.download.nvidia.com/compute/cuda/11.0.3/
+cuda_libraries:
+- cublas
+- cublasLt
+- cudart
+- cufft
+- cufftw
+- curand
+- cusolver
+- cusolverMg
+- cusparse
+- nppc
+- nppial
+- nppicc
+- nppidei
+- nppif
+- nppig
+- nppim
+- nppist
+- nppisu
+- nppitc
+- npps
+- nvToolsExt
+- nvblas
+- nvjpeg
+- nvrtc
+- nvrtc-builtins
+- accinj64
+- cuinj64
+cuda_static_libraries:
+- cudadevrt
+installers_url_ext: local_installers/
+libdevice_versions:
+- '11'
+linux:
+  blob: cuda_11.3.1_465.19.01_linux.run
+  cuda_lib_fmt: lib{0}.so*
+  cuda_static_lib_fmt: lib{0}.a
+  embedded_blob: null
+  libdevice_lib_fmt: libdevice.10.bc
+  nvtoolsext_fmt: lib{0}.so*
+  nvvm_lib_fmt: lib{0}.so*
+  patches: []
+  ppc64le_blob: cuda_11.0.3_450.51.06_linux_ppc64le.run
+  ppc64le_embedded_blob: null
+md5_url: http://developer.download.nvidia.com/compute/cuda/11.0.3//docs/sidebar/md5sum.txt
+patch_url_ext: ''
+version: '11.3'
+windows:
+  NvToolsExtPath: c:/Program Files/NVIDIA Corporation/NVToolsExt/bin
+  blob: cuda_11.0.3_451.82_win10.exe
+  cuda_lib_fmt: '{0}64_1*.dll'
+  cuda_static_lib_fmt: '{0}.lib'
+  libdevice_lib_fmt: libdevice.10.bc
+  nvtoolsext_fmt: '{0}64_1.dll'
+  nvvm_lib_fmt: '{0}64_33_0.dll'
+  patches: []

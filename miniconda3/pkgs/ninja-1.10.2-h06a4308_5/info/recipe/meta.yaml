@@ -1,0 +1,37 @@
+# This file created by conda-build 3.21.8
+# ------------------------------------------------
+
+package:
+  name: ninja
+  version: 1.10.2
+source:
+  fn: v1.10.2.tar.gz
+  sha256: ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed
+  url: https://github.com/ninja-build/ninja/archive/v1.10.2.tar.gz
+build:
+  noarch: false
+  noarch_python: false
+  number: '5'
+  string: h06a4308_5
+requirements:
+  build: []
+  run:
+    - ninja-base 1.10.2 hd09550d_5
+    - python
+about:
+  dev_url: https://github.com/ninja-build/ninja
+  doc_source_url: https://github.com/ninja-build/ninja/tree/master/doc
+  doc_url: https://ninja-build.org/manual.html
+  home: https://ninja-build.org/
+  license: Apache-2.0
+  license_family: Apache
+  license_file: COPYING
+  summary: A small build system with a focus on speed
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 1ee34c1f-f50b-49c5-8d5d-f97f98a9d32b
+  recipe-maintainers:
+    - frol
+  remote_url: git@github.com:AnacondaRecipes/ninja-feedstock.git
+  sha: 02e0641538afcc8657eeeea966b1c0c672f6231d

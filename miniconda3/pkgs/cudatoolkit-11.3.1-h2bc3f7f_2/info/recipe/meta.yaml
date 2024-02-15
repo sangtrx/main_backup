@@ -1,0 +1,115 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# Origin b'https://github.com/AnacondaRecipes/cudatoolkit-feedstock', commit b'e6bd35eb3036ea4e75ba7e5332472ab13b59da15'
+# ------------------------------------------------
+
+package:
+  name: cudatoolkit
+  version: 11.3.1
+source:
+  path: /home/builder/ktietz/aggregate/cudatoolkit-feedstock
+build:
+  missing_dso_whitelist:
+    - $RPATH/ld-linux-x86-64.so.2
+    - $RPATH/libc.so.6
+    - $RPATH/libdl.so.2
+    - $RPATH/libm.so.6
+    - $RPATH/libpthread.so.0
+    - $RPATH/librt.so.1
+  number: '2'
+  script_env:
+    - DEBUG_INSTALLER_PATH
+    - NVTOOLSEXT_INSTALL_PATH
+  string: h2bc3f7f_2
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - _sysroot_linux-64_curr_repodata_hack 3 haa98f57_10
+    - binutils_impl_linux-64 2.35.1 h27ae35d_9
+    - binutils_linux-64 2.35.1 h454624a_30
+    - brotlipy 0.7.0 py38h27cfd23_1003
+    - ca-certificates 2021.5.25 h06a4308_1
+    - certifi 2021.5.30 py38h06a4308_0
+    - cffi 1.14.5 py38h261ae71_0
+    - chardet 4.0.0 py38h06a4308_1003
+    - cryptography 3.4.7 py38hd23ed53_0
+    - gcc_impl_linux-64 9.3.0 h6df7d76_17
+    - gcc_linux-64 9.3.0 h1ee779e_30
+    - gxx_impl_linux-64 9.3.0 hbdd7822_17
+    - gxx_linux-64 9.3.0 h7e70986_30
+    - idna 2.10 pyhd3eb1b0_0
+    - kernel-headers_linux-64 3.10.0 h57e8cba_10
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libffi 3.3 he6710b0_2
+    - libgcc-devel_linux-64 9.3.0 hb95220a_17
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-devel_linux-64 9.3.0 hf0c5c8d_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - ncurses 6.2 he6710b0_1
+    - openssl 1.1.1k h27cfd23_0
+    - pip 21.1.2 py38h06a4308_0
+    - pycparser 2.20 py_2
+    - pyopenssl 20.0.1 pyhd3eb1b0_1
+    - pysocks 1.7.1 py38h06a4308_0
+    - python 3.8.10 h12debd9_8
+    - pyyaml 5.4.1 py38h27cfd23_1
+    - readline 8.1 h27cfd23_0
+    - requests 2.25.1 pyhd3eb1b0_0
+    - setuptools 52.0.0 py38h06a4308_0
+    - six 1.16.0 pyhd3eb1b0_0
+    - sqlite 3.36.0 hc218d9a_0
+    - sysroot_linux-64 2.17 h57e8cba_10
+    - tk 8.6.10 hbc83047_0
+    - tqdm 4.61.1 pyhd3eb1b0_1
+    - urllib3 1.26.4 pyhd3eb1b0_0
+    - wheel 0.36.2 pyhd3eb1b0_0
+    - xz 5.2.5 h7b6447c_0
+    - yaml 0.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+  run:
+    - libgcc-ng >=9.3.0
+    - libstdcxx-ng >=9.3.0
+  run_constrained:
+    - __cuda >=11.0
+test:
+  requires:
+    - numba
+    - python >=3.7
+    - setuptools
+about:
+  description: 'CUDA is a parallel computing platform and programming model developed
+    by NVIDIA for general computing on graphical processing units (GPUs). With CUDA,
+    developers can dramatically speed up computing applications by harnessing the
+    power of GPUs.
+
+
+    The CUDA Toolkit from NVIDIA provides everything you need to develop GPU-accelerated
+    applications. This CUDA Toolkit includes GPU-accelerated libraries, and the CUDA
+    runtime for the Conda ecosystem. For the full CUDA Toolkit with a compiler and
+    development tools visit https://developer.nvidia.com/cuda-downloads
+
+
+    License Agreements
+
+    The packages are governed by the CUDA Toolkit End User License Agreement (EULA).
+    By downloading and using the packages, you accept the terms and conditions of
+    the CUDA EULA - https://docs.nvidia.com/cuda/eula/index.html
+
+    '
+  dev_url: https://developer.nvidia.com/cuda-downloads
+  doc_url: https://docs.nvidia.com/cuda/
+  home: null
+  license: NVIDIA End User License Agreement
+  license_file: NVIDIA_EULA
+  summary: CUDA Toolkit - Including CUDA runtime and headers
+extra:
+  copy_test_source_files: true
+  final: true

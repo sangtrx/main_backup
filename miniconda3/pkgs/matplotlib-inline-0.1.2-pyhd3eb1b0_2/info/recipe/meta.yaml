@@ -1,0 +1,67 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/matplotlib-inline-0.1.2-on-linux_64, last modified Fri Aug  6 09:31:01 2021
+# ------------------------------------------------
+
+package:
+  name: matplotlib-inline
+  version: 0.1.2
+source:
+  sha256: f41d5ff73c9f5385775d5c0bc13b424535c8402fe70ea8210f93e11f3683993e
+  url: https://pypi.io/packages/source/m/matplotlib-inline/matplotlib-inline-0.1.2.tar.gz
+build:
+  noarch: python
+  number: '2'
+  script: /tmp/build/80754af9/matplotlib-inline_1628242447089/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh/bin/python
+    -m pip install . -vv
+  string: pyhd3eb1b0_2
+requirements:
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - ca-certificates 2021.7.5 h06a4308_1
+    - certifi 2021.5.30 py39h06a4308_0
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - ncurses 6.2 he6710b0_1
+    - openssl 1.1.1k h27cfd23_0
+    - pip 21.2.2 py39h06a4308_0
+    - python 3.9.6 h12debd9_0
+    - readline 8.1 h27cfd23_0
+    - setuptools 52.0.0 py39h06a4308_0
+    - sqlite 3.36.0 hc218d9a_0
+    - tk 8.6.10 hbc83047_0
+    - tzdata 2021a h52ac0ba_0
+    - wheel 0.36.2 pyhd3eb1b0_0
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+  run:
+    - python >=3.6
+    - traitlets
+test:
+  commands:
+    - pip check
+  imports:
+    - matplotlib_inline
+    - matplotlib_inline.backend_inline
+  requires:
+    - ipython
+    - matplotlib-base
+    - pip
+about:
+  dev_url: https://github.com/ipython/matplotlib-inline
+  home: https://github.com/ipython/matplotlib-inline
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Inline Matplotlib backend for Jupyter
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - Carreau
+    - SylvainCorlay
+    - martinRenou

@@ -1,0 +1,74 @@
+# This file created by conda-build 3.21.5
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/setuptools-58.0.4-python_3.7-on-linux_64, last modified Thu Sep 16 22:51:58 2021
+# ------------------------------------------------
+
+package:
+  name: setuptools
+  version: 58.0.4
+source:
+  patches:
+    - patches/0002-disable-downloads-inside-conda-build.patch
+    - patches/0003-Win32-distutils-Add-support-to-cygwinccompiler-for-V.patch
+    - patches/0006-Win32-Fixes-for-Windows-GCC-interop-needed-by-RPy2-a.patch
+    - patches/0008-runtime_library_dir_option-Use-1st-word-of-CC-as-com.patch
+    - patches/0010-Add-support-for-_CONDA_PYTHON_SYSCONFIGDATA_NAME-if-.patch
+    - patches/0012-Disable-new-dtags-in-unixccompiler.py.patch
+    - patches/0019-Use-ranlib-from-env-if-env-variable-is-set.patch
+    - patches/0021-Add-d1trimfile-SRC_DIR-to-make-pdbs-more-relocatable.patch
+    - patches/0034-distutils-fix-ldshared.patch
+  sha256: f10059f0152e0b7fb6b2edd77bcb1ecd4c9ed7048a826eb2d79f72fd2e6e237b
+  url: https://pypi.io/packages/source/s/setuptools/setuptools-58.0.4.tar.gz
+build:
+  number: '0'
+  string: py37h06a4308_0
+requirements:
+  build: []
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - ca-certificates 2021.7.5 h06a4308_1
+    - certifi 2021.5.30 py37h06a4308_0
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - ncurses 6.2 he6710b0_1
+    - openssl 1.1.1l h7f8727e_0
+    - python 3.7.11 h12debd9_0
+    - readline 8.1 h27cfd23_0
+    - sqlite 3.36.0 hc218d9a_0
+    - tk 8.6.10 hbc83047_0
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+  run:
+    - certifi >=2016.9.26
+    - python >=3.7,<3.8.0a0
+test:
+  imports:
+    - pkg_resources
+    - setuptools
+about:
+  description: 'Setuptools is a fully-featured, actively-maintained, and stable library
+
+    designed to facilitate packaging Python projects.
+
+    '
+  dev_url: https://github.com/pypa/setuptools
+  doc_source_url: https://github.com/pypa/setuptools/tree/master/docs
+  doc_url: http://pythonhosted.org/setuptools/
+  home: https://github.com/pypa/setuptools
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Download, build, install, upgrade, and uninstall Python packages
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - isuruf
+    - jakirkham
+    - msarahan
+    - nicoddemus
+    - ocefpaf

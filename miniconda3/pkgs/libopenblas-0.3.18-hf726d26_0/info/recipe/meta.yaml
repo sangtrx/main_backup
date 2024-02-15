@@ -1,0 +1,81 @@
+# This file created by conda-build 3.21.8
+# ------------------------------------------------
+
+package:
+  name: libopenblas
+  version: 0.3.18
+source:
+  fn: openblas-0.3.18.tar.gz
+  patches: null
+  sha256: 1632c1e8cca62d8bed064b37747e331a1796fc46f688626337362bf0d16aeadb
+  url: https://github.com/xianyi/OpenBLAS/archive/v0.3.18.tar.gz
+build:
+  missing_dso_whitelist: null
+  noarch: false
+  noarch_python: false
+  number: '0'
+  string: hf726d26_0
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - _sysroot_linux-64_curr_repodata_hack 3 haa98f57_10
+    - binutils_impl_linux-64 2.35.1 h27ae35d_9
+    - binutils_linux-64 2.35.1 h454624a_30
+    - gcc_impl_linux-64 7.5.0 h7105cf2_17
+    - gcc_linux-64 7.5.0 h8f34230_30
+    - gfortran_impl_linux-64 7.5.0 ha8c8e06_17
+    - gfortran_linux-64 7.5.0 h96bb648_30
+    - gxx_impl_linux-64 7.5.0 h0a5bf11_17
+    - gxx_linux-64 7.5.0 hffc177d_30
+    - kernel-headers_linux-64 3.10.0 h57e8cba_10
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libgcc-devel_linux-64 7.5.0 hbbeae57_17
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgfortran4 7.5.0 ha8ba4b0_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-devel_linux-64 7.5.0 hf0c5c8d_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - sysroot_linux-64 2.17 h57e8cba_10
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgfortran-ng 7.5.0 ha8ba4b0_17
+    - libgfortran4 7.5.0 ha8ba4b0_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+  run:
+    - libgcc-ng >=7.5.0
+    - libgfortran-ng
+    - libgfortran4 >=7.5.0
+    - libstdcxx-ng >=7.5.0
+test:
+  commands:
+    - python -c "import ctypes; ctypes.cdll['${PREFIX}/lib/libopenblas${SHLIB_EXT}']"
+  requires:
+    - python
+about:
+  description: OpenBLAS is based on GotoBLAS2 1.13 BSD version.
+  dev_url: https://github.com/xianyi/OpenBLAS
+  doc_source_url: https://github.com/xianyi/OpenBLAS/blob/develop/README.md
+  doc_url: https://www.openblas.net/
+  home: https://www.openblas.net/
+  license: BSD-3-clause
+  license_file: LICENSE
+  summary: An Optimized BLAS library
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: efdce26a-ae46-4192-891c-2060bc29a938
+  recipe-maintainers:
+    - beckermr
+    - chenghlee
+    - gillins
+    - groutr
+    - isuruf
+    - jakirkham
+    - jschueller
+    - msarahan
+  remote_url: git@github.com:AnacondaRecipes/openblas-feedstock.git
+  sha: 4d2bcad568db1b0581fb4041a78290e92bdf9a24

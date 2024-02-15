@@ -1,0 +1,124 @@
+# This file created by conda-build 3.21.8
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/ipython-8.2.0-python_3.8-on-linux_64, last modified Fri Apr  1 12:41:11 2022
+# ------------------------------------------------
+
+package:
+  name: ipython
+  version: 8.2.0
+source:
+  sha256: 70e5eb132cac594a34b5f799bd252589009905f05104728aea6a403ec2519dc1
+  url: https://pypi.io/packages/source/i/ipython/ipython-8.2.0.tar.gz
+build:
+  entry_points:
+    - ipython = IPython:start_ipython
+    - ipython3 = IPython:start_ipython
+  number: '0'
+  script: /tmp/build/80754af9/ipython_1648799197050/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh/bin/python
+    -m pip install . -vv --no-deps
+  script_env:
+    - COV_THRESHOLD=73
+    - IPYTHON_TESTING_TIMEOUT_SCALE=10
+    - MIGRATING=False
+  string: py38h06a4308_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - ca-certificates 2022.3.29 h06a4308_0
+    - certifi 2021.10.8 py38h06a4308_2
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - ncurses 6.3 h7f8727e_2
+    - openssl 1.1.1n h7f8727e_0
+    - pip 21.2.4 py38h06a4308_0
+    - python 3.8.13 h12debd9_0
+    - readline 8.1.2 h7f8727e_1
+    - setuptools 58.0.4 py38h06a4308_0
+    - sqlite 3.38.2 hc218d9a_0
+    - tk 8.6.11 h1ccaba5_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7f8727e_4
+  run:
+    - backcall
+    - decorator
+    - jedi >=0.16
+    - matplotlib-inline >=0.1.2
+    - pexpect >4.3
+    - pickleshare
+    - prompt-toolkit >=2.0.0,<3.1.0,!=3.0.0,!=3.0.1
+    - pygments >=2.4.0
+    - python >=3.8,<3.9.0a0
+    - setuptools >=18.5
+    - stack_data
+    - traitlets >=5
+test:
+  commands:
+    - pip check
+    - ipython -h
+    - ipython3 -h
+  imports:
+    - IPython
+    - IPython.core
+    - IPython.core.magics
+    - IPython.core.tests
+    - IPython.extensions
+    - IPython.extensions.tests
+    - IPython.external
+    - IPython.lib
+    - IPython.lib.tests
+    - IPython.sphinxext
+    - IPython.terminal
+    - IPython.terminal.pt_inputhooks
+    - IPython.terminal.tests
+    - IPython.testing
+    - IPython.testing.plugin
+    - IPython.testing.tests
+    - IPython.utils
+    - IPython.utils.tests
+  requires:
+    - black
+    - curio
+    - matplotlib-base !=3.2.0
+    - nbformat
+    - numpy >=1.19
+    - pandas
+    - pip
+    - pygments
+    - pytest <7
+    - pytest-cov
+    - testpath
+    - trio
+about:
+  description: 'IPython provides a rich architecture for interactive computing with
+
+    a powerful interactive shell, a kernel for Jupyter, high performance
+
+    tools for parallel computing, and more.
+
+    '
+  dev_url: https://github.com/ipython/ipython
+  doc_url: https://ipython.readthedocs.io
+  home: https://ipython.org
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: 'IPython: Productive Interactive Computing'
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - Carreau
+    - blink1073
+    - bollwyvl
+    - ellisonbg
+    - fperez
+    - jakirkham
+    - minrk
+    - ocefpaf
+    - pelson
+    - takluyver

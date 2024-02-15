@@ -1,0 +1,61 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/lame-3.100-on-linux_canary, last modified Wed Dec 18 01:36:35 2019
+# ------------------------------------------------
+
+package:
+    name: lame
+    version: '3.100'
+source:
+    patches:
+        - libmp3lame.patch
+    sha256: ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
+    url: https://downloads.sourceforge.net/sourceforge/lame/lame-3.100.tar.gz
+build:
+    number: '0'
+    run_exports:
+        - lame >=3.100,<3.101.0a0
+    string: h7b6447c_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_8
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_8
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - make 4.2.1 h1bed415_1
+    host:
+        - _libgcc_mutex 0.1 main
+        - libgcc-ng 9.1.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - lame --genre-list testcase.mp3
+about:
+    description: 'LAME is a high quality MPEG Audio Layer III (MP3) encoder licensed
+        under the LGPL.
+
+        Today, LAME is considered the best MP3 encoder at mid-high bitrates and at
+        VBR, mostly
+
+        thanks to the dedicated work of its developers and the open source licensing
+        model
+
+        that allowed the project to tap into engineering resources from all around
+        the world.
+
+        '
+    dev_url: https://svn.code.sf.net/p/lame/svn/trunk/lame/
+    doc_url: http://lame.sourceforge.net/using.php
+    home: https://lame.sourceforge.io/
+    license: LGPL
+    license_file: LICENSE
+    summary: High quality MPEG Audio Layer III (MP3) encoder
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - soumith

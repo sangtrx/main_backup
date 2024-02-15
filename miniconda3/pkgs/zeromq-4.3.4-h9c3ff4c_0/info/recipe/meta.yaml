@@ -1,0 +1,70 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Feb  3 09:40:55 2021
+# ------------------------------------------------
+
+package:
+  name: zeromq
+  version: 4.3.4
+source:
+  fn: zeromq-4.3.4.tar.gz
+  patches:
+    - 001-windows-install.patch
+  sha256: c593001a89f5a85dd2ddf564805deb860e02471171b3f204944857336295c3e5
+  url: https://github.com/zeromq/libzmq/releases/download/v4.3.4/zeromq-4.3.4.tar.gz
+build:
+  number: '0'
+  run_exports:
+    - zeromq >=4.3.4,<4.4.0a0
+  string: h9c3ff4c_0
+requirements:
+  build:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 1_gnu
+    - autoconf 2.69 pl5320h36c2ea0_10
+    - automake 1.16.2 pl5320ha770c72_3
+    - binutils_impl_linux-64 2.35.1 h193b22a_2
+    - binutils_linux-64 2.35 hc3fd857_29
+    - gcc_impl_linux-64 9.3.0 h70c0ae5_18
+    - gcc_linux-64 9.3.0 h7247604_29
+    - gxx_impl_linux-64 9.3.0 hd87eabc_18
+    - gxx_linux-64 9.3.0 h0d07fa4_29
+    - kernel-headers_linux-64 2.6.32 h77966d4_13
+    - ld_impl_linux-64 2.35.1 hea4e1c9_2
+    - libgcc-devel_linux-64 9.3.0 h7864c58_18
+    - libgcc-ng 9.3.0 h2828fa1_18
+    - libgomp 9.3.0 h2828fa1_18
+    - libstdcxx-devel_linux-64 9.3.0 hb016644_18
+    - libstdcxx-ng 9.3.0 h6de172a_18
+    - libtool 2.4.6 h58526e2_1007
+    - m4 1.4.18 h516909a_1001
+    - make 4.3 hd18ef5c_1
+    - perl 5.32.0 h36c2ea0_0
+    - pkg-config 0.29.2 h36c2ea0_1008
+    - sysroot_linux-64 2.12 h77966d4_13
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 1_gnu
+    - libgcc-ng 9.3.0 h2828fa1_18
+    - libgomp 9.3.0 h2828fa1_18
+    - libsodium 1.0.18 h36c2ea0_1
+    - libstdcxx-ng 9.3.0 h6de172a_18
+  run:
+    - libgcc-ng >=9.3.0
+    - libsodium >=1.0.18,<1.0.19.0a0
+    - libsodium >=1.0.18,<1.0.19.0a0
+    - libstdcxx-ng >=9.3.0
+about:
+  home: http://zeromq.org
+  license: LGPL-3.0-or-later
+  license_file: COPYING.LESSER
+  summary: A high-performance asynchronous messaging library.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - JohanMabille
+    - SylvainCorlay
+    - davidbrochart
+    - jakirkham
+    - minrk

@@ -1,0 +1,70 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /tmp/build/80754af9/combined_recipe, last modified Mon Feb  1 21:13:45 2021
+# ------------------------------------------------
+
+package:
+  name: libwebp-base
+  version: 1.2.0
+source:
+  sha256: 2fc8bbde9f97f2ab403c0224fb9ca62b2e6852cbc519e91ceaa7c153ffd88a0c
+  url: http://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.0.tar.gz
+build:
+  number: '0'
+  run_exports:
+    - libwebp-base
+  string: h27cfd23_0
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - binutils_impl_linux-64 2.33.1 he6710b0_7
+    - binutils_linux-64 2.33.1 h9595d00_15
+    - gcc_impl_linux-64 7.3.0 habb00fd_1
+    - gcc_linux-64 7.3.0 h553295d_15
+    - ld_impl_linux-64 2.33.1 h53a641e_7
+    - libgcc-ng 9.1.0 hdf63c60_0
+    - libstdcxx-ng 9.1.0 hdf63c60_0
+    - libtool 2.4.6 h7b6447c_1005
+    - make 4.2.1 h1bed415_1
+  host:
+    - _libgcc_mutex 0.1 main
+    - libgcc-ng 9.1.0 hdf63c60_0
+  run:
+    - libgcc-ng >=7.3.0
+  run_constrained:
+    - libwebp 1.2.0
+test:
+  commands:
+    - test -f $PREFIX/lib/libwebp.a
+    - test -f $PREFIX/lib/libwebp.so
+    - test -f $PREFIX/include/webp/decode.h
+    - test -f $PREFIX/include/webp/encode.h
+    - test -f $PREFIX/include/webp/types.h
+about:
+  description: 'WebP is a method of lossy and lossless compression that can be used
+    on a
+
+    large variety of photographic, translucent and graphical images found on the
+
+    web. The degree of lossy compression is adjustable so a user can choose the
+
+    trade-off between file size and image quality.
+
+    libwebp-base provides the headers and shared libraries. For cwebp and dwep,
+
+    binaries install libwebp.
+
+    '
+  dev_url: https://chromium.googlesource.com/webm/libwebp
+  doc_url: https://developers.google.com/speed/webp/docs/using
+  home: https://developers.google.com/speed/webp
+  license: BSD-3-Clause
+  license_file: COPYING
+  summary: WebP image library
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - carterbox
+    - dschreij
+    - ocefpaf

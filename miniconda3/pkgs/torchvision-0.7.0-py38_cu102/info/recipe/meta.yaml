@@ -1,0 +1,79 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /root/project/packaging/torchvision, last modified Sat Jul 25 00:49:22 2020
+# ------------------------------------------------
+
+package:
+    name: torchvision
+    version: 0.7.0
+source:
+    path: /root/project
+build:
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    script_env:
+        - BUILD_VERSION
+        - CUDA_HOME
+        - FORCE_CUDA
+        - NVCC_FLAGS
+    string: py38_cu102
+requirements:
+    host:
+        - sqlite 3.32.3 h62c20be_0
+        - six 1.15.0 py_0
+        - blas 1.0 mkl
+        - mkl_random 1.1.1 py38h0573a6f_0
+        - cudatoolkit 10.2.89 hfd86e86_1
+        - xz 5.2.5 h7b6447c_0
+        - pip 20.1.1 py38_1
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - pytorch 1.6.0 py3.8_cuda10.2.89_cudnn7.6.5_0
+        - mkl 2020.1 217
+        - mkl_fft 1.1.0 py38h23d657b_0
+        - python 3.8.3 hcff3b4d_2
+        - tk 8.6.10 hbc83047_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - certifi 2020.6.20 py38_0
+        - numpy 1.18.5 py38ha1c710e_0
+        - mkl-service 2.3.0 py38he904b0f_0
+        - wheel 0.34.2 py38_0
+        - _libgcc_mutex 0.1 main
+        - ncurses 6.2 he6710b0_1
+        - numpy-base 1.18.5 py38hde5b4d6_0
+        - ca-certificates 2020.6.24 0
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libffi 3.3 he6710b0_2
+        - ninja 1.9.0 py38hfd86e86_0
+        - readline 8.0 h7b6447c_0
+        - ld_impl_linux-64 2.33.1 h53a641e_7
+        - libedit 3.1.20191231 h14c3975_1
+        - zlib 1.2.11 h7b6447c_3
+        - openssl 1.1.1g h7b6447c_0
+        - intel-openmp 2020.1 217
+        - setuptools 49.2.0 py38_0
+    run:
+        - cudatoolkit >=10.2,<10.3
+        - numpy >=1.11
+        - pillow >=4.1.1
+        - python >=3.8,<3.9.0a0
+        - pytorch==1.6.0
+test:
+    commands: pytest . --verbose --junitxml=/root/project/build_results/results.xml
+    imports:
+        - torchvision
+        - torchvision.datasets
+        - torchvision.transforms
+    requires:
+        - av
+        - ca-certificates
+        - pytest
+        - scipy
+    source_files:
+        - test
+about:
+    home: https://github.com/pytorch/vision
+    license: BSD
+    license_file: LICENSE
+    summary: image and video datasets and models for torch deep learning
+extra:
+    copy_test_source_files: true
+    final: true

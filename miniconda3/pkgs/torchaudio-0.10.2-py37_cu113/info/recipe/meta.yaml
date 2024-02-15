@@ -1,0 +1,93 @@
+# This file created by conda-build 3.21.7
+# meta.yaml template originally from:
+# /root/project/packaging/torchaudio, last modified Fri Jan 21 18:05:31 2022
+# ------------------------------------------------
+
+package:
+  name: torchaudio
+  version: 0.10.2
+source:
+  path: /root/project
+build:
+  features: null
+  script_env:
+    - BUILD_VERSION
+    - TORCH_CUDA_ARCH_LIST
+    - USE_CUDA
+  string: py37_cu113
+requirements:
+  build: []
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - blas 1.0 mkl
+    - bzip2 1.0.8 h7b6447c_0
+    - c-ares 1.18.1 h7f8727e_0
+    - ca-certificates 2021.10.26 h06a4308_2
+    - certifi 2021.10.8 py37h06a4308_2
+    - cmake 3.22.1 h1fce559_0
+    - cudatoolkit 11.3.1 h2bc3f7f_2
+    - expat 2.4.1 h2531618_2
+    - intel-openmp 2021.4.0 h06a4308_3561
+    - krb5 1.19.2 hac12032_0
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libcurl 7.80.0 h0b77cf5_0
+    - libedit 3.1.20210910 h7f8727e_0
+    - libev 4.33 h7f8727e_1
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libnghttp2 1.46.0 hce63b2e_0
+    - libssh2 1.9.0 h1ba5d50_1
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - libuv 1.40.0 h7b6447c_0
+    - lz4-c 1.9.3 h295c915_1
+    - mkl 2021.4.0 h06a4308_640
+    - mkl-service 2.4.0 py37h7f8727e_0
+    - mkl_fft 1.3.1 py37hd3c417c_0
+    - mkl_random 1.2.2 py37h51133e4_0
+    - ncurses 6.3 h7f8727e_2
+    - ninja 1.10.2 py37hd09550d_3
+    - numpy 1.21.2 py37h20f2e39_0
+    - numpy-base 1.21.2 py37h79a1101_0
+    - openssl 1.1.1m h7f8727e_0
+    - pip 21.2.2 py37h06a4308_0
+    - python 3.7.11 h12debd9_0
+    - pytorch 1.10.2 py3.7_cuda11.3_cudnn8.2.0_0
+    - pytorch-mutex 1.0 cuda
+    - readline 8.1.2 h7f8727e_1
+    - rhash 1.4.1 h3c74f83_1
+    - setuptools 58.0.4 py37h06a4308_0
+    - six 1.16.0 pyhd3eb1b0_0
+    - sqlite 3.37.0 hc218d9a_0
+    - tk 8.6.11 h1ccaba5_0
+    - typing_extensions 3.10.0.2 pyh06a4308_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7f8727e_4
+    - zstd 1.5.0 ha4553b6_1
+  run:
+    - cudatoolkit >=11.3,<11.4
+    - defaults::numpy >=1.11
+    - python >=3.7,<3.8.0a0
+    - pytorch==1.10.2
+test:
+  imports:
+    - torchaudio
+    - torchaudio.datasets
+    - torchaudio.kaldi_io
+    - torchaudio.sox_effects
+    - torchaudio.transforms
+  requires:
+    - pytest
+    - scipy
+  source_files:
+    - test
+about:
+  home: https://github.com/pytorch/audio
+  license: BSD
+  license_file: LICENSE
+  summary: simple audio I/O for pytorch
+extra:
+  copy_test_source_files: true
+  final: true

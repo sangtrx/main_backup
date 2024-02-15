@@ -1,0 +1,84 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /root/project/ffmpeg/recipe, last modified Tue Aug 11 20:44:20 2020
+# ------------------------------------------------
+
+package:
+    name: ffmpeg
+    version: '4.3'
+source:
+    -   sha256: 95edf444cc46509ea1fea85d99ecd40a597a873627483ef9b068796feb3bf72a
+        url: https://ffmpeg.org/releases/ffmpeg-4.3.tar.gz
+build:
+    number: '0'
+    run_exports:
+        - ffmpeg >=4.3,<4.4.0a0
+    string: hf484d3e_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.33.1 he6710b0_7
+        - binutils_linux-64 2.33.1 h9595d00_15
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_15
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_15
+        - lame 3.100 h7b6447c_0
+        - ld_impl_linux-64 2.33.1 h53a641e_7
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - libtool 2.4.6 h7b6447c_5
+        - make 4.2.1 h1bed415_1
+        - nasm 2.13.03 h7b6447c_1
+        - pkg-config 0.29.2 h1bed415_8
+    host:
+        - _libgcc_mutex 0.1 main
+        - bzip2 1.0.8 h7b6447c_0
+        - freetype 2.10.2 h5ab3b9f_0
+        - gmp 6.1.2 h6c8ec71_1
+        - gnutls 3.6.5 h71b1129_1002
+        - lame 3.100 h7b6447c_0
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libiconv 1.15 h63c8f33_5
+        - libpng 1.6.37 hbc83047_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - nettle 3.4.1 hbb512f6_0
+        - openh264 2.1.0 hd408876_0
+        - zlib 1.2.11 h7b6447c_3
+    run:
+        - bzip2 >=1.0.8,<2.0a0
+        - freetype >=2.10.2,<3.0a0
+        - gmp >=6.1.2
+        - gnutls >=3.6.5,<3.7.0a0
+        - lame >=3.100,<3.101.0a0
+        - libgcc-ng >=7.3.0
+        - libiconv
+        - libstdcxx-ng >=7.3.0
+        - openh264 >=2.1.0,<2.2.0a0
+        - zlib >=1.2.11,<1.3.0a0
+test:
+    commands:
+        - ffmpeg --help
+        - ffmpeg -loglevel panic -protocols | grep "https"
+        - ffmpeg -loglevel panic -codecs | grep "libmp3lame"
+        - ffmpeg -loglevel panic -codecs | grep "DEVI.S zlib"
+        - ffmpeg -loglevel panic -codecs | grep "DEV.LS h264"
+        - ffmpeg -loglevel panic -codecs | grep "libopenh264"
+        - test -f $PREFIX/lib/libavcodec.so
+        - test -f $PREFIX/lib/libavdevice.so
+        - test -f $PREFIX/lib/libswresample.so
+        - test -f $PREFIX/lib/libavfilter.so
+        - test -f $PREFIX/lib/libswresample.so
+        - test -f $PREFIX/lib/libavcodec.so
+        - test -f $PREFIX/lib/libavformat.so
+        - test -f $PREFIX/lib/libswscale.so
+        - test -f $PREFIX/lib/libavresample.so
+        - conda inspect linkages -p $PREFIX $PKG_NAME
+about:
+    home: http://www.ffmpeg.org/
+    license: LGPL
+    license_file: COPYING.LGPLv2.1
+    summary: Cross-platform solution to record, convert and stream audio and video.
+extra:
+    copy_test_source_files: true
+    final: true

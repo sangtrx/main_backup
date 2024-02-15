@@ -1,0 +1,63 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /tmp/build/80754af9/combined_recipe, last modified Fri Jul 16 12:52:06 2021
+# ------------------------------------------------
+
+package:
+  name: libdeflate
+  version: '1.8'
+source:
+  sha256: 50711ad4e9d3862f8dfb11b97eb53631a86ee3ce49c0e68ec2b6d059a9662f61
+  url: https://github.com/ebiggers/libdeflate/archive/v1.8.tar.gz
+build:
+  number: '5'
+  run_exports:
+    - libdeflate >=1.8,<1.9.0a0
+  string: h7f8727e_5
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - _sysroot_linux-64_curr_repodata_hack 3 haa98f57_10
+    - binutils_impl_linux-64 2.35.1 h27ae35d_9
+    - binutils_linux-64 2.35.1 h454624a_30
+    - gcc_impl_linux-64 7.5.0 h7105cf2_17
+    - gcc_linux-64 7.5.0 h8f34230_30
+    - kernel-headers_linux-64 3.10.0 h57e8cba_10
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libgcc-devel_linux-64 7.5.0 hbbeae57_17
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - make 4.2.1 h1bed415_1
+    - sysroot_linux-64 2.17 h57e8cba_10
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+  run:
+    - libgcc-ng >=7.5.0
+test:
+  commands:
+    - test ! -f ${PREFIX}/lib/libdeflate.a
+    - test -f ${PREFIX}/lib/libdeflate${SHLIB_EXT}
+    - test -f ${PREFIX}/include/libdeflate.h
+    - libdeflate-gzip -h
+    - libdeflate-gunzip -h
+about:
+  dev_url: https://github.com/ebiggers/libdeflate
+  doc_url: https://github.com/ebiggers/libdeflate/blob/master/README.md
+  home: https://github.com/ebiggers/libdeflate
+  license: MIT
+  license_family: MIT
+  license_file: COPYING
+  summary: libdeflate is a library for fast, whole-buffer DEFLATE-based compression
+    and decompression.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - dpryan79
+    - hmaarrfk
+    - rhpvorderman

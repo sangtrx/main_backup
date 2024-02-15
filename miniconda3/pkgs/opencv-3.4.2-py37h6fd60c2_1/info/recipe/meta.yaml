@@ -1,0 +1,65 @@
+# This file created by conda-build 3.13.0
+# ------------------------------------------------
+
+package:
+    name: opencv
+    version: 3.4.2
+source:
+    -   fn: opencv-3.4.2.zip
+        patches:
+            - 0001-Use-OpenCV_INSTALL_BINARIES_PREFIX-instead-of-hardcoding.patch
+            - 0002-Fix-protobuf-Parser-call.patch
+        sha256: 9405c5d7d8ab1696e98631d0c92125816356ec366a73c417bdcc4d74783b42aa
+        url: https://github.com/opencv/opencv/archive/3.4.2.zip
+    -   fn: opencv_contrib-3.4.2.tar.gz
+        folder: opencv_contrib-3.4.2
+        sha256: 45a52764ebd2558fa0b7fd8dc47379b37dd0956d912abbf7c786228374fdf60d
+        url: https://github.com/opencv/opencv_contrib/archive/3.4.2.tar.gz
+build:
+    number: 1
+    run_exports:
+        - opencv >=3.4.2,<3.4.3.0a0
+    string: py37h6fd60c2_1
+requirements:
+    host:
+        - ca-certificates 2018.03.07 0
+        - hdf5 1.10.2 hba1933b_1
+        - libedit 3.1.20170329 h6b74fdf_2
+        - libffi 3.2.1 hd88cf55_4
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - ncurses 6.1 hf484d3e_0
+        - openssl 1.0.2p h14c3975_0
+        - py-opencv 3.4.2 py37hb342d67_1
+        - python 3.7.0 hc3d631a_0
+        - readline 7.0 h7b6447c_5
+        - sqlite 3.24.0 h84994c4_0
+        - tk 8.6.8 hbc83047_0
+        - xz 5.2.4 h14c3975_4
+        - zlib 1.2.11 ha838bed_2
+    run:
+        - hdf5 >=1.10.2,<1.10.3.0a0
+        - py-opencv 3.4.2 py37hb342d67_1
+        - python >=3.7,<3.8.0a0
+test:
+    imports:
+        - cv2
+        - cv2.xfeatures2d
+about:
+    description: 'OpenCV (Open Source Computer Vision Library) includes several hundreds
+        of computer vision algorithms.
+
+        It has a modular structure,which means that the package includes several shared
+        or static libraries.
+
+        '
+    doc_source_url: https://github.com/opencv/opencv/tree/master/doc
+    doc_url: http://docs.opencv.org/
+    home: http://opencv.org/
+    license: BSD 3-clause
+    license_family: BSD
+    summary: Computer vision and machine learning software library.
+extra:
+    copy_test_source_files: true
+    final: true

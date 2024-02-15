@@ -1,0 +1,82 @@
+# This file created by conda-build 3.21.5
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/typing_extensions-3.10.0.2-on-linux_64, last modified Thu Sep 16 17:50:41 2021
+# ------------------------------------------------
+
+package:
+  name: typing_extensions
+  version: 3.10.0.2
+source:
+  sha256: 49f75d16ff11f1cd258e1b988ccff82a3ca5570217d7ad8c5f48205dd99a677e
+  url: https://pypi.io/packages/source/t/typing_extensions/typing_extensions-3.10.0.2.tar.gz
+build:
+  noarch: python
+  number: '0'
+  script: python -m pip install --no-deps --ignore-installed .
+  string: pyh06a4308_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - ca-certificates 2021.7.5 h06a4308_1
+    - certifi 2021.5.30 py39h06a4308_0
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - ncurses 6.2 he6710b0_1
+    - openssl 1.1.1l h7f8727e_0
+    - pip 21.2.4 py37h06a4308_0
+    - python 3.9.6 h12debd9_1
+    - readline 8.1 h27cfd23_0
+    - setuptools 52.0.0 py39h06a4308_0
+    - sqlite 3.36.0 hc218d9a_0
+    - tk 8.6.10 hbc83047_0
+    - tzdata 2021a h5d7bf9c_0
+    - wheel 0.37.0 pyhd3eb1b0_1
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+  run:
+    - python >=3.5
+about:
+  description: 'The typing module was added to the standard library in Python 3.5
+    on a
+
+    provisional basis and will no longer be provisional in Python 3.7. However,
+
+    this means users of Python 3.5 - 3.6 who are unable to upgrade will not be
+
+    able to take advantage of new types added to the typing module, such as
+
+    typing.Text or typing.Coroutine.
+
+
+    The typing_extensions module contains both backports of these changes
+
+    as well as experimental types that will eventually be added to the typing
+
+    module, such as Protocol.
+
+
+    Users of other Python versions should continue to install and use the
+
+    typing module from PyPi instead of using this one unless specifically
+
+    writing code that must be compatible with multiple Python versions or
+
+    requires experimental types.
+
+    '
+  dev_url: https://github.com/python/typing
+  doc_url: https://github.com/python/typing
+  home: https://github.com/python/typing/tree/master/typing_extensions
+  license: PSF-2.0
+  license_family: PSF
+  license_file: LICENSE
+  summary: Backported and Experimental Type Hints for Python
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - djsutherland

@@ -1,0 +1,56 @@
+MODEL:
+  BACKBONE:
+    FREEZE_AT: 0
+    NAME: "build_resnet_backbone"
+  # WEIGHTS: "detectron2://ImageNetPretrained/torchvision/R-50.pkl"
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+  RESNETS:
+    DEPTH: 50
+    STEM_TYPE: "basic"  # not used
+    STEM_OUT_CHANNELS: 64
+    STRIDE_IN_1X1: False
+    OUT_FEATURES: ["res2", "res3", "res4", "res5"]
+    # NORM: "SyncBN"
+    RES5_MULTI_GRID: [1, 1, 1]  # not used
+DATASETS:
+  TRAIN: ("front2class_2017_train_panoptic",)
+  TEST: ("front2class_2017_val_panoptic",)  # to evaluate instance and semantic performance as well
+SOLVER:
+  IMS_PER_BATCH: 1
+  BASE_LR: 0.00025  #0.02 0.0025
+  STEPS: (10000, 15000)
+  MAX_ITER: 20000
+  WARMUP_FACTOR: 1.0
+  WARMUP_ITERS: 10
+  WEIGHT_DECAY: 0.05
+  # WARMUP_FACTOR: 0.001
+  # WARMUP_ITERS: 1000
+  # WARMUP_METHOD: linear
+  # WEIGHT_DECAY: 0.0001
+  # OPTIMIZER: "ADAMW"
+  OPTIMIZER: "SGD"
+  BACKBONE_MULTIPLIER: 0.1
+  CLIP_GRADIENTS:
+    ENABLED: True
+    CLIP_TYPE: "full_model"
+    CLIP_VALUE: 0.01
+    NORM_TYPE: 2.0
+  AMP:
+    ENABLED: True
+INPUT:
+  IMAGE_SIZE: 256
+  # MIN_SCALE: 0.1
+  # MAX_SCALE: 2.0
+  MIN_SIZE_TRAIN: (256,)
+  MAX_SIZE_TRAIN: 256
+  MIN_SIZE_TEST: 256
+  MAX_SIZE_TEST: 256
+  FORMAT: "RGB"
+  DATASET_MAPPER_NAME: "coco_panoptic_lsj"
+TEST:
+  EVAL_PERIOD: 5000
+DATALOADER:
+  FILTER_EMPTY_ANNOTATIONS: True
+  NUM_WORKERS: 4
+VERSION: 2

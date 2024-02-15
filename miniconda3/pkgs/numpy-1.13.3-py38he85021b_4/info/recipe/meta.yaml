@@ -1,0 +1,108 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /tmp/build/80754af9/aggregate/numpy-1.13-feedstock/recipe, last modified Thu Nov 21 16:24:17 2019
+# ------------------------------------------------
+
+package:
+    name: numpy
+    version: 1.13.3
+source:
+    -   patches:
+            - 0001-Remove-ICC-specific-flags.patch
+            - 0002-Remove-np.invsqrt.patch
+            - 0003-Rewrite-inlining.patch
+            - 0004-always-generate_cython.patch
+            - gfortran_alias.patch
+            - intel_distribution.patch
+            - intel_init_mkl.patch
+            - intel_mkl-version.patch
+            - intel_mkl_mem_all.patch
+            - intel_mkl_random.patch
+            - intel_umath_optimizations.patch
+            - intel_use_mkl_fft.patch
+        sha256: 36ee86d5adbabc4fa2643a073f93d5504bdfed37a149a3a49f4dde259f35a750
+        url: https://pypi.io/packages/source/n/numpy/numpy-1.13.3.zip
+    -   folder: tools
+        url: https://raw.githubusercontent.com/numpy/numpy/maintenance/1.11.x/tools/cythonize.py
+build:
+    number: '4'
+    requires_features:
+        blas: mkl
+    string: py38he85021b_4
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_8
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_8
+        - gfortran_impl_linux-64 7.3.0 hdf63c60_1
+        - gfortran_linux-64 7.3.0 h553295d_8
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - blas 1.0 mkl
+        - ca-certificates 2019.10.16 0
+        - certifi 2019.9.11 py38_0
+        - cython 0.29.14 py38he6710b0_0
+        - intel-openmp 2019.4 243
+        - libedit 3.1.20181209 hc058e9b_0
+        - libffi 3.2.1 hd88cf55_4
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - mkl 2019.4 243
+        - mkl-devel 2019.4 243
+        - mkl-include 2019.4 243
+        - ncurses 6.1 he6710b0_1
+        - openssl 1.1.1d h7b6447c_3
+        - python 3.8.0 h0371630_2
+        - readline 7.0 h7b6447c_5
+        - setuptools 41.6.0 py38_0
+        - sqlite 3.30.1 h7b6447c_0
+        - tk 8.6.8 hbc83047_0
+        - xz 5.2.4 h14c3975_4
+        - zlib 1.2.11 h7b6447c_3
+    run:
+        - blas 1.0 mkl
+        - libgcc-ng >=7.3.0
+        - libgfortran-ng >=7,<8.0a0
+        - mkl >=2019.4,<2020.0a0
+        - mkl-service >=2,<3.0a0
+        - mkl_fft
+        - mkl_random
+        - python >=3.8,<3.9.0a0
+test:
+    commands:
+        - f2py -h
+        - conda inspect linkages -p $PREFIX numpy
+    imports:
+        - numpy
+        - numpy.linalg.lapack_lite
+    requires:
+        - gcc_linux-64 7.3.0.*
+        - gfortran_linux-64 7.3.0.*
+        - nose
+about:
+    description: 'NumPy is the fundamental package needed for scientific computing
+        with Python.
+
+        '
+    dev_source_url: https://github.com/numpy/numpy/tree/master/doc
+    dev_url: https://github.com/numpy/numpy
+    doc_url: https://docs.scipy.org/doc/numpy-1.13.0/reference/
+    home: http://numpy.scipy.org/
+    license: BSD 3-Clause
+    license_file: LICENSE.txt
+    summary: Array processing for numbers, strings, records, and objects.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - msarahan
+        - ocefpaf
+        - pelson
+        - rgommers

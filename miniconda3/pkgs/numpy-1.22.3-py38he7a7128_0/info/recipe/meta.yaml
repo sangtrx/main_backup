@@ -1,0 +1,119 @@
+# This file created by conda-build 3.21.8
+# ------------------------------------------------
+
+package:
+  name: numpy
+  version: 1.22.3
+source:
+  patches:
+    - patches/0001-Obtain-and-prefer-custom-gfortran-from-env-variable.patch
+    - patches/0002-intel_mkl-version.patch
+    - patches/0003-intel_init_mkl.patch
+  sha256: a906c0b4301a3d62ccf66d058fe779a65c1c34f6719ef2058f96e1856f48bca5
+  url: https://github.com/numpy/numpy/releases/download/v1.22.3/numpy-1.22.3.tar.gz
+build:
+  number: 0
+  string: py38he7a7128_0
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - _sysroot_linux-64_curr_repodata_hack 3 haa98f57_10
+    - binutils_impl_linux-64 2.35.1 h27ae35d_9
+    - binutils_linux-64 2.35.1 h454624a_30
+    - gcc_impl_linux-64 7.5.0 h7105cf2_17
+    - gcc_linux-64 7.5.0 h8f34230_30
+    - gxx_impl_linux-64 7.5.0 h0a5bf11_17
+    - gxx_linux-64 7.5.0 hffc177d_30
+    - kernel-headers_linux-64 3.10.0 h57e8cba_10
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libgcc-devel_linux-64 7.5.0 hbbeae57_17
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-devel_linux-64 7.5.0 hf0c5c8d_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - sysroot_linux-64 2.17 h57e8cba_10
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - blas 1.0 mkl
+    - ca-certificates 2022.4.26 h06a4308_0
+    - certifi 2021.10.8 py38h06a4308_2
+    - cython 0.29.28 py38h295c915_0
+    - intel-openmp 2021.4.0 h06a4308_3561
+    - ld_impl_linux-64 2.38 h1181459_0
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - mkl 2021.4.0 h06a4308_640
+    - mkl-devel 2021.4.0 h66538d2_640
+    - mkl-include 2021.4.0 h06a4308_640
+    - ncurses 6.3 h7f8727e_2
+    - openssl 1.1.1o h7f8727e_0
+    - python 3.8.13 h12debd9_0
+    - readline 8.1.2 h7f8727e_1
+    - setuptools 58.0.4 py38h06a4308_0
+    - sqlite 3.38.3 hc218d9a_0
+    - tk 8.6.11 h1ccaba5_1
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h7f8727e_1
+    - zlib 1.2.12 h7f8727e_2
+  run:
+    - blas 1.0 mkl
+    - libgcc-ng >=7.5.0
+    - libstdcxx-ng >=7.5.0
+    - mkl >=2021.4.0,<2022.0a0
+    - mkl-service >=2.3.0,<3.0a0
+    - mkl_fft
+    - mkl_random
+    - numpy-base 1.22.3 py38hf524024_0
+    - python >=3.8,<3.9.0a0
+test:
+  commands:
+    - f2py -h
+    - python -c "import numpy; numpy.show_config()"
+    - export OPENBLAS_NUM_THREADS=1
+    - pytest -vvv --pyargs numpy -k "not (_not_a_real_test or test_sincos_float32
+      or test_overrides)" --durations=0
+  imports:
+    - numpy
+    - numpy.core.multiarray
+    - numpy.core.numeric
+    - numpy.core.umath
+    - numpy.linalg.lapack_lite
+    - numpy.random.mtrand
+  requires:
+    - gcc_linux-64 7.5.0.*
+    - gfortran_linux-64 7.5.0.*
+    - gxx_linux-64 7.5.0.*
+    - hypothesis
+    - pip
+    - pytest
+    - setuptools <60.0.0
+about:
+  description: 'NumPy is the fundamental package needed for scientific computing with
+    Python.
+
+    '
+  dev_source_url: https://github.com/numpy/numpy/tree/master/doc
+  dev_url: https://github.com/numpy/numpy
+  doc_url: https://docs.scipy.org/doc/numpy/reference/
+  home: https://numpy.org/
+  license: BSD-3-Clause
+  license_file: LICENSE.txt
+  lisense_family: BSD
+  summary: Array processing for numbers, strings, records, and objects.
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: ad9b0918-861b-43e8-a54c-734f4ee5e62b
+  recipe-maintainers:
+    - chenghlee
+    - jakirkham
+    - msarahan
+    - ocefpaf
+    - pelson
+    - rgommers
+  remote_url: git@github.com:AnacondaRecipes/numpy-feedstock.git
+  sha: 0703252fab2cc38334b41e78094a3b3235f5e204

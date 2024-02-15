@@ -1,0 +1,161 @@
+# This file created by conda-build 3.13.0
+# ------------------------------------------------
+
+package:
+    name: libopencv
+    version: 3.4.2
+source:
+    -   fn: opencv-3.4.2.zip
+        patches:
+            - 0001-Use-OpenCV_INSTALL_BINARIES_PREFIX-instead-of-hardcoding.patch
+            - 0002-Fix-protobuf-Parser-call.patch
+        sha256: 9405c5d7d8ab1696e98631d0c92125816356ec366a73c417bdcc4d74783b42aa
+        url: https://github.com/opencv/opencv/archive/3.4.2.zip
+    -   fn: opencv_contrib-3.4.2.tar.gz
+        folder: opencv_contrib-3.4.2
+        sha256: 45a52764ebd2558fa0b7fd8dc47379b37dd0956d912abbf7c786228374fdf60d
+        url: https://github.com/opencv/opencv_contrib/archive/3.4.2.tar.gz
+build:
+    ignore_run_exports:
+        - libprotobuf
+    number: 1
+    run_exports:
+        - libopencv >=3.4.2,<3.4.3.0a0
+    string: hb342d67_1
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - bzip2 1.0.6 h14c3975_5
+        - ca-certificates 2018.03.07 0
+        - cmake 3.12.0 h307fef2_0
+        - expat 2.2.6 he6710b0_0
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_3
+        - libcurl 7.61.0 h1ad7b7a_0
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libssh2 1.8.0 h9cfc8f7_4
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - make 4.2.1 h1bed415_1
+        - ncurses 6.1 hf484d3e_0
+        - openssl 1.0.2p h14c3975_0
+        - pkg-config 0.29.2 h1bed415_8
+        - rhash 1.3.6 hb7f436b_0
+        - xz 5.2.4 h14c3975_4
+        - zlib 1.2.11 ha838bed_2
+    host:
+        - bzip2 1.0.6 h14c3975_5
+        - cairo 1.14.12 h8948797_3
+        - eigen 3.3.3 h5721d7b_0
+        - ffmpeg 4.0 hcdf2ecd_0
+        - fontconfig 2.13.0 h9420a91_0
+        - freeglut 3.0.0 hf484d3e_5
+        - freetype 2.9.1 h8a8886c_1
+        - glib 2.56.2 hd408876_0
+        - graphite2 1.3.12 h23475e2_2
+        - harfbuzz 1.7.6 hec2c2bc_3
+        - hdf5 1.10.2 hba1933b_1
+        - icu 58.2 h9c2bf20_1
+        - jasper 2.0.14 h07fcdf6_1
+        - jpeg 9b h024ee3a_2
+        - libffi 3.2.1 hd88cf55_4
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - libglu 9.0.0 hf484d3e_1
+        - libopus 1.2.1 hb9ed12e_0
+        - libpng 1.6.34 hb9fc6fc_0
+        - libprotobuf 3.5.2 h6f1eeef_0
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - libtiff 4.0.9 he85c1e1_2
+        - libuuid 1.0.3 h1bed415_2
+        - libvpx 1.7.0 h439df22_0
+        - libxcb 1.13 h1bed415_1
+        - libxml2 2.9.8 h26e45fe_1
+        - pcre 8.42 h439df22_0
+        - pixman 0.34.0 hceecf20_3
+        - xz 5.2.4 h14c3975_4
+        - zlib 1.2.11 ha838bed_2
+    run:
+        - ffmpeg >=4.0,<4.1.0a0
+        - freetype >=2.9.1,<3.0a0
+        - harfbuzz >=1.7.6,<2.0a0
+        - hdf5 >=1.10.2,<1.10.3.0a0
+        - jasper >=2.0.14,<3.0a0
+        - jpeg >=9b,<10a
+        - libgcc-ng >=7.3.0
+        - libpng >=1.6.34,<1.7.0a0
+        - libstdcxx-ng >=7.3.0
+        - libtiff >=4.0.9,<5.0a0
+        - zlib >=1.2.11,<1.3.0a0
+test:
+    commands:
+        - pushd test-cmake
+        - cmake . -DOpenCV_STATIC=OFF -DOpenCV_SHARED=ON
+        - cmake --build . --config Release
+        - popd
+        - test -f $PREFIX/lib/libopencv_aruco.so
+        - test -f $PREFIX/lib/libopencv_bgsegm.so
+        - test -f $PREFIX/lib/libopencv_calib3d.so
+        - test -f $PREFIX/lib/libopencv_ccalib.so
+        - test -f $PREFIX/lib/libopencv_core.so
+        - test -f $PREFIX/lib/libopencv_datasets.so
+        - test -f $PREFIX/lib/libopencv_dnn.so
+        - test -f $PREFIX/lib/libopencv_dpm.so
+        - test -f $PREFIX/lib/libopencv_face.so
+        - test -f $PREFIX/lib/libopencv_features2d.so
+        - test -f $PREFIX/lib/libopencv_flann.so
+        - test -f $PREFIX/lib/libopencv_fuzzy.so
+        - test -f $PREFIX/lib/libopencv_highgui.so
+        - test -f $PREFIX/lib/libopencv_imgcodecs.so
+        - test -f $PREFIX/lib/libopencv_imgproc.so
+        - test -f $PREFIX/lib/libopencv_line_descriptor.so
+        - test -f $PREFIX/lib/libopencv_ml.so
+        - test -f $PREFIX/lib/libopencv_objdetect.so
+        - test -f $PREFIX/lib/libopencv_optflow.so
+        - test -f $PREFIX/lib/libopencv_phase_unwrapping.so
+        - test -f $PREFIX/lib/libopencv_photo.so
+        - test -f $PREFIX/lib/libopencv_plot.so
+        - test -f $PREFIX/lib/libopencv_reg.so
+        - test -f $PREFIX/lib/libopencv_rgbd.so
+        - test -f $PREFIX/lib/libopencv_saliency.so
+        - test -f $PREFIX/lib/libopencv_shape.so
+        - test -f $PREFIX/lib/libopencv_stereo.so
+        - test -f $PREFIX/lib/libopencv_stitching.so
+        - test -f $PREFIX/lib/libopencv_structured_light.so
+        - test -f $PREFIX/lib/libopencv_superres.so
+        - test -f $PREFIX/lib/libopencv_surface_matching.so
+        - test -f $PREFIX/lib/libopencv_text.so
+        - test -f $PREFIX/lib/libopencv_tracking.so
+        - test -f $PREFIX/lib/libopencv_video.so
+        - test -f $PREFIX/lib/libopencv_videoio.so
+        - test -f $PREFIX/lib/libopencv_videostab.so
+        - test -f $PREFIX/lib/libopencv_xfeatures2d.so
+        - test -f $PREFIX/lib/libopencv_ximgproc.so
+        - test -f $PREFIX/lib/libopencv_xobjdetect.so
+        - test -f $PREFIX/lib/libopencv_xphoto.so
+    files:
+        - test-cmake/CMakeLists.txt
+        - test-cmake/DisplayImage.cpp
+        - test.cpp
+    requires:
+        - cmake
+        - gxx_linux-64 7.3.0.*
+about:
+    description: 'OpenCV (Open Source Computer Vision Library) includes several hundreds
+        of computer vision algorithms.
+
+        It has a modular structure,which means that the package includes several shared
+        or static libraries.
+
+        '
+    doc_source_url: https://github.com/opencv/opencv/tree/master/doc
+    doc_url: http://docs.opencv.org/
+    home: http://opencv.org/
+    license: BSD 3-clause
+    license_family: BSD
+    summary: Computer vision and machine learning software library.
+extra:
+    copy_test_source_files: true
+    final: true

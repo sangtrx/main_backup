@@ -1,0 +1,73 @@
+# This file created by conda-build 3.21.7
+# meta.yaml template originally from:
+# /feedstock/recipe, last modified Thu Mar 10 15:53:04 2022
+# ------------------------------------------------
+
+package:
+  name: stack_data
+  version: 0.2.0
+source:
+  sha256: 45692d41bd633a9503a5195552df22b583caf16f0b27c4e58c98d88c8b648e12
+  url: https://pypi.io/packages/source/s/stack_data/stack_data-0.2.0.tar.gz
+build:
+  noarch: python
+  number: '0'
+  script: /opt/conda/conda-bld/stack_data_1646927590127/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl/bin/python
+    -m pip install . --no-deps --ignore-installed -vvv
+  string: pyhd3eb1b0_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - bzip2 1.0.8 h7b6447c_0
+    - ca-certificates 2022.2.1 h06a4308_0
+    - certifi 2021.5.30 py310h06a4308_0
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - libuuid 1.0.3 h7f8727e_2
+    - ncurses 6.3 h7f8727e_2
+    - openssl 1.1.1m h7f8727e_0
+    - packaging 21.3 pyhd3eb1b0_0
+    - pip 21.2.4 py310h06a4308_0
+    - pyparsing 3.0.4 pyhd3eb1b0_0
+    - python 3.10.0 h12debd9_5
+    - readline 8.1.2 h7f8727e_1
+    - setuptools 58.0.4 py310h06a4308_0
+    - setuptools-scm 6.3.2 pyhd3eb1b0_0
+    - setuptools_scm 6.3.2 hd3eb1b0_0
+    - sqlite 3.37.2 hc218d9a_0
+    - tk 8.6.11 h1ccaba5_0
+    - toml 0.10.2 pyhd3eb1b0_0
+    - tomli 1.2.2 pyhd3eb1b0_0
+    - tzdata 2021e hda174b7_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7f8727e_4
+  run:
+    - asttokens
+    - executing
+    - pure_eval
+    - python >=3.5
+test:
+  commands:
+    - pip check
+  imports:
+    - stack_data
+  requires:
+    - pip
+about:
+  dev_url: https://github.com/alexmojaki/stack_data
+  doc_url: https://github.com/alexmojaki/stack_data/blob/master/README.md
+  home: https://github.com/alexmojaki/stack_data
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: Extract data from python stack frames and tracebacks for informative displays
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - alexmojaki

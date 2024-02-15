@@ -1,0 +1,49 @@
+# This file created by conda-build 3.10.9+36.gd10dbde.dirty
+# meta.yaml template originally from:
+# /home/rdonnelly/conda/aggregate/libglu-feedstock/recipe, last modified Thu Oct 12 12:27:40 2017
+# ------------------------------------------------
+
+package:
+    name: libglu
+    version: 9.0.0
+source:
+    fn: glu-9.0.0.tar.gz
+    md5: bbc57d4fe3bd3fb095bdbef6fcb977c4
+    url: ftp://ftp.freedesktop.org/pub/mesa/glu/glu-9.0.0.tar.gz
+build:
+    number: '1'
+    string: hf484d3e_1
+requirements:
+    build:
+        - binutils_impl_linux-64 2.28.1 had2808c_3
+        - binutils_linux-64 7.2.0 had2808c_27
+        - gcc_impl_linux-64 7.2.0 habb00fd_3
+        - gcc_linux-64 7.2.0 h550dcbe_27
+        - gxx_impl_linux-64 7.2.0 hdf63c60_3
+        - gxx_linux-64 7.2.0 h550dcbe_27
+        - libdrm-cos6-x86_64 2.4.65 hd39d64f_0
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - libx11-common-cos6-x86_64 1.6.4 h023ea50_0
+        - libx11-cos6-x86_64 1.6.4 h64a1553_0
+        - mesa-libgl-cos6-x86_64 11.0.7 h045e36e_0
+        - mesa-libgl-devel-cos6-x86_64 11.0.7 h5a2c0ac_0
+    host:
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+    run:
+        - libgcc-ng >=7.2.0
+        - libstdcxx-ng >=7.2.0
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libGLU.a
+        - test -f ${PREFIX}/lib/libGLU.so
+about:
+    home: http://www.mesa3d.org/glu.html
+    license: SGI-2
+    summary: Mesa OpenGL utility library (GLU)
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - bgruening
+        - mingwandroid

@@ -1,0 +1,122 @@
+# This file created by conda-build 3.21.9
+# meta.yaml template originally from:
+# /builder/conda/pytorch-nightly, last modified Tue Aug  2 23:55:42 2022
+# ------------------------------------------------
+
+package:
+  name: pytorch
+  version: 1.12.1
+source:
+  path: /pytorch
+build:
+  detect_binary_files_with_prefix: false
+  number: '0'
+  script_env:
+    - BUILD_SPLIT_CUDA
+    - BUILD_TEST
+    - CMAKE_ARGS
+    - CMAKE_OSX_ARCHITECTURES
+    - CONDA_CUDATOOLKIT_CONSTRAINT
+    - CUDA_VERSION
+    - CUDNN_VERSION
+    - DEBUG
+    - DEVELOPER_DIR
+    - EXTRA_CAFFE2_CMAKE_FLAGS
+    - USE_CUDA
+    - USE_DISTRIBUTED
+    - USE_FBGEMM
+    - USE_GLOO_WITH_OPENSSL
+    - USE_MKLDNN
+    - USE_NNPACK
+    - USE_QNNPACK
+    - _GLIBCXX_USE_CXX11_ABI
+  string: py3.8_cuda10.2_cudnn7.6.5_0
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 5.1 1_gnu
+    - bzip2 1.0.8 h7b6447c_0
+    - c-ares 1.18.1 h7f8727e_0
+    - ca-certificates 2022.07.19 h06a4308_0
+    - cmake 3.22.1 h1fce559_0
+    - expat 2.4.4 h295c915_0
+    - krb5 1.19.2 hac12032_0
+    - libcurl 7.84.0 h91b91d3_0
+    - libedit 3.1.20210910 h7f8727e_0
+    - libev 4.33 h7f8727e_1
+    - libgcc-ng 11.2.0 h1234567_1
+    - libgomp 11.2.0 h1234567_1
+    - libnghttp2 1.46.0 hce63b2e_0
+    - libssh2 1.10.0 h8f2d780_0
+    - libstdcxx-ng 11.2.0 h1234567_1
+    - libuv 1.40.0 h7b6447c_0
+    - lz4-c 1.9.3 h295c915_1
+    - ncurses 6.3 h5eee18b_3
+    - openssl 1.1.1q h7f8727e_0
+    - pkg-config 0.29.2 h1bed415_8
+    - rhash 1.4.1 h3c74f83_1
+    - xz 5.2.5 h7f8727e_1
+    - zlib 1.2.12 h7f8727e_2
+    - zstd 1.5.2 ha4553b6_0
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 5.1 1_gnu
+    - blas 1.0 mkl
+    - ca-certificates 2022.07.19 h06a4308_0
+    - certifi 2022.6.15 py38h06a4308_0
+    - intel-openmp 2022.0.1 h06a4308_3633
+    - ld_impl_linux-64 2.38 h1181459_1
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 11.2.0 h1234567_1
+    - libgomp 11.2.0 h1234567_1
+    - libllvm9 9.0.1 h4a3c616_1
+    - libstdcxx-ng 11.2.0 h1234567_1
+    - llvm-tools 9.0.1 h4a3c616_1
+    - llvmdev 9.0.1 h4a3c616_1
+    - magma-cuda102 2.5.2 1
+    - mkl 2020.2 256
+    - mkl-include 2022.0.1 h06a4308_117
+    - mkl-service 2.3.0 py38he904b0f_0
+    - mkl_fft 1.3.0 py38h54f3939_0
+    - mkl_random 1.1.1 py38h0573a6f_0
+    - ncurses 6.3 h5eee18b_3
+    - ninja 1.10.2 h06a4308_5
+    - ninja-base 1.10.2 hd09550d_5
+    - numpy 1.19.2 py38h54aff64_0
+    - numpy-base 1.19.2 py38hfa32c7d_0
+    - openssl 1.1.1q h7f8727e_0
+    - pip 22.1.2 py38h06a4308_0
+    - python 3.8.13 h12debd9_0
+    - pyyaml 6.0 py38h7f8727e_1
+    - readline 8.1.2 h7f8727e_1
+    - setuptools 61.2.0 py38h06a4308_0
+    - six 1.16.0 pyhd3eb1b0_1
+    - sqlite 3.39.0 h5082296_0
+    - tk 8.6.12 h1ccaba5_0
+    - typing_extensions 4.1.1 pyh06a4308_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h7f8727e_1
+    - yaml 0.2.5 h7b6447c_0
+    - zlib 1.2.12 h7f8727e_2
+  run:
+    - blas * mkl
+    - cudatoolkit >=10.2,<10.3
+    - mkl >=2018
+    - python >=3.8,<3.9.0a0
+    - pytorch-mutex 1.0 cuda
+    - typing_extensions
+  run_constrained:
+    - cpuonly <0
+test:
+  imports:
+    - torch
+about:
+  home: http://pytorch.org/
+  license: BSD 3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: PyTorch is an optimized tensor library for deep learning using GPUs and
+    CPUs.
+extra:
+  copy_test_source_files: true
+  final: true

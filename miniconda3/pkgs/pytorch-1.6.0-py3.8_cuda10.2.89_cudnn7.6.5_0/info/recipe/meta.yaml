@@ -1,0 +1,102 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /builder/conda/pytorch-nightly, last modified Fri Jul 24 22:22:35 2020
+# ------------------------------------------------
+
+package:
+    name: pytorch
+    version: 1.6.0
+source:
+    path: /pytorch
+build:
+    detect_binary_files_with_prefix: false
+    number: '0'
+    script_env:
+        - CMAKE_ARGS
+        - CONDA_CUDATOOLKIT_CONSTRAINT
+        - CUDA_VERSION
+        - CUDNN_VERSION
+        - DEBUG
+        - DEVELOPER_DIR
+        - EXTRA_CAFFE2_CMAKE_FLAGS
+        - USE_CUDA
+        - USE_DISTRIBUTED
+        - USE_FBGEMM
+    string: py3.8_cuda10.2.89_cudnn7.6.5_0
+requirements:
+    build:
+        - krb5 1.18.2 h173b8e3_0
+        - bzip2 1.0.8 h7b6447c_0
+        - expat 2.2.9 he6710b0_2
+        - _libgcc_mutex 0.1 main
+        - libedit 3.1.20191231 h14c3975_1
+        - libcurl 7.71.1 h20c2e04_1
+        - rhash 1.3.8 h1ba5d50_0
+        - libssh2 1.9.0 h1ba5d50_1
+        - openssl 1.1.1g h7b6447c_0
+        - xz 5.2.5 h7b6447c_0
+        - ncurses 6.2 he6710b0_1
+        - ca-certificates 2020.6.24 0
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - cmake 3.14.0 h52cb24c_0
+        - zlib 1.2.11 h7b6447c_3
+    host:
+        - sqlite 3.32.3 h62c20be_0
+        - six 1.15.0 py_0
+        - magma-cuda102 2.5.2 1
+        - blas 1.0 mkl
+        - python 3.8.3 hcff3b4d_2
+        - xz 5.2.5 h7b6447c_0
+        - pip 20.1.1 py38_1
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - mkl 2020.1 217
+        - yaml 0.2.5 h7b6447c_0
+        - tk 8.6.10 hbc83047_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - certifi 2020.6.20 py38_0
+        - numpy 1.11.3 py38h7e9f1db_12
+        - mkl-service 2.3.0 py38he904b0f_0
+        - wheel 0.34.2 py38_0
+        - _libgcc_mutex 0.1 main
+        - ncurses 6.2 he6710b0_1
+        - numpy-base 1.11.3 py38hde5b4d6_12
+        - ca-certificates 2020.6.24 0
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libffi 3.3 he6710b0_2
+        - ninja 1.9.0 py38hfd86e86_0
+        - readline 8.0 h7b6447c_0
+        - ld_impl_linux-64 2.33.1 h53a641e_7
+        - pyyaml 5.3.1 py38h7b6447c_1
+        - libedit 3.1.20191231 h14c3975_1
+        - zlib 1.2.11 h7b6447c_3
+        - openssl 1.1.1g h7b6447c_0
+        - intel-openmp 2020.1 217
+        - mkl-include 2020.1 217
+        - setuptools 49.2.0 py38_0
+        - libuv 1.26.0 h7b6447c_0
+        - pkg-config 0.29.2 h1bed415_8
+    run:
+        - blas * mkl
+        - cudatoolkit >=10.2,<10.3
+        - mkl >=2018
+        - ninja
+        - numpy >=1.11
+        - python >=3.8,<3.9.0a0
+test:
+    commands:
+        - OMP_NUM_THREADS=4 python ./test/run_test.py || true
+    imports:
+        - torch
+    source_files:
+        - test
+about:
+    home: http://pytorch.org/
+    license: BSD 3-Clause
+    license_family: BSD
+    license_file: LICENSE
+    summary: PyTorch is an optimized tensor library for deep learning using GPUs and
+        CPUs.
+extra:
+    copy_test_source_files: true
+    final: true

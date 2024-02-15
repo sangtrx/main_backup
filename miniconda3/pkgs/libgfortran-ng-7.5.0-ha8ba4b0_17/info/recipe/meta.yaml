@@ -1,0 +1,28 @@
+# This file created by conda-build 3.21.4
+# ------------------------------------------------
+
+package:
+  name: libgfortran-ng
+  version: 7.5.0
+source:
+  path: /home/builder/ktietz/cos6/ctng-compilers-feedstock/recipe
+build:
+  number: 17
+  string: ha8ba4b0_17
+requirements:
+  build: []
+  run:
+    - libgfortran4 7.5.0.*
+test:
+  commands:
+    - test -f ${PREFIX}/lib/libgfortran.so
+about:
+  home: https://gcc.gnu.org/
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  summary: The GNU Fortran Runtime Library
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - beckermr
+    - isuruf

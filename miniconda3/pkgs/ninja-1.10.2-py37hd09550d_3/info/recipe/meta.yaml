@@ -1,0 +1,84 @@
+# This file created by conda-build 3.21.5
+# meta.yaml template originally from:
+# /feedstock/recipe, last modified Thu Nov 11 15:15:40 2021
+# ------------------------------------------------
+
+package:
+  name: ninja
+  version: 1.10.2
+source:
+  fn: v1.10.2.tar.gz
+  sha256: ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed
+  url: https://github.com/ninja-build/ninja/archive/v1.10.2.tar.gz
+build:
+  ignore_run_exports:
+    - vc
+  number: '3'
+  string: py37hd09550d_3
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - _sysroot_linux-64_curr_repodata_hack 3 haa98f57_10
+    - binutils_impl_linux-64 2.35.1 h27ae35d_9
+    - binutils_linux-64 2.35.1 h454624a_30
+    - ca-certificates 2021.10.26 h06a4308_2
+    - gcc_impl_linux-64 7.5.0 h7105cf2_17
+    - gcc_linux-64 7.5.0 h8f34230_30
+    - gxx_impl_linux-64 7.5.0 h0a5bf11_17
+    - gxx_linux-64 7.5.0 hffc177d_30
+    - kernel-headers_linux-64 3.10.0 h57e8cba_10
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libffi 3.3 he6710b0_2
+    - libgcc-devel_linux-64 7.5.0 hbbeae57_17
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-devel_linux-64 7.5.0 hf0c5c8d_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - ncurses 6.3 h7f8727e_2
+    - openssl 1.1.1l h7f8727e_0
+    - python 3.7.11 h12debd9_0
+    - readline 8.1 h27cfd23_0
+    - sqlite 3.36.0 hc218d9a_0
+    - sysroot_linux-64 2.17 h57e8cba_10
+    - tk 8.6.11 h1ccaba5_0
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - ca-certificates 2021.10.26 h06a4308_2
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - ncurses 6.3 h7f8727e_2
+    - openssl 1.1.1l h7f8727e_0
+    - python 3.7.11 h12debd9_0
+    - readline 8.1 h27cfd23_0
+    - sqlite 3.36.0 hc218d9a_0
+    - tk 8.6.11 h1ccaba5_0
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+  run:
+    - libgcc-ng >=7.5.0
+    - libstdcxx-ng >=7.5.0
+    - python >=3.7,<3.8.0a0
+test:
+  commands:
+    - ninja --version
+about:
+  dev_url: https://github.com/ninja-build/ninja
+  doc_source_url: https://github.com/ninja-build/ninja/tree/master/doc
+  doc_url: https://ninja-build.org/manual.html
+  home: https://ninja-build.org/
+  license: Apache-2.0
+  license_family: Apache
+  license_file: COPYING
+  summary: A small build system with a focus on speed
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - frol

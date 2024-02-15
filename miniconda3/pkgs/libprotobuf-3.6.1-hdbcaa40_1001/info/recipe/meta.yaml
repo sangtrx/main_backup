@@ -1,0 +1,82 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sun Feb 24 17:46:32 2019
+# ------------------------------------------------
+
+package:
+    name: libprotobuf
+    version: 3.6.1
+source:
+    -   patches:
+            - 4854.patch
+        sha256: 3d4e589d81b2006ca603c1ab712c9715a76227293032d05b26fca603f90b3f5b
+        url: https://github.com/google/protobuf/archive/v3.6.1/libprotobuf-v3.6.1.tar.gz
+    -   folder: third_party/benchmark
+        sha256: 866d3c8cadb3323251d4fe0e989ea0df51f30660badb73dad0f2d11e5bf1770f
+        url: https://github.com/google/benchmark/archive/5b7683f49e1e9223cf9927b24f6fd3d6bd82e3f8.zip
+    -   folder: third_party/googletest
+        sha256: 8f282e6bf68956bc40bad8ac9743b9ee5c0bf3cd9a91f830fb5749a5ba8d5f76
+        url: https://github.com/google/googletest/archive/c3bb0ee2a63279a803aaad956b9b26d74bf9e6e2.zip
+build:
+    number: '1001'
+    run_exports:
+        - libprotobuf >=3.6.1,<3.6.2.0a0
+    string: hdbcaa40_1001
+requirements:
+    build:
+        - autoconf 2.69 pl526h14c3975_9
+        - automake 1.16.1 pl526_1003
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_3
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - libtool 2.4.6 h14c3975_1002
+        - m4 1.4.18 h14c3975_1001
+        - make 4.2.1 h14c3975_2004
+        - perl 5.26.2 h14c3975_1002
+        - pkg-config 0.29.2 h14c3975_1004
+        - unzip 6.0 0
+    host:
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+        - zlib >=1.2.11,<1.3.0a0
+        - zlib >=1.2.11,<1.3.0a0
+test:
+    commands:
+        - protoc --help
+        - test -f ${PREFIX}/lib/libprotobuf.a
+        - test -f ${PREFIX}/lib/libprotobuf${SHLIB_EXT}
+about:
+    description: 'Protocol buffers are Google''s language-neutral,
+
+        platform-neutral, extensible mechanism for serializing structured data-
+
+        think XML, but smaller, faster, and simpler.
+
+        '
+    doc_source_url: https://github.com/google/protobuf/releases
+    doc_url: https://developers.google.com/protocol-buffers/
+    home: https://developers.google.com/protocol-buffers/
+    license: BSD-3-Clause
+    license_family: BSD
+    license_file: LICENSE
+    summary: Protocol Buffers - Google's data interchange format. C++ Libraries
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - dopplershift
+        - hajapy
+        - jakirkham
+        - jjhelmus
+        - ocefpaf
+        - wesm
+        - xhochy

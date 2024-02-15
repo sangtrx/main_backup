@@ -1,0 +1,104 @@
+# This file created by conda-build 3.21.9
+# ------------------------------------------------
+
+package:
+  name: mkl
+  version: 2022.1.0
+source:
+  - folder: mkl
+    sha256: 31c225ce08d3dc129f0881e5d36a1ef0ba8dc9fdc0e168397c2ac144d5f0bf54
+    url: https://anaconda.org/intel/mkl/2022.1.0/download/linux-64/mkl-2022.1.0-intel_223.tar.bz2
+  - folder: mkl-devel
+    sha256: 4e014e6ac31e8961f09c937b66f53d2c0d75f074f39abfa9f378f4659ed2ecbb
+    url: https://anaconda.org/intel/mkl-devel/2022.1.0/download/linux-64/mkl-devel-2022.1.0-intel_223.tar.bz2
+  - folder: mkl-include
+    sha256: 704e658a9b25a200f8035f3d0a8f2e094736496a2169f87609f1cfed2e2eb0a9
+    url: https://anaconda.org/intel/mkl-include/2022.1.0/download/linux-64/mkl-include-2022.1.0-intel_223.tar.bz2
+  - folder: intel-openmp
+    sha256: 498dc37ce1bd513f591b633565151c4de8f11a12914814f2bf85afebbd35ee23
+    url: https://anaconda.org/intel/intel-openmp/2022.1.0/download/linux-64/intel-openmp-2022.1.0-intel_3768.tar.bz2
+  - folder: dal
+    sha256: e456f92ed30d77c00583a1b0fe6fc41358415c60a62709ece57503f7a9215fc1
+    url: https://anaconda.org/intel/dal/2021.6.0/download/linux-64/dal-2021.6.0-intel_915.tar.bz2
+  - folder: dal-include
+    sha256: e3bba390db7e36b4cfcf781a503b4cff79d49bcdc8b45f059f4b1a0459a7e3ef
+    url: https://anaconda.org/intel/dal-include/2021.6.0/download/linux-64/dal-include-2021.6.0-intel_915.tar.bz2
+  - folder: dal-static
+    sha256: df1cff3ef35951b49b874ee6ccdff2a266e552c8114ac7abe853d4b41856bff9
+    url: https://anaconda.org/intel/dal-static/2021.6.0/download/linux-64/dal-static-2021.6.0-intel_915.tar.bz2
+  - folder: dal-devel
+    sha256: 75dbf1b002cc8d40f45d8172d58e3a2143c61d340bb81ae86588a2869a7f71e3
+    url: https://anaconda.org/intel/dal-devel/2021.6.0/download/linux-64/dal-devel-2021.6.0-intel_915.tar.bz2
+  - folder: daal
+    sha256: 092be0168b46861ed1eda1467ce1d13f9c6eaa7ee936a232db6638a37b0c3678
+    url: https://anaconda.org/intel/daal/2021.5.3/download/linux-64/daal-2021.5.3-intel_832.tar.bz2
+  - folder: daal-include
+    sha256: 83cfc95049a91b32895644fff532512359e33d9a26e079c4f74c2c72556ffbd8
+    url: https://anaconda.org/intel/daal-include/2021.5.3/download/linux-64/daal-include-2021.5.3-intel_832.tar.bz2
+  - folder: daal-static
+    sha256: eaf8a0aa2ef5fb73bc96dbb64c3fbde502a9c4fd2c0044331009cf92916b995c
+    url: https://anaconda.org/intel/daal-static/2021.5.3/download/linux-64/daal-static-2021.5.3-intel_832.tar.bz2
+  - folder: daal-devel
+    sha256: a982199ffd3d096712a6650fe02a4df4068e0093bf9f0106d9348f9cddce1fa4
+    url: https://anaconda.org/intel/daal-devel/2021.5.3/download/linux-64/daal-devel-2021.5.3-intel_832.tar.bz2
+build:
+  missing_dso_whitelist:
+    - $RPATH/libtbb.so.12
+    - $RPATH/libtbbmalloc.so.2
+  number: 224
+  string: hc2b9512_224
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 5.1 1_gnu
+    - _sysroot_linux-64_curr_repodata_hack 3 haa98f57_10
+    - binutils_impl_linux-64 2.38 h2a08ee3_1
+    - binutils_linux-64 2.38.0 hc2dff05_0
+    - gcc_impl_linux-64 11.2.0 h1234567_1
+    - gcc_linux-64 11.2.0 h5c386dc_0
+    - gxx_impl_linux-64 11.2.0 h1234567_1
+    - gxx_linux-64 11.2.0 hc2dff05_0
+    - kernel-headers_linux-64 3.10.0 h57e8cba_10
+    - ld_impl_linux-64 2.38 h1181459_1
+    - libgcc-devel_linux-64 11.2.0 h1234567_1
+    - libgcc-ng 11.2.0 h1234567_1
+    - libgomp 11.2.0 h1234567_1
+    - libstdcxx-devel_linux-64 11.2.0 h1234567_1
+    - libstdcxx-ng 11.2.0 h1234567_1
+    - sysroot_linux-64 2.17 h57e8cba_10
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 5.1 1_gnu
+    - intel-openmp 2022.*
+    - libgcc-ng 11.2.0 h1234567_1
+    - libgomp 11.2.0 h1234567_1
+    - libstdcxx-ng 11.2.0 h1234567_1
+  run:
+    - intel-openmp 2022.*
+    - libgcc-ng >=11.2.0
+    - libstdcxx-ng >=11.2.0
+  run_constrained:
+    - __glibc >=2.17
+test:
+  commands:
+    - ls -A $PREFIX/lib/*
+about:
+  description: 'Intel Math Kernel Library is a BLAS implementation tuned for high
+    performance on Intel CPUs.
+
+    This package is a repackaged set of binaries obtained directly from Intel\''s
+    anaconda.org channel.
+
+    '
+  doc_url: https://software.intel.com/en-us/mkl/documentation
+  home: https://software.intel.com/en-us/mkl
+  license: LicenseRef-ProprietaryIntel
+  license_family: Proprietary
+  license_file: mkl/info/licenses/license.txt
+  summary: Math library for Intel and compatible processors
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - beckermr
+    - isuruf

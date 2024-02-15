@@ -1,0 +1,81 @@
+# This file created by conda-build 3.20.5
+# meta.yaml template originally from:
+# /tmp/build/80754af9/combined_recipe, last modified Wed Dec 30 19:03:02 2020
+# ------------------------------------------------
+
+package:
+    name: ptyprocess
+    version: 0.7.0
+source:
+    sha256: 5c5d0a3b48ceee0b48485e0c26037c0acd7d29765ca3fbb5cb3831d347423220
+    url: https://pypi.io/packages/source/p/ptyprocess/ptyprocess-0.7.0.tar.gz
+build:
+    noarch: python
+    number: '2'
+    script:
+        - flit build --format wheel
+        - /tmp/build/80754af9/ptyprocess_1609355006118/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/bin/python
+            -m pip install dist/*.whl --no-deps -vv
+    string: pyhd3eb1b0_2
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - brotlipy 0.7.0 py36h27cfd23_1003
+        - ca-certificates 2020.12.8 h06a4308_0
+        - certifi 2020.12.5 py36h06a4308_0
+        - cffi 1.14.4 py36h261ae71_0
+        - chardet 4.0.0 py36h06a4308_1003
+        - cryptography 3.3.1 py36h3c74f83_0
+        - docutils 0.16 py36_1
+        - flit 3.0.0 py_0
+        - flit-core 3.0.0 py_0
+        - idna 2.10 py_0
+        - ld_impl_linux-64 2.33.1 h53a641e_7
+        - libedit 3.1.20191231 h14c3975_1
+        - libffi 3.3 he6710b0_2
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.2 he6710b0_1
+        - openssl 1.1.1i h27cfd23_0
+        - pip 20.3.3 py36h06a4308_0
+        - pycparser 2.20 py_2
+        - pyopenssl 20.0.1 pyhd3eb1b0_1
+        - pysocks 1.7.1 py36h06a4308_0
+        - python 3.6.12 hcff3b4d_2
+        - pytoml 0.1.21 py_0
+        - readline 8.0 h7b6447c_0
+        - requests 2.25.1 pyhd3eb1b0_0
+        - requests_download 0.1.2 py_1
+        - setuptools 51.0.0 py36h06a4308_2
+        - six 1.15.0 py36h06a4308_0
+        - sqlite 3.33.0 h62c20be_0
+        - tk 8.6.10 hbc83047_0
+        - urllib3 1.26.2 pyhd3eb1b0_0
+        - wheel 0.36.2 pyhd3eb1b0_0
+        - xz 5.2.5 h7b6447c_0
+        - zlib 1.2.11 h7b6447c_3
+    run:
+        - python
+test:
+    imports:
+        - ptyprocess
+about:
+    description: 'Ptyprocess allows you to launch a subprocess in a pseudo terminal
+        (pty),
+
+        and interact with both the process and its pty.
+
+        '
+    dev_url: https://github.com/pexpect/ptyprocess
+    doc_source_url: https://github.com/pexpect/ptyprocess/blob/master/docs/index.rst
+    doc_url: http://ptyprocess.readthedocs.io/en/latest/
+    home: https://github.com/pexpect/ptyprocess
+    license: ISC
+    summary: Run a subprocess in a pseudo terminal
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - ocefpaf
+        - pelson
+        - takluyver

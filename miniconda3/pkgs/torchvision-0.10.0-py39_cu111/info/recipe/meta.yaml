@@ -1,0 +1,97 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /root/project/packaging/torchvision, last modified Tue Jun 15 15:40:57 2021
+# ------------------------------------------------
+
+package:
+  name: torchvision
+  version: 0.10.0
+source:
+  path: /root/project
+build:
+  features: null
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script_env:
+    - BUILD_VERSION
+    - CUDA_HOME
+    - FORCE_CUDA
+    - TORCH_CUDA_ARCH_LIST
+  string: py39_cu111
+requirements:
+  build:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 1_gnu
+    - bzip2 1.0.8 h7f98852_4
+    - ffmpeg 4.3 hf484d3e_0
+    - freetype 2.10.4 h0708190_1
+    - gmp 6.2.1 h58526e2_0
+    - gnutls 3.6.13 h85f3911_1
+    - jpeg 8d h516909a_0
+    - lame 3.100 h7f98852_1001
+    - libgcc-ng 9.3.0 h2828fa1_19
+    - libgomp 9.3.0 h2828fa1_19
+    - libiconv 1.16 h516909a_0
+    - libpng 1.6.37 h21135ba_2
+    - libstdcxx-ng 9.3.0 h6de172a_19
+    - nettle 3.6 he412f7d_0
+    - openh264 2.1.1 h780b84a_0
+    - zlib 1.2.11 h516909a_1010
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 1_llvm
+    - blas 1.0 mkl
+    - ca-certificates 2021.5.30 ha878542_0
+    - certifi 2021.5.30 py39hf3d152e_0
+    - cudatoolkit 11.1.1 h6406543_8
+    - ld_impl_linux-64 2.35.1 hea4e1c9_2
+    - libffi 3.3 h58526e2_2
+    - libgcc-ng 9.3.0 h2828fa1_19
+    - libstdcxx-ng 9.3.0 h6de172a_19
+    - libuv 1.41.0 h7f98852_0
+    - llvm-openmp 11.1.0 h4bd325d_1
+    - mkl 2021.2.0 h726a3e6_389
+    - ncurses 6.2 h58526e2_4
+    - ninja 1.10.2 h4bd325d_0
+    - openssl 1.1.1k h7f98852_0
+    - pip 21.1.2 pyhd8ed1ab_0
+    - python 3.9.4 hffdb5ce_0_cpython
+    - pytorch 1.9.0 py3.9_cuda11.1_cudnn8.0.5_0
+    - readline 8.1 h46c0cb4_0
+    - setuptools 49.6.0 py39hf3d152e_3
+    - sqlite 3.35.5 h74cdb3f_0
+    - tbb 2021.2.0 h4bd325d_0
+    - tk 8.6.10 h21135ba_1
+    - typing_extensions 3.10.0.0 pyha770c72_0
+    - tzdata 2021a he74cb21_0
+    - wheel 0.36.2 pyhd3deb0d_0
+    - xz 5.2.5 h516909a_1
+    - zlib 1.2.11 h516909a_1010
+  run:
+    - cudatoolkit >=11.1,<11.2
+    - ffmpeg >=4.2
+    - jpeg <=9b
+    - libpng
+    - pillow >=5.3.0
+    - python >=3.9,<3.10.0a0
+    - pytorch==1.9.0
+test:
+  imports:
+    - torchvision
+    - torchvision.datasets
+    - torchvision.transforms
+  requires:
+    - av
+    - ca-certificates
+    - jpeg <=9b
+    - pytest
+    - scipy
+  source_files:
+    - test
+about:
+  home: https://github.com/pytorch/vision
+  license: BSD
+  license_file: LICENSE
+  summary: image and video datasets and models for torch deep learning
+extra:
+  copy_test_source_files: true
+  final: true

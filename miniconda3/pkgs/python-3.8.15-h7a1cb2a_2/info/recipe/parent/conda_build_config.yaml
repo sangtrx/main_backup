@@ -1,0 +1,182 @@
+extend_keys:
+- extend_keys
+- ignore_build_only_deps
+- pin_run_as_build
+- ignore_version
+ignore_build_only_deps:
+- python
+- numpy
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+  r-base:
+    min_pin: x.x
+    max_pin: x.x
+  libboost:
+    max_pin: x.x.x
+geos:
+- 3.8.0
+gst_plugins_base:
+- '1.14'
+libxslt:
+- '1.1'
+libgsasl:
+- '1.8'
+r_version:
+- 3.5.0
+fortran_compiler:
+- gfortran
+python_impl:
+- cpython
+fortran_compiler_version:
+- 11.2.0
+clang_variant:
+- clang
+dbus:
+- '1'
+jpeg:
+- '9'
+serf:
+- 1.3.9
+cairo:
+- '1.16'
+python_implementation:
+- cpython
+xz:
+- '5'
+c_compiler_version:
+- 11.2.0
+libpng:
+- '1.6'
+gstreamer:
+- '1.14'
+gnu:
+- 2.12.2
+perl:
+- '5.34'
+bzip2:
+- '1.0'
+libxml2:
+- '2.9'
+mkl:
+- 2021.*
+icu:
+- '58'
+zstd:
+- 1.5.2
+boost:
+- '1.73'
+expat:
+- '2'
+apr:
+- 1.6.3
+libffi:
+- '3.3'
+zlib:
+- '1.2'
+rust_compiler_version:
+- 1.56.0
+r_implementation:
+- mro-base
+- r-base
+lua:
+- '5'
+c_compiler:
+- gcc
+hdf5:
+- 1.10.6
+libdap4:
+- '3.19'
+glib:
+- '2'
+lzo:
+- '2'
+mpfr:
+- '4'
+hdfeos2:
+- '2.20'
+target_platform:
+- linux-64
+boost_cpp:
+- '1.73'
+llvm_variant:
+- llvm
+openjpeg:
+- '2.3'
+cran_mirror:
+- https://mran.microsoft.com/snapshot/2018-01-01
+libwebp:
+- 1.2.0
+hdf4:
+- '4.2'
+libgd:
+- 2.3.3
+proj:
+- 6.2.1
+VERBOSE_CM:
+- VERBOSE=1
+harfbuzz:
+- 4.3.0
+cxx_compiler:
+- gxx
+tk:
+- '8.6'
+cpu_optimization_target:
+- nocona
+cxx_compiler_version:
+- 11.2.0
+giflib:
+- '5'
+g2clib:
+- '1.6'
+hdfeos5:
+- '5.1'
+r_base:
+- '3.5'
+channel_targets:
+- defaults
+fontconfig:
+- '2.13'
+sqlite:
+- '3'
+gmp:
+- '6.1'
+openblas:
+- 0.3.20
+openssl:
+- 1.1.1
+cyrus_sasl:
+- 2.1.26
+libnetcdf:
+- '4.8'
+freetype:
+- '2.10'
+blas_impl:
+- mkl
+- openblas
+libtiff:
+- '4.1'
+proj4:
+- 5.2.0
+libgdal:
+- '3.0'
+rust_compiler:
+- rust
+pixman:
+- '0.40'
+libkml:
+- '1.3'
+VERBOSE_AT:
+- V=1
+libprotobuf:
+- 3.20.1
+readline:
+- '8.0'
+python:
+- '3.8'
+numpy:
+- '1.16'
+zip_keys:
+- - python
+  - numpy

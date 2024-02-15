@@ -1,0 +1,84 @@
+# This file created by conda-build 3.21.8
+# meta.yaml template originally from:
+# /feedstock/recipe, last modified Tue Jun 28 15:28:36 2022
+# ------------------------------------------------
+
+package:
+  name: openssl
+  version: 1.1.1p
+source:
+  fn: openssl-1.1.1p.tar.gz
+  sha256: bf61b62aaa66c7c7639942a94de4c9ae8280c08f17d4eac2e44644d9fc8ace6f
+  url: https://www.openssl.org/source/openssl-1.1.1p.tar.gz
+build:
+  binary_has_prefix_files:
+    - lib/libcrypto.a
+    - lib/libcrypto.so.1.1
+  detect_binary_files_with_prefix: true
+  has_prefix_files:
+    - bin/c_rehash
+    - lib/pkgconfig/libcrypto.pc
+    - lib/pkgconfig/libssl.pc
+    - lib/pkgconfig/openssl.pc
+  no_link: lib/libcrypto.so.1.1
+  number: '0'
+  run_exports:
+    - openssl >=1.1.1p,<1.1.2a
+  string: h5eee18b_0
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 5.1 1_gnu
+    - _sysroot_linux-64_curr_repodata_hack 3 haa98f57_10
+    - binutils_impl_linux-64 2.38 h2a08ee3_1
+    - binutils_linux-64 2.38.0 hc2dff05_0
+    - gcc_impl_linux-64 11.2.0 h1234567_1
+    - gcc_linux-64 11.2.0 h5c386dc_0
+    - kernel-headers_linux-64 3.10.0 h57e8cba_10
+    - ld_impl_linux-64 2.38 h1181459_1
+    - libgcc-devel_linux-64 11.2.0 h1234567_1
+    - libgcc-ng 11.2.0 h1234567_1
+    - libgomp 11.2.0 h1234567_1
+    - libstdcxx-ng 11.2.0 h1234567_1
+    - make 4.2.1 h1bed415_1
+    - patch 2.7.6 h7b6447c_1001
+    - perl 5.26.2 h14c3975_0
+    - sysroot_linux-64 2.17 h57e8cba_10
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 5.1 1_gnu
+    - libgcc-ng 11.2.0 h1234567_1
+    - libgomp 11.2.0 h1234567_1
+  run:
+    - ca-certificates
+    - libgcc-ng >=11.2.0
+test:
+  commands:
+    - touch checksum.txt
+    - openssl sha256 checksum.txt
+    - python -c "from six.moves import urllib; urllib.request.urlopen('https://pypi.org')"
+  requires:
+    - python 3.7.*
+    - six
+about:
+  dev_url: https://github.com/openssl/openssl
+  doc_url: https://www.openssl.org/docs/man1.1.1/
+  home: https://www.openssl.org/
+  license: OpenSSL
+  license_family: Apache
+  license_file: LICENSE
+  summary: OpenSSL is an open-source implementation of the SSL and TLS protocols
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 944eb9b7-8914-4cc3-bbe0-b4c1b91683fb
+  recipe-maintainers:
+    - carlodri
+    - chenghlee
+    - jakirkham
+    - jjhelmus
+    - msarahan
+    - ocefpaf
+    - pelson
+  remote_url: git@github.com:AnacondaRecipes/openssl-feedstock.git
+  sha: 771a52f309019c70e7d1c533cca0922e85f99453

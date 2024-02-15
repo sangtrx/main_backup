@@ -1,0 +1,70 @@
+# This file created by conda-build 3.14.4
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/olefile-0.46-python_3.6-on-linux_64, last modified Tue Sep 11 20:15:22 2018
+# ------------------------------------------------
+
+package:
+    name: olefile
+    version: '0.46'
+source:
+    sha256: 133b031eaf8fd2c9399b78b8bc5b8fcbe4c31e85295749bb17a87cba8f3c3964
+    url: https://pypi.io/packages/source/o/olefile/olefile-0.46.zip
+build:
+    noarch: false
+    number: '0'
+    script: /tmp/build/80754af9/olefile_1536697110105/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh/bin/python
+        -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    string: py36_0
+requirements:
+    host:
+        - ca-certificates 2018.03.07 0
+        - certifi 2018.8.24 py36_1
+        - libedit 3.1.20170329 h6b74fdf_2
+        - libffi 3.2.1 hd88cf55_4
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - ncurses 6.1 hf484d3e_0
+        - openssl 1.0.2p h14c3975_0
+        - pip 10.0.1 py36_0
+        - python 3.6.6 hc3d631a_0
+        - readline 7.0 h7b6447c_5
+        - setuptools 40.2.0 py36_0
+        - sqlite 3.24.0 h84994c4_0
+        - tk 8.6.8 hbc83047_0
+        - wheel 0.31.1 py36_0
+        - xz 5.2.4 h14c3975_4
+        - zlib 1.2.11 ha838bed_2
+    run:
+        - python >=3.6,<3.7.0a0
+test:
+    imports:
+        - olefile
+about:
+    description: 'Python package to parse, read and write Microsoft OLE2 files
+
+        (Structured Storage or Compound Document, Microsoft Office) -
+
+        Improved version of the OleFileIO module from PIL, the Python
+
+        Image Library.
+
+        '
+    dev_url: https://github.com/decalage2/olefile
+    doc_source_url: https://github.com/decalage2/olefile/blob/master/doc/index.rst
+    doc_url: http://olefile.readthedocs.io/en/latest/index.html
+    home: http://www.decalage.info/python/olefileio
+    license: BSD 2-Clause
+    license_family: BSD
+    license_file: doc/License.rst
+    summary: parse, read and write Microsoft OLE2 files
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - decarlof
+        - dgursoy
+        - ericdill
+        - licode
+        - ocefpaf
+        - ravescovi
+        - tacaswell

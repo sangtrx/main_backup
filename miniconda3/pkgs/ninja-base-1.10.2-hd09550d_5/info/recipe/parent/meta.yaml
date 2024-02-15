@@ -1,0 +1,50 @@
+{% set version = "1.10.2" %}
+{% set build_number = "5" %}
+
+package:
+  name: ninja-suite
+  version: {{ version }}
+
+source:
+  fn: v{{ version }}.tar.gz
+  url: https://github.com/ninja-build/ninja/archive/v{{ version }}.tar.gz
+  sha256: ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed
+
+build:
+  number: {{ build_number }}
+
+outputs:
+  - name: ninja-base
+    script: build-ninja.sh  # [unix]
+    script: bld-ninja.bat   # [win]
+    build:
+      ignore_run_exports:
+        - vc
+    requirements:
+      build:
+        - {{ compiler("cxx") }}
+        - cmake
+        - make  # [not win]
+    test:
+      commands:
+        - ninja --version
+
+  - name: ninja
+    requirements:
+      run:
+        - {{ pin_subpackage('ninja-base', exact=True) }}
+        - python
+
+about:
+  home: https://ninja-build.org/
+  license: Apache-2.0
+  license_family: Apache
+  license_file: COPYING
+  summary: A small build system with a focus on speed
+  dev_url: https://github.com/ninja-build/ninja
+  doc_url: https://ninja-build.org/manual.html
+  doc_source_url: https://github.com/ninja-build/ninja/tree/master/doc
+
+extra:
+  recipe-maintainers:
+    - frol

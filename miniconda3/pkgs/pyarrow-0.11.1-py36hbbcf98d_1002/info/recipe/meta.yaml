@@ -1,0 +1,104 @@
+# This file created by conda-build 3.17.5
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Thu Jan 17 09:24:43 2019
+# ------------------------------------------------
+
+package:
+    name: pyarrow
+    version: 0.11.1
+source:
+    fn: apache-arrow-0.11.1.tar.gz
+    sha256: c524f3d47f0cdb7445c0326b20e79f60485e12daeb2adc8ad6a845ad6c19c1ac
+    url: https://dist.apache.org/repos/dist/release/arrow/arrow-0.11.1/apache-arrow-0.11.1.tar.gz
+build:
+    number: '1002'
+    string: py36hbbcf98d_1002
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - bzip2 1.0.6 h14c3975_1002
+        - ca-certificates 2018.11.29 ha4d7672_0
+        - cmake 3.13.2 h8d4ced6_1000
+        - curl 7.63.0 h646f8bb_1000
+        - expat 2.2.5 hf484d3e_1002
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_3
+        - krb5 1.16.3 hc83ff2d_1000
+        - libcurl 7.63.0 h01ee5af_1000
+        - libedit 3.1.20170329 hf8c457e_1001
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libssh2 1.8.0 h1ad7b7a_1003
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - libuv 1.24.1 h14c3975_1000
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.0.2p h14c3975_1002
+        - rhash 1.3.6 h14c3975_1001
+        - tk 8.6.9 h84994c4_1000
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h14c3975_1004
+    host:
+        - arrow-cpp 0.11.1 py36h0e61e49_1004
+        - blas 1.1 openblas
+        - boost-cpp 1.68.0 h11c811c_1000
+        - bzip2 1.0.6 h14c3975_1002
+        - ca-certificates 2018.11.29 ha4d7672_0
+        - certifi 2018.11.29 py36_1000
+        - cython 0.29.2 py36hf484d3e_1000
+        - icu 58.2 hf484d3e_1000
+        - libffi 3.2.1 hf484d3e_1005
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libgfortran-ng 7.2.0 hdf63c60_3
+        - libprotobuf 3.6.1 hdbcaa40_1000
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - numpy 1.14.6 py36_blas_openblash1522bff_1200
+        - openblas 0.3.3 h9ac9557_1001
+        - openssl 1.0.2p h14c3975_1002
+        - python 3.6.7 hd21baee_1001
+        - readline 7.0 hf8c457e_1001
+        - setuptools 40.6.3 py36_0
+        - setuptools_scm 3.1.0 py_0
+        - six 1.12.0 py36_1000
+        - sqlite 3.26.0 h67949de_1000
+        - thrift-cpp 0.12.0 h23e226f_1000
+        - tk 8.6.9 h84994c4_1000
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - arrow-cpp 0.11.1.*
+        - arrow-cpp >=0.11.1,<0.12.0a0
+        - boost-cpp >=1.68.0,<1.68.1.0a0
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+        - numpy >=1.14,<2.0a0
+        - pandas
+        - parquet-cpp 1.5.1.*
+        - python >=3.6,<3.7.0a0
+        - setuptools
+        - six
+test:
+    imports:
+        - pyarrow
+        - pyarrow.parquet
+        - pyarrow.plasma
+about:
+    home: http://github.com/apache/arrow
+    license: Apache 2.0
+    summary: Python libraries for Apache Arrow
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - cpcloud
+        - jreback
+        - kou
+        - kszucs
+        - pcmoritz
+        - pitrou
+        - robertnishihara
+        - siddharthteotia
+        - wesm
+        - xhochy

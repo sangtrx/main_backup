@@ -1,0 +1,69 @@
+# This file created by conda-build 3.20.2
+# meta.yaml template originally from:
+# /tmp/build/80754af9/combined_recipe, last modified Fri Sep 25 15:48:48 2020
+# ------------------------------------------------
+
+package:
+    name: libuv
+    version: 1.40.0
+source:
+    fn: libuv-v1.40.0.tar.gz
+    patches:
+        - 0001-Skip-the-single-bit-that-fails-in-test-fs-copyfile-w.patch
+    sha256: 70fe1c9ba4f2c509e8166c0ca2351000237da573bb6c82092339207a9715ba6b
+    url: https://github.com/libuv/libuv/archive/v1.40.0.tar.gz
+build:
+    number: '0'
+    run_exports:
+        - libuv >=1.40.0,<2.0a0
+    string: h7b6447c_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - autoconf 2.69 pl526hebd4dad_5
+        - automake 1.16.2 pl526_0
+        - binutils_impl_linux-64 2.33.1 he6710b0_7
+        - binutils_linux-64 2.33.1 h9595d00_15
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_15
+        - ld_impl_linux-64 2.33.1 h53a641e_7
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - libtool 2.4.6 h7b6447c_5
+        - m4 1.4.18 h4e445db_0
+        - make 4.2.1 h1bed415_1
+        - perl 5.26.2 h14c3975_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - libgcc-ng 9.1.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - test -f "$PREFIX/include/uv.h"
+        - test -f "$PREFIX/lib/libuv.a"
+        - test -f "$PREFIX/lib/libuv.so.1"
+        - test -f "$PREFIX/lib/libuv${SHLIB_EXT}"
+about:
+    description: 'libuv is a multi-platform support library with a focus on asynchronous
+        I/O.
+
+        It was primarily developed for use by Node.js, but it''s also used by Luvit,
+
+        Julia, pyuv, and others.
+
+        '
+    dev_url: https://github.com/libuv/libuv
+    doc_source_url: https://github.com/libuv/libuv/tree/v1.x/docs
+    doc_url: http://docs.libuv.org/
+    home: http://libuv.org/
+    license: MIT
+    license_family: MIT
+    license_file: LICENSE
+    summary: Cross-platform asynchronous I/O
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - frol
+        - mariusvniekerk

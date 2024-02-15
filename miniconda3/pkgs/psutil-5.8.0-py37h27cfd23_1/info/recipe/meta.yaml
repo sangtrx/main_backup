@@ -1,0 +1,87 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /tmp/build/80754af9/combined_recipe, last modified Tue Feb  2 20:33:09 2021
+# ------------------------------------------------
+
+package:
+  name: psutil
+  version: 5.8.0
+source:
+  fn: psutil-5.8.0.tar.gz
+  sha256: 0c9ccb99ab76025f2f0bbecf341d4656e9c1351db8cc8a03ccd62e318ab4b5c6
+  url: https://pypi.io/packages/source/p/psutil/psutil-5.8.0.tar.gz
+build:
+  number: '1'
+  script: /tmp/build/80754af9/psutil_1612298016854/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/bin/python
+    -m pip install --ignore-installed --no-deps .
+  string: py37h27cfd23_1
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - binutils_impl_linux-64 2.33.1 he6710b0_7
+    - binutils_linux-64 2.33.1 h9595d00_15
+    - gcc_impl_linux-64 7.3.0 habb00fd_1
+    - gcc_linux-64 7.3.0 h553295d_15
+    - ld_impl_linux-64 2.33.1 h53a641e_7
+    - libgcc-ng 9.1.0 hdf63c60_0
+    - libstdcxx-ng 9.1.0 hdf63c60_0
+  host:
+    - _libgcc_mutex 0.1 main
+    - ca-certificates 2021.1.19 h06a4308_0
+    - certifi 2020.12.5 py37h06a4308_0
+    - ld_impl_linux-64 2.33.1 h53a641e_7
+    - libedit 3.1.20191231 h14c3975_1
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.1.0 hdf63c60_0
+    - libstdcxx-ng 9.1.0 hdf63c60_0
+    - ncurses 6.2 he6710b0_1
+    - openssl 1.1.1i h27cfd23_0
+    - pip 20.3.3 py37h06a4308_0
+    - python 3.7.9 h7579374_0
+    - readline 8.1 h27cfd23_0
+    - setuptools 52.0.0 py37h06a4308_0
+    - sqlite 3.33.0 h62c20be_0
+    - tk 8.6.10 hbc83047_0
+    - wheel 0.36.2 pyhd3eb1b0_0
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+  run:
+    - libgcc-ng >=7.3.0
+    - python >=3.7,<3.8.0a0
+test:
+  imports:
+    - psutil
+    - psutil._psutil_linux
+    - psutil._psutil_posix
+    - psutil.tests
+  requires: null
+about:
+  description: 'psutil (process and system utilities) is a cross-platform library
+    for
+
+    retrieving information on running processes and system utilization (CPU,
+
+    memory, disks, network) in Python. It is useful mainly for system
+
+    monitoring, profiling and limiting process resources and management of
+
+    running processes.
+
+    '
+  dev_url: https://github.com/giampaolo/psutil
+  doc_source_url: https://github.com/giampaolo/psutil/blob/master/docs/index.rst
+  doc_url: http://pythonhosted.org/psutil/
+  home: https://github.com/giampaolo/psutil
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: A cross-platform process and system utilities module for Python
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - gqmelo
+    - jakirkham
+    - jjhelmus
+    - nehaljwani
+    - pelson

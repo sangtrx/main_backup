@@ -1,0 +1,13 @@
+# path: /home/tqsang/JSON2YOLO/carcass_YOLO_v1/datasetss
+train: train/images 
+val: val/images 
+test: test/images 
+
+# nc: 2
+
+# # Classes
+# names: ['normal','defect']
+
+names:
+  0: normal
+  1: defect

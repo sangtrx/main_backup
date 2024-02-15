@@ -1,0 +1,73 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /tmp/build/80754af9/combined_recipe, last modified Tue Aug 17 21:01:49 2021
+# ------------------------------------------------
+
+package:
+  name: pygments
+  version: 2.10.0
+source:
+  sha256: f398865f7eb6874156579fdf36bc840a03cab64d1cde9e93d68f46a425ec52c6
+  url: https://pypi.io/packages/source/P/Pygments/Pygments-2.10.0.tar.gz
+build:
+  entry_points:
+    - pygmentize = pygments.cmdline:main
+  noarch: python
+  number: '0'
+  script: /tmp/build/80754af9/pygments_1629234116488/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/bin/python
+    -m pip install . --no-deps -vv
+  string: pyhd3eb1b0_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - ca-certificates 2021.7.5 h06a4308_1
+    - certifi 2021.5.30 py39h06a4308_0
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - ncurses 6.2 he6710b0_1
+    - openssl 1.1.1k h27cfd23_0
+    - pip 21.2.3 py36h06a4308_0
+    - python 3.9.6 h12debd9_0
+    - readline 8.1 h27cfd23_0
+    - setuptools 52.0.0 py39h06a4308_0
+    - sqlite 3.36.0 hc218d9a_0
+    - tk 8.6.10 hbc83047_0
+    - tzdata 2021a h5d7bf9c_0
+    - wheel 0.37.0 pyhd3eb1b0_0
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+  run:
+    - python >=3.6
+    - setuptools
+test:
+  commands:
+    - pip check
+    - pygmentize -h
+  imports:
+    - pygments
+    - pygments.filters
+    - pygments.formatters
+    - pygments.lexers
+    - pygments.plugin
+    - pygments.styles
+  requires:
+    - pip
+about:
+  dev_url: https://github.com/pygments/pygments
+  home: http://pygments.org/
+  license: BSD-2-clause
+  license_file: LICENSE
+  summary: Pygments is a generic syntax highlighter suitable for use in code hosting,
+    forums, wikis or other applications that need to prettify source code.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - jakirkham
+    - ocefpaf
+    - pelson
+    - scopatz

@@ -1,0 +1,82 @@
+# This file created by conda-build 3.21.6
+# meta.yaml template originally from:
+# /tmp/build/80754af9/combined_recipe, last modified Fri Nov 12 09:44:48 2021
+# ------------------------------------------------
+
+package:
+  name: traitlets
+  version: 5.1.1
+source:
+  sha256: 059f456c5a7c1c82b98c2e8c799f39c9b8128f6d0d46941ee118daace9eb70c7
+  url: https://pypi.io/packages/source/t/traitlets/traitlets-5.1.1.tar.gz
+build:
+  noarch: python
+  number: '0'
+  script: /tmp/build/80754af9/traitlets_1636710298902/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac/bin/python
+    -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  string: pyhd3eb1b0_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - ca-certificates 2021.10.26 h06a4308_2
+    - certifi 2021.10.8 py39h06a4308_0
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - ncurses 6.3 h7f8727e_2
+    - openssl 1.1.1l h7f8727e_0
+    - pip 21.2.4 py39h06a4308_0
+    - python 3.9.7 h12debd9_1
+    - readline 8.1 h27cfd23_0
+    - setuptools 58.0.4 py39h06a4308_0
+    - sqlite 3.36.0 hc218d9a_0
+    - tk 8.6.11 h1ccaba5_0
+    - tzdata 2021e hda174b7_0
+    - wheel 0.37.0 pyhd3eb1b0_1
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+  run:
+    - python >=3.7
+test:
+  commands:
+    - pip check
+  imports:
+    - traitlets
+    - traitlets.config
+  requires:
+    - pip
+    - python <3.10
+about:
+  description: 'Traitlets is a framework that lets Python classes have attributes
+    with
+
+    type checking, dynamically calculated default values, and "on change"
+
+    callbacks.
+
+    '
+  dev_url: https://github.com/ipython/traitlets
+  doc_source_url: https://github.com/ipython/traitlets/blob/master/docs/source/index.rst
+  doc_url: http://traitlets.readthedocs.org/en/stable/
+  home: http://traitlets.readthedocs.org/
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: COPYING.md
+  summary: Configuration system for Python applications
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - Carreau
+    - SylvainCorlay
+    - blink1073
+    - jakirkham
+    - minrk
+    - ocefpaf
+    - pelson
+    - rmorshea
+    - takluyver
+    - zsailer

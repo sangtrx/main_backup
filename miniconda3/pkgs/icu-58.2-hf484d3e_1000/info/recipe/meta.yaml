@@ -1,0 +1,68 @@
+# This file created by conda-build 3.15.1
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sun Sep 23 01:55:22 2018
+# ------------------------------------------------
+
+package:
+    name: icu
+    version: '58.2'
+source:
+    sha256: 2b0a4410153a9b20de0e20c7d8b66049a72aef244b53683d0d7521371683da0c
+    url: http://download.icu-project.org/files/icu4c/58.2/icu4c-58_2-src.tgz
+build:
+    number: '1000'
+    string: hf484d3e_1000
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_3
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+    host:
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+test:
+    commands:
+        - test -f $PREFIX/lib/libicudata.a
+        - test -f $PREFIX/lib/libicudata.so.58.2
+        - test -f $PREFIX/lib/libicui18n.a
+        - test -f $PREFIX/lib/libicui18n.so.58.2
+        - test -f $PREFIX/lib/libicuio.a
+        - test -f $PREFIX/lib/libicuio.so.58.2
+        - test -f $PREFIX/lib/libicutest.a
+        - test -f $PREFIX/lib/libicutest.so.58.2
+        - test -f $PREFIX/lib/libicutu.a
+        - test -f $PREFIX/lib/libicutu.so.58.2
+        - test -f $PREFIX/lib/libicuuc.a
+        - test -f $PREFIX/lib/libicuuc.so.58.2
+        - genbrk --help
+        - gencfu --help
+        - gencnval --help
+        - gendict --help
+        - icuinfo --help
+        - icu-config --help
+        - makeconv gb-18030-2000.ucm
+        - conda inspect linkages -p $PREFIX $PKG_NAME
+    files:
+        - de.txt
+        - gb-18030-2000.ucm
+about:
+    home: http://site.icu-project.org/
+    license: MIT
+    license_file: LICENSE
+    summary: International Components for Unicode.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - ccordoba12
+        - jakirkham
+        - msarahan
+        - ocefpaf

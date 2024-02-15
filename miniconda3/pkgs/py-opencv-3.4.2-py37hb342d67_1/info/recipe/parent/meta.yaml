@@ -1,0 +1,242 @@
+{% set version = "3.4.2" %}
+
+package:
+  name: opencv-suite
+  version: {{ version }}
+
+source:
+  # - git_url: https://github.com/opencv/opencv
+  #   git_tag: {{ version }}
+  - url: https://github.com/opencv/opencv/archive/{{ version }}.zip
+    fn: opencv-{{ version }}.zip
+    patches:
+      - 0001-Use-OpenCV_INSTALL_BINARIES_PREFIX-instead-of-hardcoding.patch
+      - 0002-Fix-protobuf-Parser-call.patch
+    sha256: 9405c5d7d8ab1696e98631d0c92125816356ec366a73c417bdcc4d74783b42aa
+  - url: https://github.com/opencv/opencv_contrib/archive/{{ version }}.tar.gz
+    fn: opencv_contrib-{{ version }}.tar.gz
+    sha256: 45a52764ebd2558fa0b7fd8dc47379b37dd0956d912abbf7c786228374fdf60d
+    folder: opencv_contrib-{{ version }}
+
+build:
+  number: 1
+  # Python 2.7 is not supported on Windows
+  skip: True  # [win and py27]
+  ignore_run_exports:
+    - libprotobuf
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  # - git
+    - m2-filesystem         # [win]
+    - m2w64-pkg-config      # [win]
+    - pkg-config            # [not win]
+    - jom                   # [win]
+    - cmake
+    - make                  # [unix]
+  host:
+    - hdf5                  # [unix]
+    - eigen
+    - jasper                # [unix]
+    - zlib
+    - jpeg
+    - libtiff
+    - harfbuzz              # [not win]
+    - freetype              # [not win]
+    - libpng
+    - ffmpeg                # [not win]
+    - msinttypes            # [win and py<35]
+    # protobuf is bundled and incompatible with headers from the latest.
+    - libprotobuf =3.5.2    # [not win]
+
+outputs:
+  - name: opencv
+    build:
+      run_exports:
+        # pin to exact version
+        # https://abi-laboratory.pro/tracker/timeline/opencv/
+        - {{ pin_subpackage('opencv', max_pin='x.x.x') }}
+    requirements:
+      host:
+        - hdf5
+        - python
+        - {{ pin_subpackage('py-opencv', exact=True) }}
+      run:
+        # Python is necessary here.
+        - python
+        - {{ pin_subpackage('py-opencv', exact=True) }}
+    test:
+      imports:
+        - cv2
+        - cv2.xfeatures2d
+
+  - name: py-opencv
+    script: install-py-opencv.sh   # [not win]
+    script: install-py-opencv.bat  # [win]
+    build:
+      run_exports:
+        # more liberal that libopencv
+        - {{ pin_subpackage('py-opencv', max_pin='x.x') }}
+      ignore_run_exports:
+        - ffmpeg
+        - freetype
+        - harfbuzz
+        - hdf5
+        - jasper
+        - jpeg
+        - libpng
+        - libprotobuf
+        - libtiff
+        - zlib
+    requirements:
+      build:
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+      # - git
+        - m2-filesystem         # [win]
+        - m2w64-pkg-config      # [win]
+        - m2-base               # [win]
+        - pkg-config            # [not win]
+        - jom                   # [win]
+        - cmake
+      # - m2-make               # [win]
+        - make                  # [unix]
+      host:
+        - {{ pin_subpackage('libopencv', exact=True) }}
+        - hdf5                  # [unix]
+        - eigen
+        - jasper                # [unix]
+        - zlib
+        - jpeg
+        - libtiff
+        - harfbuzz              # [not win]
+        - freetype              # [not win]
+        - libpng
+        - ffmpeg                # [not win]
+        - msinttypes            # [win and py<35]
+        - libprotobuf =3.5.2    # [not win]
+        - python
+        - numpy =1.11*
+      run:
+        - {{ pin_subpackage('libopencv', exact=True) }}
+        - python
+        - {{ pin_compatible('numpy') }}
+    test:
+      requires:
+        - {{ compiler('cxx') }}
+      imports:
+        - cv2
+        - cv2.xfeatures2d
+
+  - name: libopencv
+    script: install-libopencv.sh   # [unix]
+    script: install-libopencv.bat  # [win]
+    build:
+      ignore_run_exports:
+        - libprotobuf
+      run_exports:
+        # pin to exact version
+        # https://abi-laboratory.pro/tracker/timeline/opencv/
+        - {{ pin_subpackage('libopencv', max_pin='x.x.x') }}
+    requirements:
+      build:
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+      # - git
+        - m2-filesystem         # [win]
+        - m2w64-pkg-config      # [win]
+        - pkg-config            # [not win]
+        - jom                   # [win]
+        - cmake
+        - make                  # [unix]
+      host:
+        - hdf5                  # [unix]
+        - eigen
+        - jasper                # [unix]
+        - zlib
+        - jpeg
+        - libtiff
+        - harfbuzz              # [not win]
+        - freetype              # [not win]
+        - libpng
+        - ffmpeg                # [not win]
+        - msinttypes            # [win and py<35]
+        - libprotobuf =3.5.2    # [not win]
+
+    test:
+      requires:
+        - {{ compiler('cxx') }}
+        - cmake
+      files:
+        - test-cmake/CMakeLists.txt
+        - test-cmake/DisplayImage.cpp
+        - test.cpp
+      commands:
+        - pushd test-cmake
+        - cmake . -DOpenCV_STATIC=OFF -DOpenCV_SHARED=ON -G"Visual Studio 14 2015"        # [win32]
+        - cmake . -DOpenCV_STATIC=OFF -DOpenCV_SHARED=ON -G"Visual Studio 14 2015 Win64"  # [win64]
+        - cmake . -DOpenCV_STATIC=OFF -DOpenCV_SHARED=ON                                  # [not win]
+        - cmake --build . --config Release
+        - popd
+        # Verify dynamic libraries.
+        # "bioinspired", Not working in 3.1.0
+        {% set opencv_libs = [
+             "aruco",
+             "bgsegm",
+             "calib3d",
+             "ccalib",
+             "core",
+             "datasets",
+             "dnn",
+             "dpm",
+             "face",
+             "features2d",
+             "flann",
+             "fuzzy",
+             "highgui",
+             "imgcodecs",
+             "imgproc",
+             "line_descriptor",
+             "ml",
+             "objdetect",
+             "optflow",
+             "phase_unwrapping",
+             "photo",
+             "plot",
+             "reg",
+             "rgbd",
+             "saliency",
+             "shape",
+             "stereo",
+             "stitching",
+             "structured_light",
+             "superres",
+             "surface_matching",
+             "text",
+             "tracking",
+             "video",
+             "videoio",
+             "videostab",
+             "xfeatures2d",
+             "ximgproc",
+             "xobjdetect",
+             "xphoto",
+        ] %}
+        {% for each_opencv_lib in opencv_libs %}
+        - test -f $PREFIX/lib/libopencv_{{ each_opencv_lib }}.dylib                        # [osx]
+        - test -f $PREFIX/lib/libopencv_{{ each_opencv_lib }}.so                           # [linux]
+        - if not exist %PREFIX%\\Library\\bin\\opencv_{{ each_opencv_lib }}342.dll exit 1  # [win]
+        {% endfor %}
+
+about:
+  home: http://opencv.org/
+  license: BSD 3-clause
+  license_family: BSD
+  summary: Computer vision and machine learning software library.
+  description: |
+    OpenCV (Open Source Computer Vision Library) includes several hundreds of computer vision algorithms.
+    It has a modular structure,which means that the package includes several shared or static libraries.
+  doc_url: http://docs.opencv.org/
+  doc_source_url: https://github.com/opencv/opencv/tree/master/doc

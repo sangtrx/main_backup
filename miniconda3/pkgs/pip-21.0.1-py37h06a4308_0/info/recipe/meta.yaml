@@ -1,0 +1,65 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /tmp/build/80754af9/combined_recipe, last modified Thu Feb 18 21:59:24 2021
+# ------------------------------------------------
+
+package:
+  name: pip
+  version: 21.0.1
+source:
+  sha256: 99bbde183ec5ec037318e774b0d8ae0a64352fe53b2c7fd630be1d07e94f41e5
+  url: https://pypi.io/packages/source/p/pip/pip-21.0.1.tar.gz
+build:
+  disable_pip: true
+  entry_points:
+    - pip = pip._internal.cli.main:main
+    - pip3 = pip._internal.cli.main:main
+  number: '0'
+  string: py37h06a4308_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 main
+    - ca-certificates 2021.1.19 h06a4308_0
+    - certifi 2020.12.5 py37h06a4308_0
+    - ld_impl_linux-64 2.33.1 h53a641e_7
+    - libedit 3.1.20191231 h14c3975_1
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.1.0 hdf63c60_0
+    - libstdcxx-ng 9.1.0 hdf63c60_0
+    - ncurses 6.2 he6710b0_1
+    - openssl 1.1.1j h27cfd23_0
+    - python 3.7.9 h7579374_0
+    - readline 8.1 h27cfd23_0
+    - setuptools 52.0.0 py37h06a4308_0
+    - sqlite 3.33.0 h62c20be_0
+    - tk 8.6.10 hbc83047_0
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+  run:
+    - python >=3.7,<3.8.0a0
+    - setuptools
+    - wheel
+test:
+  commands:
+    - pip -h
+    - pip list
+  imports:
+    - pip
+about:
+  dev_url: https://github.com/pypa/pip
+  doc_url: https://pip.pypa.io/en/stable/
+  home: https://pip.pypa.io/en/stable/
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: PyPA recommended tool for installing Python packages
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - jakirkham
+    - jjhelmus
+    - mingwandroid
+    - msarahan
+    - ocefpaf
+    - pelson

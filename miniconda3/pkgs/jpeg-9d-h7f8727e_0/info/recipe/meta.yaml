@@ -1,0 +1,59 @@
+# This file created by conda-build 3.21.5
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/jpeg-9d-on-linux_64, last modified Fri Sep 17 07:35:17 2021
+# ------------------------------------------------
+
+package:
+  name: jpeg
+  version: 9d
+source:
+  md5: ad7e40dedc268f97c44e7ee3cd54548a
+  patches: null
+  url: http://www.ijg.org/files/jpegsrc.v9d.tar.gz
+build:
+  number: '0'
+  run_exports:
+    - jpeg >=9d,<10a
+  string: h7f8727e_0
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - _sysroot_linux-64_curr_repodata_hack 3 haa98f57_10
+    - binutils_impl_linux-64 2.35.1 h27ae35d_9
+    - binutils_linux-64 2.35.1 h454624a_30
+    - gcc_impl_linux-64 7.5.0 h7105cf2_17
+    - gcc_linux-64 7.5.0 h8f34230_30
+    - kernel-headers_linux-64 3.10.0 h57e8cba_10
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libgcc-devel_linux-64 7.5.0 hbbeae57_17
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - libtool 2.4.6 h7b6447c_1005
+    - make 4.2.1 h1bed415_1
+    - sysroot_linux-64 2.17 h57e8cba_10
+  host:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+  run:
+    - libgcc-ng >=7.5.0
+test:
+  commands:
+    - djpeg -dct int -ppm -outfile testout.ppm testorig.jpg
+  files:
+    - testorig.jpg
+about:
+  home: http://www.ijg.org/
+  license: Custom free software license
+  summary: read/write jpeg COM, EXIF, IPTC medata
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - gillins
+    - jakirkham
+    - katietz
+    - msarahan

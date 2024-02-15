@@ -1,0 +1,56 @@
+# This file created by conda-build 3.18.11
+# ------------------------------------------------
+
+package:
+    name: libxcb
+    version: '1.14'
+source:
+    -   patches:
+            - 0001-Re-introduce-_xcb_lock_io-for-SLES11.patch
+        sha256: a55ed6db98d43469801262d81dc2572ed124edc3db31059d4e9916eb9f844c34
+        url: https://www.x.org/releases/individual/xcb/libxcb-1.14.tar.xz
+    -   folder: proto
+        patches: null
+        sha256: 186a3ceb26f9b4a015f5a44dcc814c93033a5fc39684f36f1ecc79834416a605
+        url: https://www.x.org/releases/individual/xcb/xcb-proto-1.14.tar.xz
+build:
+    number: 0
+    run_exports:
+        - libxcb >=1.14,<2.0a0
+    string: h7b6447c_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.33.1 he6710b0_7
+        - binutils_linux-64 2.33.1 h9595d00_15
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_15
+        - ld_impl_linux-64 2.33.1 h53a641e_7
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - libx11-common-cos6-x86_64 1.6.4 h023ea50_0
+        - libx11-cos6-x86_64 1.6.4 h64a1553_0
+        - libx11-devel-cos6-x86_64 1.6.4 hb9851ce_0
+        - libxau-cos6-x86_64 1.0.6 h4888106_0
+        - libxau-devel-cos6-x86_64 1.0.6 hf5ff492_0
+        - make 4.2.1 h1bed415_1
+        - pkg-config 0.29.2 h1bed415_8
+        - xorg-x11-proto-devel-cos6-x86_64 7.7 h8d4a98b_0
+        - xorg-x11-util-macros-cos6-x86_64 1.19.0 h94bfbc6_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - pthread-stubs 0.3 h0ce48e5_1
+        - xcb-proto >=1.14,<2.0a0
+    run:
+        - libgcc-ng >=7.3.0
+about:
+    summary: This is the C-language Binding (XCB) package to the X Window System protocol
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - ccordoba12
+        - mingwandroid
+        - msarahan
+        - pkgw

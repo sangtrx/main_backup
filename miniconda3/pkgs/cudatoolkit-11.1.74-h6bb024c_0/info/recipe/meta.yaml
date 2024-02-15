@@ -1,0 +1,104 @@
+# This file created by conda-build 3.20.4
+# meta.yaml template originally from:
+# Origin b'https://github.com/mike-wendt/conda-recipe-cudatoolkit.git', commit b'9f7fbadb6dcccfc6befa53214412bacf26189b49'
+# ------------------------------------------------
+
+package:
+    name: cudatoolkit
+    version: 11.1.74
+source:
+    path: /workspace
+build:
+    missing_dso_whitelist:
+        - $RPATH/ld-linux-x86-64.so.2
+        - $RPATH/libc.so.6
+        - $RPATH/libdl.so.2
+        - $RPATH/libm.so.6
+        - $RPATH/libpthread.so.0
+        - $RPATH/librt.so.1
+    number: '0'
+    script_env:
+        - DEBUG_INSTALLER_PATH
+        - NVTOOLSEXT_INSTALL_PATH
+    string: h6bb024c_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.33.1 he6710b0_7
+        - binutils_linux-64 2.33.1 h9595d00_15
+        - brotlipy 0.7.0 py38h7b6447c_1000
+        - ca-certificates 2020.7.22 0
+        - certifi 2020.6.20 py38_0
+        - cffi 1.14.3 py38he30daa8_0
+        - chardet 3.0.4 py38_1003
+        - cryptography 3.1.1 py38h1ba5d50_0
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_15
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_15
+        - idna 2.10 py_0
+        - ld_impl_linux-64 2.33.1 h53a641e_7
+        - libedit 3.1.20191231 h14c3975_1
+        - libffi 3.3 he6710b0_2
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.2 he6710b0_1
+        - openssl 1.1.1h h7b6447c_0
+        - pip 20.2.3 py38_0
+        - pycparser 2.20 py_2
+        - pyopenssl 19.1.0 py_1
+        - pysocks 1.7.1 py38_0
+        - python 3.8.5 h7579374_1
+        - pyyaml 5.3.1 py38h7b6447c_1
+        - readline 8.0 h7b6447c_0
+        - requests 2.24.0 py_0
+        - setuptools 50.3.0 py38hb0f4dca_1
+        - six 1.15.0 py_0
+        - sqlite 3.33.0 h62c20be_0
+        - tk 8.6.10 hbc83047_0
+        - tqdm 4.50.2 py_0
+        - urllib3 1.25.10 py_0
+        - wheel 0.35.1 py_0
+        - xz 5.2.5 h7b6447c_0
+        - yaml 0.2.5 h7b6447c_0
+        - zlib 1.2.11 h7b6447c_3
+    host:
+        - _libgcc_mutex 0.1 main
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+test:
+    requires:
+        - numba
+        - python >=3.7
+        - setuptools
+about:
+    description: 'CUDA is a parallel computing platform and programming model developed
+        by NVIDIA for general computing on graphical processing units (GPUs). With
+        CUDA, developers can dramatically speed up computing applications by harnessing
+        the power of GPUs.
+
+
+        The CUDA Toolkit from NVIDIA provides everything you need to develop GPU-accelerated
+        applications. This CUDA Toolkit includes GPU-accelerated libraries, and the
+        CUDA runtime for the Conda ecosystem. For the full CUDA Toolkit with a compiler
+        and development tools visit https://developer.nvidia.com/cuda-downloads
+
+
+        License Agreements
+
+        The packages are governed by the CUDA Toolkit End User License Agreement (EULA).
+        By downloading and using the packages, you accept the terms and conditions
+        of the CUDA EULA - https://docs.nvidia.com/cuda/eula/index.html
+
+        '
+    dev_url: https://developer.nvidia.com/cuda-downloads
+    doc_url: https://docs.nvidia.com/cuda/
+    license: NVIDIA End User License Agreement
+    license_file: NVIDIA_EULA
+    summary: CUDA Toolkit - Including CUDA runtime and headers
+extra:
+    copy_test_source_files: true
+    final: true

@@ -1,0 +1,34 @@
+# This file created by conda-build 3.21.8
+# ------------------------------------------------
+
+package:
+  name: libgfortran-ng
+  version: 12.1.0
+source:
+  - patches:
+      - patches/0021-Hardcode-HAVE_ALIGNED_ALLOC-1-in-libstdc-v3-configur.patch
+      - patches/new-allow-commands-in-main-specfile.patch
+    sha256: e88a004a14697bbbaba311f38a938c716d9a652fd151aaaa4cf1b5b99b90e2de
+    url: https://ftp.gnu.org/gnu/gcc/gcc-12.1.0/gcc-12.1.0.tar.gz
+build:
+  number: 16
+  string: h69a702a_16
+requirements:
+  build: []
+  run:
+    - libgfortran5 12.1.0 hdcd56e2_16
+test:
+  commands:
+    - test -f ${PREFIX}/lib/libgfortran.so
+about:
+  home: https://gcc.gnu.org/
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  summary: The GNU Fortran Runtime Library
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - beckermr
+    - isuruf
+    - timsnyder
+    - xhochy
