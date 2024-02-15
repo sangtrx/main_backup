@@ -1,0 +1,294 @@
+commit 1dd72323dba23152a7b143853fa5d491bef06504
+Author: Cheng H. Lee <clee@anaconda.com>
+Date:   Fri Apr 2 18:26:48 2021 -0500
+
+    Update recipe for defaults channel
+    
+    - Don't build/package static library
+    - Remove documentation from output package
+
+commit 8d71804dc0df7ecda1107b89db582103854a55e2
+Author: conda-forge-admin <conda-forge-admin@email.com>
+Date:   Sat Aug 8 07:11:21 2020 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration CFEP13TokenCleanup
+
+commit 263f51c058ef190616cdf923b02c03ac1aade7c8
+Author: Matthew R Becker <becker.mr@gmail.com>
+Date:   Mon May 18 07:48:51 2020 -0500
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration CondaForgeAutomerge
+
+commit c12ae92f66edc04e0f7fe9d40fb7eb2e494fd8bd
+Author: conda-forge-admin <conda-forge-admin@email.com>
+Date:   Sat May 16 18:24:08 2020 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration CFEP13TokensAndConfig
+
+commit 1891f26307886f24bd9b2bf9bf7093cd741f7d38
+Author: conda-forge-admin <conda-forge-admin@email.com>
+Date:   Mon Mar 2 21:36:27 2020 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration AutomergeAndRerender
+
+commit a3df15bf866b03b3acdc51b2fa7c6aa7ac9c04de
+Merge: 282f33e 863987f
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Fri Mar 8 08:39:18 2019 -0500
+
+    Merge pull request #15 from regro-cf-autotick-bot/rebuildaarch64_and_ppc64le_addition1_arch
+    
+    Arch Migrator
+
+commit 863987f1131511a426f356cc242d3cc6f3c58631
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Thu Mar 7 23:20:27 2019 -0500
+
+    Update build.sh
+
+commit 6a42f515eb18ac00972f7440b1619a5eadf22072
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Mar 7 23:33:39 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.2.14, and conda-forge-pinning 2019.03.04
+
+commit c41dc929cf34534402fe967a176de973061c0c85
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Mar 7 23:33:28 2019 +0000
+
+    bump build number
+
+commit 282f33eb3a62c70fb1cf92883470d5a08f55de18
+Merge: 5bbb26d 854d31b
+Author: Björn Grüning <bjoern@gruenings.eu>
+Date:   Thu Mar 7 22:41:00 2019 +0100
+
+    Merge pull request #14 from bgruening/0.9.10
+    
+    0.9.10
+
+commit 854d31b1f6184a2d29ad4088c620014d71c75478
+Author: Björn Grüning <bjoern@gruenings.eu>
+Date:   Thu Mar 7 22:22:01 2019 +0100
+
+    Update meta.yaml
+
+commit 94b0278982cdcd54f95e4387e4e33bd8c68ac867
+Author: Björn Grüning <bjoern@gruenings.eu>
+Date:   Thu Mar 7 22:18:52 2019 +0100
+
+    Update meta.yaml
+
+commit 0ccfe5278e601be9a9007b4235cc89b30803fb89
+Author: Björn Grüning <bjoern@gruenings.eu>
+Date:   Thu Mar 7 22:18:09 2019 +0100
+
+    Update meta.yaml
+
+commit f0e3dbbc76fa55ccb80c91a9bf927b4f2af1ba7f
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Thu Mar 7 21:13:41 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.2.14, and conda-forge-pinning 2019.03.04
+
+commit f4ff6a5b23f99c7d22a9c5e166666ecbe560c452
+Author: Björn Grüning <bjoern@gruenings.eu>
+Date:   Thu Mar 7 22:11:43 2019 +0100
+
+    0.9.10
+
+commit 5bbb26d23af39d2fb9f9846fdaa5e66b6d91b1a4
+Merge: 394ea31 45b967b
+Author: Björn Grüning <bjoern@gruenings.eu>
+Date:   Sat Sep 1 19:22:04 2018 +0200
+
+    Merge pull request #13 from regro-cf-autotick-bot/rebuild
+    
+    Rebuild for Python 3.7, GCC 7, R 3.5.1, openBLAS 0.3.2
+
+commit 45b967b4512527db80a52dab7bd5d1a3d6bd833f
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Aug 21 20:46:48 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.08.21
+
+commit 67c32ab8d66cf74e5ee716f02f002699233bb9f6
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Aug 21 20:46:42 2018 +0000
+
+    bump build number
+
+commit 394ea31663b102755977d9da574ec61724c26795
+Merge: 82a145d d4dd196
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Sat Aug 11 21:48:34 2018 -0400
+
+    Merge pull request #11 from mariusvniekerk/compiler-migrate
+    
+    Update jinja2 compiler syntax
+
+commit d4dd196e77b3b1399d74b8ecc740838665b024fe
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Wed Aug 8 23:36:40 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.1.10 and pinning 2018.08.05
+
+commit 3974fbbe2599899bac15f31dfa875cc5f2290e52
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Wed Aug 8 19:36:14 2018 -0400
+
+    Add compiler jinja2
+
+commit 82a145d9d458d31f0ba8bf1ae1dd1b1ee4d08f88
+Author: Travis CI User <travis@example.org>
+Date:   Sat Aug 4 17:05:30 2018 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit aa69addcaa28147169083d6662efcabd3b2339b0
+Merge: 102474a b4d0390
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Jul 11 09:31:05 2018 -0500
+
+    Merge pull request #9 from regro-cf-autotick-bot/0.9.9
+    
+    libunistring v0.9.9
+
+commit b4d039053f7f4a9168b3c8342d49d93948ebe411
+Author: Travis CI User <travis@example.org>
+Date:   Fri Mar 16 22:44:28 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 2.4.5
+
+commit e28d0866986e1094ef7e73c6253042965e24903b
+Author: Travis CI User <travis@example.org>
+Date:   Fri Mar 16 22:44:00 2018 +0000
+
+    updated v0.9.9
+
+commit 102474aff547fb14cd0557651a6cf88fff4efad4
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 19:18:03 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit 31e939f40593853ccc7640c9d4a6e32849e22797
+Merge: bf6fd01 82e99d9
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sun Feb 26 15:33:16 2017 -0500
+
+    Merge pull request #8 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 82e99d994965239e47265def5f4f09cd7dc0d7aa
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sun Feb 26 01:42:33 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 2.1.0.
+
+commit bf6fd01d0193890a15150cf2d2a73fab44d80996
+Merge: 96565a8 64f5a70
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue Feb 21 01:04:59 2017 -0500
+
+    Merge pull request #7 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 64f5a70c4101b421cffd544095f9c40ffd27e267
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Feb 3 01:37:27 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 2.0.1.
+
+commit 96565a8f279142b8cf4a3516d36b3a130762eafa
+Merge: 9f7a4ac 952fb3f
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Fri Nov 18 02:01:05 2016 -0500
+
+    Merge pull request #6 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 952fb3f1eebead5240be683470820b3a32723d09
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Nov 18 01:40:22 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.5.3.
+
+commit 9f7a4ac44f1c1fc418134e7668cca4e205b442cc
+Merge: e2afa3f 15ca54a
+Author: Stefan Balke <stefan.balke@audiolabs-erlangen.de>
+Date:   Mon Oct 31 10:25:42 2016 +0100
+
+    Merge pull request #5 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 15ca54a8f4962a56476a04be091a040e1f100f7d
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Mon Oct 31 01:34:09 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.4.3.
+
+commit e2afa3ffec6245926648d306317b2f67441ea93e
+Merge: 67414a3 1713878
+Author: stefan-balke <stefan.balke@audiolabs-erlangen.de>
+Date:   Mon May 23 10:02:18 2016 +0200
+
+    Merge pull request #4 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit 1713878e305aa62bc602c205a8b98fa817805033
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Wed May 18 11:51:21 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit 67414a3b27c5b4ea9d7ef1dcbfe853b3d495a62a
+Merge: b0490b8 f766bf1
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Wed May 18 05:32:14 2016 +0100
+
+    Merge pull request #3 from jakirkham/rm_empty_reqs
+    
+    Remove empty `requirements` section
+
+commit f766bf1bf560bf793e867a45bc4ba066d9b858c5
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue May 17 23:56:20 2016 -0400
+
+    recipe: Remove empty `requirements` section.
+
+commit b0490b855eacdb935c3fb9c5a8df6ad6ce41b930
+Merge: 0ce9a2e be0359f
+Author: Stefan Balke <stefan.balke@audiolabs-erlangen.de>
+Date:   Mon Apr 4 14:11:23 2016 +0200
+
+    Merge pull request #1 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit be0359ffdb01878960bdb9c4e80fc4eb96424bb2
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat Apr 2 12:49:48 2016 +0100
+
+    MNT: Updated the feedstock for conda-smithy version 0.8.0.
+    
+    [ci skip]
+
+commit 0ce9a2e40443d5d04a585b140428dae54efed5a1
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Thu Mar 31 13:42:00 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 519fc27c8baaf43bae1352e29798666313c20ef0
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Thu Mar 31 13:41:19 2016 +0000
+
+    Initial commit of the libunistring feedstock.

@@ -1,0 +1,202 @@
+commit fdf44f7cf6dc6a24f5ed67ec2721052e328cb360
+Merge: a4332e5 d07f345
+Author: Charles Bousseau <16641587+cbouss@users.noreply.github.com>
+Date:   Wed Apr 27 09:15:39 2022 -0400
+
+    Merge pull request #4 from AnacondaRecipes/cb_jpeg-9e
+    
+    Update jpeg from 9d to 9e
+
+commit d07f34546ed2c21aa881ef061e3cfd0559938e7a
+Author: Charles Bousseau <cbousseau@anaconda.com>
+Date:   Tue Apr 26 15:34:50 2022 -0400
+
+    Update jpeg from 9d to 9e
+
+commit a4332e51ec0a4fec8400cab1ab8f6b70a46517b4
+Merge: 3324cfe 75f0523
+Author: Kai Tietz <47363620+katietz@users.noreply.github.com>
+Date:   Fri Sep 17 09:52:33 2021 +0200
+
+    Merge pull request #3 from AnacondaRecipes/build-9d
+    
+    add myself as maintainer
+
+commit 75f052375488b31cdaf401dd9e2c6da20423c1cf
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Fri Sep 17 09:39:31 2021 +0200
+
+    adjust recipe for missing build tools
+
+commit e126e83ce573d3d5b85e1484927ca3fda73f8a76
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Fri Sep 17 02:47:15 2021 +0200
+
+    add myself as maintainer
+
+commit 3324cfe322a345b0470997b8d2d1014d5c79dc18
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Sat Aug 28 20:07:21 2021 +0200
+
+    update to version 9d
+
+commit a0ca04d86fbc96dc6a507ca7f8e78d705035d3c0
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Fri Aug 13 14:15:28 2021 +0200
+
+    add support for osx-arm64
+
+commit c7a60183710b538794596acb12a04a9328794076
+Author: Paul Yim <paul.j.yim@gmail.com>
+Date:   Thu Mar 18 00:40:20 2021 +0000
+
+    Correct md5 hash; add make as build dep for unix.
+
+commit 930c699b8ef183b1258d804296117123a5875e90
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Wed Nov 8 21:16:13 2017 -0600
+
+    remove vc features (use run_exports vc pkg instead)
+
+commit 922c6b3ef923613d87f11b04c3e59090e1f66888
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Sep 20 07:12:08 2017 -0700
+
+    Fix breakage caused by CFLAGS and CXXFLAGS
+
+commit fe910f17865977ac13d4dd45f53aee19a2282a0c
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Aug 27 01:35:50 2017 +0100
+
+    Generalize logging
+
+commit dd6c45a5dfba9a78b40ad085fee123d226189262
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Aug 23 15:25:50 2017 +0100
+
+    make in parallel
+
+commit 101375adc72e39f0ad3fc21eea9128bfca3c680b
+Merge: bfbe748 2645770
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Fri Aug 18 18:56:20 2017 -0500
+
+    Merge pull request #1 from msarahan/cb3
+    
+    simplify recipe with cb3
+
+commit 2645770d44a18e725e80e6cdeb1ba43285a2b81f
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Fri Aug 18 15:24:02 2017 -0500
+
+    simplify recipe with cb3
+
+commit bfbe748334faf9ad6489255178461d6c392af3f6
+Author: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date:   Sat Jul 22 07:58:27 2017 +0000
+
+    Make recipe cross-compile capable
+
+commit 1fb5ca1a5ef977bda8428f07fbcf9b0c44d6208c
+Merge: cfa2edd eacd57f
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Fri Jun 9 19:22:30 2017 -0400
+
+    Merge pull request #8 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit eacd57fb6cd0fd098c84226a71468bc896512637
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Mar 24 01:40:16 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 2.2.1.
+
+commit cfa2edd70fdc35e83e2216c744123555a16bf407
+Merge: 920fbb3 ca52eae
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Wed Feb 22 01:22:01 2017 -0500
+
+    Merge pull request #7 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit ca52eaeef723667beba85d71e03453f39794362b
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat Dec 31 01:36:56 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.7.0.
+
+commit 920fbb397beeb7816fc89bbb5db1bab495a028d6
+Merge: 7116cd0 3a2839d
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue Nov 8 00:31:30 2016 -0500
+
+    Merge pull request #6 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 3a2839d8ac0cbfdfedc5b0dc84e4d4d1392a74a1
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Mon Nov 7 01:34:45 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.4.6.
+
+commit 7116cd09d55134da01fe4797e621161851a4327b
+Merge: 38f3bed 9c5952f
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue Oct 11 01:34:40 2016 -0400
+
+    Merge pull request #4 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 9c5952f8adf20d65fe90c74f5de4c3f345643edd
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Tue Oct 11 01:35:08 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.3.2.
+
+commit 38f3bedf19189b7e0c7e33c86152df33c43124dc
+Merge: 3099709 caeadab
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sat Jun 4 15:30:27 2016 -0400
+
+    Merge pull request #2 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit caeadab193342d1392e0686d33ecd4d03d5d34bd
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Mon May 16 19:42:57 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit 3099709e5218a213fc00efb0c6086176cb90eef8
+Merge: 7d1b8e1 7444d85
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Wed Apr 27 13:33:56 2016 +1000
+
+    Merge pull request #1 from jakirkham/add_jakirkham
+    
+    Add @jakirkham as a maintainer
+
+commit 7444d852fc3d55e1c278964de41e7e7dce867365
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Tue Apr 26 21:56:00 2016 -0400
+
+    recipe: Add @jakirkham as a maintainer.
+
+commit 7d1b8e1dcf2303762668e3a40bb725c8d275ee39
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Apr 15 18:40:46 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 311384d097437aee3e4d27e4e029d29596df41e3
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Apr 15 18:39:55 2016 +0000
+
+    Initial commit of the jpeg feedstock.

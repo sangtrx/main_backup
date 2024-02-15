@@ -1,0 +1,584 @@
+commit d14a6dd1154433b2394fbe520eae8243346d40ea
+Merge: 12b1e7d 6882aa3
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Wed Apr 29 08:59:52 2020 -0500
+
+    Merge pull request #5 from gmarkall/grm-cudadevrt
+    
+    Remove OSX support, add cudadevrt
+
+commit 6882aa3ace086e07062703fa83c45a930da360a4
+Author: Graham Markall <gmarkall@nvidia.com>
+Date:   Mon Mar 23 16:09:03 2020 +0000
+
+    Add cudadevrt
+    
+    cudadevrt is a static library, so we add an additional
+    platform-specific key and related logic to handle copying static
+    libraries.
+
+commit 5d1abc4b9c3f4cbec7d8ec49075dc462f9d3f08d
+Author: Graham Markall <gmarkall@nvidia.com>
+Date:   Tue Mar 24 11:20:06 2020 +0000
+
+    Remove OSX support
+    
+    OSX CUDA Toolkit packages have not been published since 9.1, and the
+    present build.py implementation does not correctly build the package.
+
+commit 12b1e7d609eb541a74e7a46c9f0d34d274c03953
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Thu Dec 19 09:57:04 2019 -0600
+
+    use bare python in bld.bat
+
+commit 6c66504566c81b1084cd33de56038331ed05c5d0
+Merge: f987284 6cf88a3
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Wed Dec 18 16:24:32 2019 -0600
+
+    Merge pull request #2 from mike-wendt/anaconda
+    
+    Update for CUDA 10.2
+
+commit 6cf88a3d9b1b2971de1419631c3e98e3f8167722
+Author: Mike Wendt <mike.wendt@me.com>
+Date:   Tue Dec 17 15:36:54 2019 -0500
+
+    FIX Import hashlib to fix error msg
+
+commit 4d881483b7f21fb35d2a013bca6adf743cd87d20
+Author: Mike Wendt <mike.wendt@me.com>
+Date:   Tue Dec 17 15:32:56 2019 -0500
+
+    ENH Update for CUDA 10.2
+
+commit ab4c0954765c5db28ef242a7bc11d7b99f7aba2f
+Author: Mike Wendt <mike.wendt@me.com>
+Date:   Tue Dec 17 15:17:23 2019 -0500
+
+    ENH Update for CUDA 10.2
+
+commit 427fca9d150329ed9b130f3296bb87bb3b84efb3
+Merge: 9827d76 f987284
+Author: Mike Wendt <mike.wendt@me.com>
+Date:   Tue Dec 17 14:55:21 2019 -0500
+
+    Merge pull request #2 from AnacondaRecipes/master
+    
+    Pull new anaconda recipe for use in building CTK 10.2
+
+commit f98728473b9db2b4d43c3a17eb17f716f08ae46d
+Merge: 9827d76 97b905c
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Mon Nov 4 08:58:09 2019 -0600
+
+    Cuda10.1 (#1)
+    
+    Cuda10.1
+
+commit 97b905c47ecbe8e15a81132927aae41f84bcc5d7
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Mon Nov 4 08:57:09 2019 -0600
+
+    make note of DEBUG_INSTALLER_PATH in meta.yaml
+
+commit 00d5705db2b6220cbfab73cd9b9a3828f9f69dc6
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Mon Nov 4 08:53:22 2019 -0600
+
+    pass NVTOOLSEXT_INSTALL_PATH through (this is for windows)
+
+commit d986702d8a75b83109f285195091d1c2a991e226
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Fri Nov 1 13:56:45 2019 -0500
+
+    use requests and tqdm instead of conda for download
+
+commit dc67702ce49303bbfea44a8a5cdfaee3e3abf46a
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Fri Nov 1 12:54:07 2019 -0500
+
+    tweak test; require setuptools for tests (numba needs pkg_resources)
+
+commit 2eccf0ebd8576ea70793d83258ba5e70ccb30552
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Fri Nov 1 11:07:51 2019 -0500
+
+    whitelist missing dso linux
+
+commit 4ba2501ad1d0c147057ec5fa8baf865f8a963f11
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Fri Nov 1 08:52:50 2019 -0500
+
+    consolidate to a single version
+
+commit 09d19e08e53a14933d7fc5b7ecb2fd9a519962f7
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Thu Oct 31 15:00:15 2019 -0500
+
+    update 10.1 for update 2 release
+
+commit a0366aeda04725fca7f3e06dc3973b2173cdf627
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Fri May 31 17:56:15 2019 -0500
+
+    use the rhel6 runfile for 10.1, extracted embedded blob
+    
+    Use the rhel6 runfile for CUDA 10.1. The cublas libraries are removed if
+    a toolkit install is performed, rather extract the embedded cuda blob
+    and extract the files from there.
+
+commit 6339d434b55183b3106e4b16439fb21ad05cc5de
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Fri May 31 13:33:34 2019 -0500
+
+    ignore files in the GFExperience path
+
+commit 5614fbe23b795ffb915081ee7c8294985bb16a07
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Fri May 31 13:33:05 2019 -0500
+
+    nvjpeg library is only for linux
+
+commit 9e340c2e3d7d07c26fb13cb2c5c981e5141a4cb7
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Fri May 31 13:32:16 2019 -0500
+
+    fix blob and cuda_lib format for cuda 10.1 on win
+
+commit 806bfa330b028664248d89baefc89020cdc9f711
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Thu May 30 16:26:12 2019 -0500
+
+    add cudatoolkit 10.1.168 recipe
+
+commit b14d10478090858157ece8e4307891a2cb52fd32
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Thu May 30 16:23:35 2019 -0500
+
+    cuda 10.1 changes to build.py
+    
+    Add entries for CUDA 10.1 to build.py.  10.1 update 1 added two new
+    libraries, libcublasLt and libnvjpeg.
+    
+    The linux run file requires the extraction path to be specified using:
+    --installpath=path rather than the previous --toolkitpath path.
+
+commit 9827d764f95edaa1e7a7c3c16fd3c8ddd3e8ad2b
+Merge: a48b39c a37525e
+Author: Stan Seibert <stan@mtrr.org>
+Date:   Fri Feb 8 16:18:26 2019 -0600
+
+    Merge pull request #15 from jjhelmus/micro_ver
+    
+    add micro version to cudatoolkit 10.0 package
+
+commit a37525e9123f06945606afc305cf59a4c4dbd5e2
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Jan 22 18:02:37 2019 -0600
+
+    update build.py to deal with micro versions
+
+commit 0f4ea50f249f1a34fe51902941107ad5da679428
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Jan 22 17:54:56 2019 -0600
+
+    add micro version to cudatoolkit 10.0 package
+    
+    Add the micro version to the cudatoolkit 10.0 version. This matches the version
+    of the libcudart.so library within the package.
+
+commit a48b39cd8ec6afd791dab573d775e1a2d3be24ce
+Merge: cb91292 35e5fee
+Author: Stan Seibert <stan@mtrr.org>
+Date:   Fri Jan 11 09:56:20 2019 -0600
+
+    Merge pull request #11 from jjhelmus/cuda9.2
+    
+    CUDA 9.2
+
+commit 35e5fee4a3f86c63a40641d4a60a5d093794921a
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Fri Jan 11 09:29:07 2019 +0000
+
+    Update CUDA 10 recipe with nvvm to \DLLs
+
+commit 2fcb900b9b794481929a86621c3986e31bb0362f
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Fri Jan 11 09:22:23 2019 +0000
+
+    Add addition libraries to CUDA 10 build.
+    
+    As title.
+
+commit 26508bad6c0a6b78210bb33c398d758f4331f0dd
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Fri Jan 11 09:21:19 2019 +0000
+
+    Add CUDA 9.2 patches.
+    
+    As title.
+
+commit 91a11db23e9e6349b80ba70577da7040798b93b8
+Merge: 67efb5d cb91292
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Fri Jan 11 09:18:22 2019 +0000
+
+    Merge remote-tracking branch 'upstream/master' into cuda9.2
+    
+    And fix up conflicts!
+    
+    Conflicts:
+            scripts/build.py
+
+commit cb912921823b065e81ac4cede87a448103439f8e
+Merge: d59d0eb c69eddd
+Author: Stan Seibert <stan@mtrr.org>
+Date:   Mon Jan 7 11:47:58 2019 -0600
+
+    Merge pull request #14 from stuartarchibald/wip/cuda10
+    
+    Add glob for windows `nvrtc` library.
+
+commit c69eddd4eaa7d67e9895ab113a06738f60418a30
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Mon Jan 7 16:58:34 2019 +0000
+
+    Add glob for windows `nvrtc` library.
+    
+    This permits matching a library named `<foo>_100_0.dll`.
+
+commit d59d0eba489cb68ca332b7fc7bc98f16b1859e1e
+Merge: 7dfa648 5f3cd10
+Author: Stan Seibert <stan@mtrr.org>
+Date:   Mon Jan 7 08:52:00 2019 -0600
+
+    Merge pull request #13 from stuartarchibald/wip/cuda10
+    
+    CUDA 10 support.
+
+commit 5f3cd10456c7fd83e6ad185246496c4da1047a2e
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Mon Jan 7 11:38:54 2019 +0000
+
+    CUDA 10 support.
+    
+    As title.
+
+commit 67efb5dbfaa26db0e235d0bf466b9798c5b4bd7a
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Aug 21 16:54:16 2018 -0500
+
+    condarecipe9.2 windows fixes
+    
+    Apply changes from #9 to condarecipe9.2
+
+commit d207dce1815bf617e0db5186db77261fecf4c6aa
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Aug 21 16:39:04 2018 -0500
+
+    add cufftw, nvblas and nvgraph libraries
+    
+    for cudatoolkit 9.2 include the follow libraries
+    * libcufftw
+    * libnvblas
+    * libnvgraph
+
+commit 40adebb6d4e2af6e39337a602611587f7b6a4421
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Aug 21 16:01:24 2018 -0500
+
+    add support for CUDA 9.2
+
+commit 47146844170a5eea1f4e313c2bd113fe1dce4bce
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Wed Jun 13 10:21:32 2018 -0500
+
+    adjust condarecipe8.0 for windows directory structure
+
+commit 4b290a567fc5c41e9263af1c0371df202fbc1e99
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Tue Jun 12 13:22:01 2018 -0500
+
+    adjust condarecipe9.0 for windows directory structure
+    
+    bump build number
+    copy nvvm and libdevice files into DLLs folder
+    adjust tests
+    diff --git a/condarecipe9.0/bld.bat b/condarecipe9.0/bld.bat
+    index 7d31450..015fedd 100644
+    --- a/condarecipe9.0/bld.bat
+    +++ b/condarecipe9.0/bld.bat
+    @@ -1,2 +1,9 @@
+     "%PYTHON%" build.py
+     if errorlevel 1 exit 1
+    +
+    +:: copy nvvm and libdevice into the DLLs folder so numba can use them
+    +mkdir "%PREFIX%\DLLs"
+    +xcopy /s /y "%PREFIX%\Library\bin\nvvm*" "%PREFIX%\DLLs\"
+    +if errorlevel 1 exit 1
+    +xcopy /s /y "%PREFIX%\Library\bin\libdevice*" "%PREFIX%\DLLs\"
+    +if errorlevel 1 exit 1
+    diff --git a/condarecipe9.0/meta.yaml b/condarecipe9.0/meta.yaml
+    index 641cd8f..682975b 100644
+    --- a/condarecipe9.0/meta.yaml
+    +++ b/condarecipe9.0/meta.yaml
+    @@ -3,7 +3,7 @@ package:
+        version: 9.0
+    
+     build:
+    -  number: 0
+    +  number: 1
+       script_env:
+         - NVTOOLSEXT_INSTALL_PATH
+    
+    diff --git a/condarecipe9.0/run_test.py b/condarecipe9.0/run_test.py
+    index c6b09a6..e8d31fc 100644
+    --- a/condarecipe9.0/run_test.py
+    +++ b/condarecipe9.0/run_test.py
+    @@ -5,6 +5,11 @@ from numba.cuda.cudadrv.nvvm import NVVM
+    
+     def run_test():
+    +    # on windows only nvvm is available to numba
+    +    if sys.platform.startswith('win'):
+    +        nvvm = NVVM()
+    +        print("NVVM version", nvvm.get_version())
+    +        return nvvm.get_version() is not None
+         if not test():
+             return False
+         nvvm = NVVM()
+    @@ -12,9 +17,6 @@ def run_test():
+         # check pkg version matches lib pulled in
+         gotlib = get_cudalib('cublas')
+         lookfor = os.environ['PKG_VERSION']
+    -    if sys.platform.startswith('win'):
+    -        # windows libs have no dot
+    -        lookfor = lookfor.replace('.', '')
+         return lookfor in gotlib
+
+commit 9637f381ad3088efb3e8b59cb8a95f7b2c32799a
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Tue Jun 12 13:20:19 2018 -0500
+
+    use Library/bin for libraries on windows
+    diff --git a/scripts/build.py b/scripts/build.py
+    index 31f703a..16f9bf5 100644
+    --- a/scripts/build.py
+    +++ b/scripts/build.py
+    @@ -280,7 +280,7 @@ class Extractor(object):
+    
+         libdir = {'linux': 'lib',
+                   'osx': 'lib',
+    -              'windows': 'DLLs'}
+    +              'windows': 'Library/bin'}
+    
+         def __init__(self, version, ver_config, plt_config):
+             """Initialise an instance:
+
+commit 7dfa648333b4d02ae796fdd3b67c0c4f2657b3f0
+Merge: 032f313 4bcba73
+Author: stuartarchibald <stuartarchibald@users.noreply.github.com>
+Date:   Mon Jun 11 17:44:07 2018 +0100
+
+    Merge pull request #8 from seibert/wip/cuda9
+    
+    CUDA 9.1 support
+
+commit 4bcba73fe5ea0d84e4c42dca943ba30545a3e527
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Mon Feb 12 21:36:28 2018 +0000
+
+    Remove erroneous flag.
+    
+    As title.
+
+commit af709c87366d0f028e257adc49e6f8cf8ac34bd4
+Author: Stan Seibert <stan.seibert@continuum.io>
+Date:   Mon Jan 1 14:33:34 2018 -0600
+
+    CUDA 9.0 toolkit
+
+commit 470556b2ce0de9ff17910f726a2be585c10cf481
+Author: Stan Seibert <stan.seibert@continuum.io>
+Date:   Thu Dec 14 15:39:02 2017 -0600
+
+    fix build number on cuda 9.1
+
+commit 9162e2c67b2bf6c7d091c323902e3d3ab7ecbb75
+Author: Stan Seibert <stan.seibert@continuum.io>
+Date:   Thu Dec 14 15:34:49 2017 -0600
+
+    Add CUDA 9.1 conda recipe
+
+commit e262651943c77c9baddb10cba03ebe82286af186
+Author: Stan Seibert <stan.seibert@continuum.io>
+Date:   Thu Dec 14 15:14:11 2017 -0600
+
+    CUDA 9.1
+
+commit 8fb50824232d54956ff869a95c4e2c05ec643a6f
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Mon Dec 11 12:16:09 2017 +0000
+
+    Initial work for CUDA 9
+    
+    This adds the config for CUDA 9, also a debug environment variable
+    option to allow the bypassing of downloading the installation
+    files every time.
+
+commit 032f3130cdc90a8a2475bd5ac9377b588cca64ae
+Merge: 90328ab f6b6612
+Author: Stan Seibert <stan@mtrr.org>
+Date:   Thu Sep 21 09:52:39 2017 -0500
+
+    Merge pull request #4 from stuartarchibald/symlink_support
+    
+    Support symlinked libraries on linux.
+
+commit f6b6612614ce2ef44bb1c88747f6416b0c65cb6a
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Fri Sep 8 17:19:12 2017 +0100
+
+    Support symlinked libraries on linux.
+    
+    This patch ensures that the nvToolsExt library symlinks are
+    included (and indeed all symlinks) for the CUDA toolkit 8
+    linux build. This is due to the SONAME not matching the DSO name.
+    
+    Build number is bumped.
+
+commit 90328abd0a6be269560d60d91e91c3c6d755b58e
+Merge: a73b550 8cf9b00
+Author: Stan Seibert <stan@mtrr.org>
+Date:   Wed Aug 30 09:56:24 2017 -0500
+
+    Merge pull request #3 from stuartarchibald/win_location_extractor
+    
+    NvToolsExt fixes
+
+commit 8cf9b008d4f56db2fb89459359fbc65ff1607f8f
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Tue Aug 29 12:58:34 2017 +0100
+
+    Accommodate NvToolsExt.
+    
+    This adds the environment variable "NVTOOLSEXT_INSTALL_PATH" as
+    a pass through variable to the conda build scripts. This is to
+    accommodate the windows installers not having the nvtoolsext DLL
+    as an extractable item and allow assembly from an already present
+    installation, the location of the dll is not the install directory!
+
+commit a73b5509f8d85bdbc4913b279da8afa8502c3de9
+Merge: f5bff9d f4b5880
+Author: Stan Seibert <stan@mtrr.org>
+Date:   Mon Aug 21 10:53:20 2017 -0500
+
+    Merge pull request #2 from stuartarchibald/nvtoolsext_wip
+    
+    Add nvToolsExt library.
+
+commit f4b588077d83e3393383185d699a84ce5c96e4ad
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Mon Aug 21 16:22:59 2017 +0100
+
+    Add nvToolsExt library.
+    
+    This adds the nvToolsExt library to the package, reorders the
+    library listing for CUDA 8 to match that of the EULA, and bumps
+    the build number. There is a known issue with the windows 64bit
+    variant that requires additional work before a build can be made.
+
+commit f5bff9d267619a259633d70968c5f86bccf38e74
+Merge: 28a9ac2 4343942
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Thu Aug 10 11:16:38 2017 -0500
+
+    Merge pull request #1 from stuartarchibald/first_attempt
+    
+    Cudatoolkit build recipe, update and automate 7.5 and 8.0.
+
+commit 4343942a079be0c6b5a86778f2ca5bdf84617b46
+Author: Stuart Archibald <stuart.archibald@googlemail.com>
+Date:   Fri Aug 4 11:07:55 2017 +0100
+
+    Cudatoolkit build recipe, update and automate 7.5 and 8.0.
+    
+    This code builds the "cudatoolkit" packages. A condarecipe exists
+    for each of 7.5 and 8.0, this is just needed to separate the
+    incremental build numbering, the actual code used to build the
+    packages is the same.
+    
+    This new code should enable a more configurable CUDA toolkit
+    package build. As a result of the configuration capacity a yaml
+    file is now dumped into the library directory of the package that
+    contains the configuration dictionary such that there is
+    tracibility from the package to the binary source.
+    
+    To add additional cuda versions, add to the dictionary defined at
+    the top of build.py.
+    
+    This is not an ideal method of assembling the package, but is
+    sufficient for reproducability.
+    
+    This is a first cut, patches welcome.
+
+commit 28a9ac2c0e6cb7e47ff9b113695336f3e4dd146e
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Thu Oct 6 14:02:10 2016 -0500
+
+    Update to linux and osx scripts to cuda 8
+
+commit 89d12212d4256902b6d80a0187e8e752f8f3e78e
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Mon Apr 11 15:37:12 2016 -0500
+
+    add copy_files script for windows
+
+commit 08bc3074835ff2843afde0d878452962793a183c
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Mon Apr 11 15:14:37 2016 -0500
+
+    add linux copy_files script
+
+commit e25c52d6aa97acf9a9200943206136c8d2528bd3
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Mon Apr 11 14:42:57 2016 -0500
+
+    update for 7.5 and add copy script
+
+commit cf22f2b2d12005eec3d49c4ecde26094f0e4ef06
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Thu Jun 11 15:25:39 2015 -0500
+
+    Include NVRTC
+
+commit 80e261c0a7c796d69fddcfdd0e50ef254210e776
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Tue Jun 9 14:49:54 2015 -0500
+
+    Upgrade to cudatoolkit 7.0
+
+commit a1a2cb286903269a97809d4ef3faabd845115951
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Wed Jul 23 14:56:06 2014 -0500
+
+    test script
+
+commit 3f5924bfd2bfe5a3e059ea9cfd06b261ff7cf8cb
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Wed Jul 23 14:49:51 2014 -0500
+
+    Add test
+
+commit 2d655796806657e0d789524da783aace172ebe7c
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Wed Jul 23 14:36:07 2014 -0500
+
+    fix win
+
+commit fc35d95d207e76ae5f712bcd1171112bbe75b6db
+Author: Siu Kwan Lam <michael.lam.sk@gmail.com>
+Date:   Wed Jul 23 14:12:01 2014 -0500
+
+    buildscripts

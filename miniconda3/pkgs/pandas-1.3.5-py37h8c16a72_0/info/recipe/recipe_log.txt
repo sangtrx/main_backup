@@ -1,0 +1,1803 @@
+commit f831fab6a6cc61dce2e68d1c4cba51d5e1b31c7e
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Thu Jan 6 09:07:02 2022 +0000
+
+    Add run_test.py
+
+commit 6fc8fbf0a7cdf40734568be84cecc9658aab32b6
+Merge: 9c6954d 00d67d8
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Thu Jan 6 09:06:02 2022 +0000
+
+    Reset build number to 0
+
+commit 9c6954d153249eae5dc0fbdc7a252c89b86fbc6f
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Thu Jan 6 09:03:24 2022 +0000
+
+    Add run_test.py
+
+commit 00d67d8068137d4dc1760af442c79cfac6fc76c4
+Merge: f2d3d1e ba3709e
+Author: Serhii Kupriienko <79282962+skupr-anaconda@users.noreply.github.com>
+Date:   Thu Jan 6 11:01:45 2022 +0200
+
+    Merge branch 'master' into update_1.3.5
+
+commit ba3709e04fd5e598976aeb807a6cb54ada4936c6
+Author: abolla22 <89803668+abolla22@users.noreply.github.com>
+Date:   Wed Jan 5 11:43:19 2022 -0500
+
+    added pandas pkg tests validations (#17)
+    
+    * added pandas pkg test validations
+    
+    * added test dependency in meta yaml
+    
+    * fix test pkg installation
+    
+    * update recipe cbc
+
+commit f2d3d1e4b3b82e280d7c565c00a4d015c6940d19
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Wed Jan 5 11:24:41 2022 +0000
+
+    Fix a patch
+
+commit 0e7d0b28adb7587c8cc7b6a0ff90169618fe7103
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Wed Jan 5 11:06:40 2022 +0000
+
+    Apply a new patch
+
+commit c70a7702d4be34eda321e2c8e82b3c88a6808148
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Wed Jan 5 10:47:13 2022 +0000
+
+    Add patch
+
+commit 02d2e80ee87bd0d3413b359008ccf7686762ab64
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Tue Jan 4 13:42:12 2022 +0000
+
+    Fix numpy in cbc.yaml
+
+commit 1546aac6686499eee8dde94dd721fa379fc49f5c
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Tue Jan 4 13:36:41 2022 +0000
+
+    Fix cbc.yaml
+
+commit ea55024e676d529da55b89dc1fe02731c7938036
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Tue Jan 4 13:31:11 2022 +0000
+
+    Update version and sha256
+
+commit 80e5d25455181d05b3c5f898b7796b32f788ff9f
+Merge: 289ffd5 1f3d503
+Author: anaconda-pkg-build <66446536+anaconda-pkg-build@users.noreply.github.com>
+Date:   Mon Nov 1 05:53:33 2021 -0600
+
+    Merge pull request #15 from AnacondaRecipes/pbs_1.3.4_20211029T033023
+    
+    pandas 1.3.4
+
+commit 1f3d5032c993658b68c46db7c52139deb44a9934
+Author: Serhii Kupriienko <79282962+skupr-anaconda@users.noreply.github.com>
+Date:   Fri Oct 29 14:21:17 2021 +0300
+
+    Update cython >=0.29.24,<3
+
+commit 37848f6229a7b3aba519521bf61aa6a5ae404018
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Fri Oct 29 03:30:24 2021 +0000
+
+    DOR update to 1.3.4
+
+commit 289ffd5eef4debf97a4dacb2e720705bcc7c1540
+Merge: 4fdb25f 5766ce8
+Author: Anthony DiPietro <51377278+adipietro18@users.noreply.github.com>
+Date:   Wed Sep 29 10:33:22 2021 -0400
+
+    Merge pull request #12 from AnacondaRecipes/pbs_1.3.3_20210912T223903
+    
+    pandas 1.3.3
+
+commit 5766ce873e19de026520996cebd8bfc1fe7fd4d9
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Sun Sep 12 22:39:04 2021 +0000
+
+    DOR update to 1.3.3
+
+commit 4fdb25ff622082aa86153b254c5e1f697e7dfcce
+Merge: 626b214 62a72d2
+Author: anaconda-pkg-build <66446536+anaconda-pkg-build@users.noreply.github.com>
+Date:   Wed Aug 25 09:22:13 2021 -0500
+
+    Merge pull request #11 from AnacondaRecipes/pbs_1.3.2_20210817T130943
+    
+    pandas 1.3.2
+
+commit 62a72d230147b4c163565582804a41f83f873d5c
+Author: Anju Thomas <anthomas@anaconda.com>
+Date:   Wed Aug 18 14:01:38 2021 -0500
+
+    Updated dependencies and test commands
+
+commit 0621cb8738a0d4dd49fe78c62d730ede44087ae1
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Tue Aug 17 13:09:45 2021 +0000
+
+    DOR update to 1.3.2
+
+commit 626b214c66619dfeb39f5618e97f4173eeae7f0f
+Merge: 697ac5b 0683f0e
+Author: Serhii Kupriienko <79282962+skupr-anaconda@users.noreply.github.com>
+Date:   Thu Aug 5 12:07:13 2021 +0300
+
+    Merge pull request #10 from AnacondaRecipes/update_to_1.3.1
+    
+    Update pandas to 1.3.1
+
+commit 0683f0e203c25345e11774224ca119ed66aa13a6
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Thu Jul 29 18:32:46 2021 +0300
+
+    Update to 1.3.1
+
+commit 697ac5b8d2e74a196217744c75e6a9a585a2905e
+Merge: e91a58b 5ef81f5
+Author: Serhii Kupriienko <79282962+skupr-anaconda@users.noreply.github.com>
+Date:   Tue Jul 20 16:38:43 2021 +0300
+
+    Merge pull request #7 from AnacondaRecipes/update_to_1.3.0
+    
+    Update to 1.3.0
+
+commit 5ef81f5f4c3594d79ebea48de0a3bd6c8a7ebc1d
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Tue Jul 20 15:48:05 2021 +0300
+
+    Revert build number to 0
+
+commit 4fe5204129e31ab3bd7ff22e247a4ebd435bf5bf
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Mon Jul 19 18:37:20 2021 +0300
+
+    Fix run_constrained python !=3.7.0 and return skip py<37
+
+commit 83b7c0cb292109e9e9376fb52beb827086f4e7d0
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Mon Jul 19 17:46:39 2021 +0300
+
+    Add run_constrained for python >=3.7.1
+
+commit 524c3bfc4a6a3d5e4cdc778e382a52de7fef2c5c
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Mon Jul 19 17:14:23 2021 +0300
+
+    Update to 1.3.0
+
+commit 7462b524f8b0572fc4974dbf61896a8365a17d85
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Mon Jul 19 16:11:54 2021 +0300
+
+    Update pandas to 1.3.0
+
+commit e91a58bdde1ad5e5850427ff72ad9f62f0c13f8f
+Merge: 594bf2e f9e565b
+Author: anaconda-pkg-build <66446536+anaconda-pkg-build@users.noreply.github.com>
+Date:   Thu Jun 24 09:03:23 2021 -0500
+
+    Merge pull request #4 from AnacondaRecipes/pbs_1.2.5_20210622T173606
+    
+    pandas 1.2.5
+
+commit f9e565b2e482bb3ca9073f0a83f65cd96812573a
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Wed Jun 23 19:25:54 2021 +0300
+
+    Fix dependencies
+
+commit 8ea08882e11e11244350411665a242ff8c160e68
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Wed Jun 23 15:51:58 2021 +0300
+
+    Add recommended dependencies to achieve large speedups
+
+commit 85169f8fff7d80180f9147ed8ea24e4982a7eeda
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Wed Jun 23 12:42:39 2021 +0300
+
+    Update dependencies, add missing packages, add license_family, doc, and dev urls
+
+commit f11ad5f2385974daee2c56651c737407f60cf2d5
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Tue Jun 22 17:36:07 2021 +0000
+
+    DOR update to 1.2.5
+
+commit 594bf2ede05ffa07e64e8cc3b87b9cf91b2bb5ed
+Author: Anju Thomas <anthomas@anaconda.com>
+Date:   Tue Apr 13 20:55:53 2021 -0500
+
+    Updated the version for pytz
+
+commit a1a3f9e4ad8e6c5dd5737984b1fb8749357f054c
+Author: Anju Thomas <anthomas@anaconda.com>
+Date:   Tue Apr 13 20:19:51 2021 -0500
+
+    updated dependencies as per  setup.py
+
+commit bb7d252648b8d7298c36292a376bc9982819e610
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Mon Apr 12 20:58:40 2021 +0000
+
+    DOR update to 1.2.4
+
+commit fe6c240693158110987ac7c53f584c5d511273ed
+Author: Paul Yim <paul.j.yim@gmail.com>
+Date:   Tue Dec 15 15:15:48 2020 -0500
+
+    Remove remaining cross-platform build requirements; we are not using these yet
+
+commit dd2df481e053bd9f5907e80849215f766c00d937
+Author: Paul Yim <paul.j.yim@gmail.com>
+Date:   Tue Dec 15 13:57:52 2020 -0500
+
+    Remove numpy pinnings and selectors
+
+commit 342d09abff18452f127542760be31d9b7bfbdf8b
+Author: Paul Yim <paul.j.yim@gmail.com>
+Date:   Tue Dec 15 13:21:29 2020 -0500
+
+    Reverting numpy version pinnings (to make sure win-32 builds)
+
+commit e6c6487cb9b25f956bfbdf215c114ad2aedfb082
+Author: Paul Yim <paul.j.yim@gmail.com>
+Date:   Tue Dec 15 12:54:03 2020 -0500
+
+    Removed cross-python requirement; we are not using this yet.
+
+commit 83378f9d64f4c542704b05c817c833f9b0fc5e70
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Tue Mar 2 16:10:45 2021 +0100
+
+    pandas v1.2.3 (#109)
+    
+    * updated v1.2.3
+    
+    * MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.9.0, and conda-forge-pinning 2021.03.02.12.06.47
+
+commit 43217f933151f2c08b61f4205c2284120f81fb5e
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Tue Feb 9 17:02:15 2021 +0100
+
+    pandas v1.2.2 (#108)
+    
+    * updated v1.2.2
+    
+    * MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.8.6, and conda-forge-pinning 2021.02.09.12.24.06
+
+commit f00c55d30706fb5d90d303a8f46edc340e3638c0
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Wed Jan 20 18:22:50 2021 +0100
+
+    pandas v1.2.1 (#107)
+    
+    * updated v1.2.1
+    
+    * MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.20.13.06.20
+
+commit 674ae0a151843a806dc053aa5e7a03394aa461c2
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Thu Jan 14 08:39:42 2021 +0100
+
+    Rebuild for pypy37 (#106)
+    
+    * Rebuild for pypy37
+    
+    * MNT: Re-rendered with conda-build 3.20.5, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.06.22.06.17
+
+commit 11c57abed0acb54f00eb5cc1e0341238d6691798
+Author: Simon Hawkins <simonjayhawkins@gmail.com>
+Date:   Sun Dec 27 14:24:51 2020 +0000
+
+    pandas v1.2.0 (2nd attempt) (#104)
+
+commit 1a39de890bd4950e658ba3106870d59e638438e9
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Sun Dec 27 12:34:14 2020 +0100
+
+    pandas v1.2.0 (#103)
+    
+    * updated v1.2.0
+    
+    * MNT: Re-rendered with conda-build 3.20.5, conda-smithy 3.8.5, and conda-forge-pinning 2020.12.26.13.11.41
+    
+    * Skip py36
+    
+    * MNT: Re-rendered with conda-build 3.20.5, conda-smithy 3.8.5, and conda-forge-pinning 2020.12.26.13.11.41
+    
+    Co-authored-by: Simon Hawkins <simonjayhawkins@gmail.com>
+
+commit 2f3d4fd2ac81bad81e7cccecd629eadb3289dabe
+Author: Simon Hawkins <simonjayhawkins@gmail.com>
+Date:   Tue Dec 8 10:57:08 2020 +0000
+
+    add simonjayhawkins to recipe-maintainers (#101)
+
+commit 86641f72dbb6b5ba8bade9f56863ace3a884c334
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Tue Dec 8 04:32:30 2020 -0600
+
+    pandas v1.1.5 (#100)
+    
+    * updated v1.1.5
+    
+    * MNT: Re-rendered with conda-build 3.20.5, conda-smithy 3.8.5, and conda-forge-pinning 2020.12.06.16.40.53
+    
+    * remove patch
+    
+    Co-authored-by: Filipe Fernandes <ocefpaf@gmail.com>
+
+commit 3c914cb97edd665160f71f127f8dc45f09305485
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Sat Oct 31 12:46:27 2020 -0500
+
+    pandas v1.1.4 (#99)
+    
+    * updated v1.1.4
+    
+    * MNT: Re-rendered with conda-build 3.20.5, conda-smithy 3.8.4, and conda-forge-pinning 2020.10.29.11.45.42
+
+commit d2f5bc3c91496fa2aeeb2e08062d863b0d4510a0
+Merge: caa8722 3e52389
+Author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+Date:   Tue Oct 20 23:33:40 2020 +0000
+
+    ARM OSX Migrator
+    
+    automerged PR by conda-forge/automerge-action
+
+commit 3e523897b660e5e248ff5023b3c38438b77051ee
+Author: Uwe L. Korn <uwelk@xhochy.com>
+Date:   Tue Oct 20 22:57:18 2020 +0200
+
+    Build using multiple CPUs
+
+commit b960c630605d030ee6be4437b6fea5f58a02b9bf
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Tue Oct 20 15:12:52 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.4, conda-smithy 3.8.2, and conda-forge-pinning 2020.10.20.15.08.50
+
+commit ae7dff666ed435cd0f94d31c49be186ee8b42953
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Tue Oct 20 11:54:47 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.4, conda-smithy 3.8.2, and conda-forge-pinning 2020.10.20.11.22.02
+
+commit 839a8991d723153b0fce53d234b7e0a9ab49cfae
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Mon Oct 19 14:09:04 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.4, conda-smithy 3.8.2, and conda-forge-pinning 2020.10.19.14.05.29
+
+commit 203a773e011e8ec480a264d482ec335f5b0d9f3b
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Sun Oct 18 20:08:51 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.4, conda-smithy 3.8.2, and conda-forge-pinning 2020.10.18.17.43.44
+
+commit 577233d3ffabe098da7ca1085ebb090254860191
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Sun Oct 18 20:08:38 2020 +0000
+
+    migration: OSXArm
+
+commit caa87229be87973bc9f7bb78c5eb31f8a4280a20
+Merge: 6074c4c df42841
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Mon Oct 12 06:37:40 2020 -0500
+
+    Merge pull request #96 from regro-cf-autotick-bot/rebuild-python39-0-2_h022a80
+    
+    Rebuild for python39
+
+commit df42841b9da04033c298d001aa9eba799c67cc9c
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Mon Oct 12 08:44:34 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.3, conda-smithy 3.8.1, and conda-forge-pinning 2020.10.11.15.10.22
+
+commit 5c5b180386f07efc0140db7704ee20bfb269dc1a
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Mon Oct 12 08:44:18 2020 +0000
+
+    Rebuild for python39
+
+commit 6074c4ce43e4efc47cff4b0850005e03530cf374
+Merge: adee129 ebba409
+Author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+Date:   Sun Oct 11 20:27:59 2020 +0000
+
+    ENH just numpy
+    
+    automerged PR by conda-forge/automerge-action
+
+commit ebba4095c89204384ca17ab45483de7f29ef1171
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Sun Oct 11 17:50:20 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.3, conda-smithy 3.8.1, and conda-forge-pinning 2020.10.11.15.10.22
+
+commit 335da92386fab7193a91604f9d37e92e892de032
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Sun Oct 11 12:47:32 2020 -0500
+
+    Delete conda_build_config.yaml
+
+commit 9100a217b57075b4bcd824ab6d4a1549db9ca93f
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Sun Oct 11 17:44:28 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.3, conda-smithy 3.8.1, and conda-forge-pinning 2020.10.11.15.10.22
+
+commit edf1a6a9503ebb1e92d1052265abe04520f4b9f7
+Author: Matthew R. Becker <beckermr@users.noreply.github.com>
+Date:   Sun Oct 11 12:41:33 2020 -0500
+
+    ENH just numpy
+
+commit adee129283c581c3de3ea5226540752bad92dda2
+Merge: 161e217 b2bb8fd
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Tue Oct 6 05:58:19 2020 -0500
+
+    Merge pull request #93 from simonjayhawkins/RLS-1.1.3
+    
+    RLS 1.1.3
+
+commit b2bb8fdab9c3ed93b66212a54d702e6c50779098
+Author: Pandas Development Team <pandas-dev@python.org>
+Date:   Mon Oct 5 18:28:38 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.3, conda-smithy 3.7.10, and conda-forge-pinning 2020.10.05.16.30.09
+
+commit fc62ddeefca471cc16bb7aff28d362930c02ef1c
+Author: Pandas Development Team <pandas-dev@python.org>
+Date:   Mon Oct 5 18:28:12 2020 +0000
+
+    RLS 1.1.3
+
+commit 161e2176f5c1bf381539d3a9baba39d10cc0e899
+Merge: 013e928 8fb9785
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Tue Sep 8 16:34:25 2020 -0500
+
+    Merge pull request #91 from simonjayhawkins/RLS-1.1.2
+    
+    Rls 1.1.2
+
+commit 8fb97858c204bf68153faeee67a569b530fff430
+Author: Pandas Development Team <pandas-dev@python.org>
+Date:   Tue Sep 8 18:09:41 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.1, conda-smithy 3.7.10, and conda-forge-pinning 2020.09.08.14.30.05
+
+commit 74b33c14412cadd343983f99c6a9100115a4eed9
+Author: Pandas Development Team <pandas-dev@python.org>
+Date:   Tue Sep 8 18:09:15 2020 +0000
+
+    RLS 1.1.2
+
+commit 013e92858af805ed51840efcd3b5fca51cbfcb27
+Merge: de0a257 9444b46
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Mon Aug 24 13:39:17 2020 -0500
+
+    Merge pull request #89 from simonjayhawkins/RLS-1.1.1
+    
+    RLS 1.1.1
+
+commit 9444b46c061f0d60feed449356c4a53e37d0a45f
+Author: Pandas Development Team <pandas-dev@python.org>
+Date:   Thu Aug 20 18:34:17 2020 +0000
+
+    RLS 1.1.1
+
+commit de0a2571eb99d7bbdedf9acd0d95fc78ceef602e
+Author: conda-forge-admin <conda-forge-admin@email.com>
+Date:   Sat Aug 8 10:43:49 2020 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration CFEP13TokenCleanup
+
+commit fdcd11290f7f4c137fdde03fac7e71838479b71e
+Merge: f6e61f6 9586d68
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Tue Jul 28 12:45:51 2020 -0500
+
+    Merge pull request #86 from TomAugspurger/RLS-1.1.0
+    
+    Rls 1.1.0
+
+commit 9586d68ddc117185aec79f5651bed72f54650dbd
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue Jul 28 11:10:28 2020 -0500
+
+    Revert "try pypy"
+    
+    This reverts commit 5e068f71f5e1dbca5f06c3f1a7ce564c32250a5c.
+
+commit 5e068f71f5e1dbca5f06c3f1a7ce564c32250a5c
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue Jul 28 11:03:03 2020 -0500
+
+    try pypy
+
+commit b86f40c6ebf6a2ec0ff174670dcf4cfa828ad0e9
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue Jul 28 08:45:07 2020 -0500
+
+    Fixup
+
+commit c841c4c6178d50be840dfe56bf3442d7b0df5180
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue Jul 28 08:44:31 2020 -0500
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.4, and conda-forge-pinning 2020.07.27.18.59.53
+
+commit 071319d166d669ef573d0799ac0c6ecb779891b9
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue Jul 28 08:38:57 2020 -0500
+
+    Added build patch
+    
+    Ignores build warnings on MacOS.
+
+commit 993d6279c49c0ef20b5abd8e7d2730b2bede3e43
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue Jul 28 08:34:18 2020 -0500
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.4, and conda-forge-pinning 2020.07.27.18.59.53
+
+commit 8c61c5070f8402c8eaf5e097e072336fd59b7338
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue Jul 28 08:33:56 2020 -0500
+
+    RLS 1.1.0
+
+commit f6e61f6e6b7c58b489c3a794852df9de9614b922
+Merge: 19b3009 7d6fb88
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Wed Jun 17 14:24:59 2020 -0500
+
+    Merge pull request #83 from simonjayhawkins/RLS-1.0.5
+    
+    RLS 1.0.5
+
+commit 7d6fb88111a2ade0546c21ef11d0c1d539983de4
+Author: Pandas Development Team <pandas-dev@python.org>
+Date:   Wed Jun 17 16:11:11 2020 +0000
+
+    RLS 1.0.5
+
+commit 19b3009c3000ff3259261c3d381fb9543f5d9747
+Merge: 5a11cae e3837c7
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Fri May 29 06:44:24 2020 -0500
+
+    Merge pull request #81 from simonjayhawkins/RLS-1.0.4
+    
+    RLS 1.0.4
+
+commit e3837c72cb713e83d88ee650ce2a9ca8551a124e
+Author: Simon Hawkins <simonjayhawkins@gmail.com>
+Date:   Thu May 28 19:49:41 2020 +0100
+
+    RLS 1.0.4
+
+commit 5a11caeba781a56c449c9056f11a1efe869f3a81
+Author: Matthew R Becker <becker.mr@gmail.com>
+Date:   Mon May 18 08:09:36 2020 -0500
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration CondaForgeAutomerge
+
+commit fdc984e19c0e935318249b28fd0223f8f8c0a97d
+Author: conda-forge-admin <conda-forge-admin@email.com>
+Date:   Sun May 17 04:52:04 2020 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration CFEP13TokensAndConfig
+
+commit 39b8063c95c5406223db2a8569bc1b77c29fde1b
+Merge: 330bae1 26835f7
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat May 2 11:21:19 2020 -0300
+
+    Merge pull request #75 from mbargull-feedstocks/ppc64le-stalling
+    
+    chmod -x recipe/meta.yaml
+
+commit 26835f7c86b1d60be85875ebfea7dfba159d6824
+Merge: 1789252 330bae1
+Author: Marcel Bargull <marcel.bargull@udo.edu>
+Date:   Fri May 1 18:45:37 2020 +0200
+
+    Merge branch 'master' into ppc64le-stalling
+
+commit 330bae186dde2ef2ae3ea308f51050e64ab4a28d
+Merge: 0d47b1a 1f1be31
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Apr 29 15:34:19 2020 -0300
+
+    Merge pull request #80 from h-vetinari/master
+
+commit 1f1be31cdb8dc93f247a5f8a969130a9ef45da17
+Author: H. Vetinari <h.vetinari@gmx.com>
+Date:   Thu Apr 16 23:43:09 2020 +0200
+
+    remove duplicate url-key in recipe
+
+commit 0d47b1aac9aff8d127c3ed4144b219291fbb2bc6
+Merge: e441093 8eb7887
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Thu Apr 16 15:17:27 2020 -0500
+
+    Merge pull request #78 from regro-cf-autotick-bot/rebuild-pypy-0-1
+    
+    Rebuild for pypy
+
+commit 8eb788776700190fb472553c1b86066bd9529040
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Thu Apr 16 13:45:06 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.6.16, and conda-forge-pinning 2020.04.16.07.55.54
+
+commit e2cffe1fad916f6a9a030f30dfd068fea3035db0
+Author: Uwe L. Korn <xhochy@users.noreply.github.com>
+Date:   Thu Apr 16 15:43:04 2020 +0200
+
+    Update conda-forge.yml
+
+commit 182e00ea917a334ce02fc29b09dbbf632ddf65ee
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Thu Apr 16 11:19:56 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.6.16, and conda-forge-pinning 2020.04.16.07.55.54
+
+commit 12700c9cb1f4066a0f78dcd06bb09854e2d63266
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Sun Apr 12 21:20:18 2020 -0500
+
+    Clause
+
+commit 139c13632b3f7a299ba966f81787b7534e1bfa19
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Sun Apr 12 21:19:30 2020 -0500
+
+    SPDX license
+
+commit e441093a68cfcc4cfbce7e3ca5206b20b4a75bc4
+Merge: ca792db 1769c21
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Wed Mar 18 11:21:17 2020 -0500
+
+    Merge pull request #79 from TomAugspurger/RLS-1.0.3
+    
+    RLS 1.0.3
+
+commit 1769c21e68784ae9dd99deb0ab3a4291dc21efdf
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Wed Mar 18 10:16:37 2020 -0500
+
+    RLS 1.0.3
+
+commit f9dbf3e71ab9cb474944fec906d6d59bdea285c6
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Mar 13 14:57:48 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.0, conda-smithy 3.6.12, and conda-forge-pinning 2020.03.12
+
+commit f2ed00b84955cae8ba95e04ee4f71a64d00ff304
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Mar 13 14:57:21 2020 +0000
+
+    Rebuild for pypy
+
+commit ca792db1f931b88bb32b80f8f23098c0f0f52acc
+Merge: 1eaaf56 139c379
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Thu Mar 12 13:08:19 2020 -0500
+
+    Merge pull request #77 from TomAugspurger/RLS-1.0.2
+    
+    RLS 1.0.2
+
+commit 139c379b2f27fedf5118fc219fec48180e11e2e7
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Thu Mar 12 16:00:49 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.0, conda-smithy 3.6.12, and conda-forge-pinning 2020.03.10
+
+commit dc430fabeeca7bda576f8abd65867a88e5cc87c4
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Thu Mar 12 10:46:01 2020 -0500
+
+    RLS 1.0.2
+
+commit 1eaaf56398c266ae573c9b55853e2fe0a23099a9
+Author: conda-forge-admin <conda-forge-admin@email.com>
+Date:   Mon Mar 2 22:47:03 2020 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration AutomergeAndRerender
+
+commit b755158ddc7882019cee4f53edd22b59b98a53ac
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Wed Feb 5 12:49:19 2020 -0600
+
+    Rls 1.0.1 (#76)
+    
+    * RLS 1.0.1
+    
+    * MNT: Re-rendered with conda-build 3.18.11, conda-smithy 3.6.7, and conda-forge-pinning 2020.01.28
+
+commit 17892524f6ede5a9fa0ebab45ac9f063b333f033
+Author: Marcel Bargull <marcel.bargull@udo.edu>
+Date:   Thu Jan 30 20:47:45 2020 +0100
+
+    Add "export PYTHONUNBUFFERED=1  # [ppc64le]"
+
+commit 217fdf406856b698d01a8b2a2f27d77dac5d5850
+Author: Marcel Bargull <marcel.bargull@udo.edu>
+Date:   Thu Jan 30 19:32:13 2020 +0100
+
+    chmod -x recipe/meta.yaml
+
+commit 5dd30bdf55dc955dcf25250498f45a4ba7ddb9ff
+Merge: d8578e0 cdc7504
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Wed Jan 29 16:46:17 2020 -0600
+
+    Merge pull request #74 from TomAugspurger/RLS-1.0.0
+    
+    Rls 1.0.0
+
+commit cdc75042a7e6c34341005c136502519c8566a5e8
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Wed Jan 29 16:19:16 2020 -0600
+
+    MNT: Re-rendered with conda-build 3.18.11, conda-smithy 3.6.6, and conda-forge-pinning 2020.01.27
+
+commit 5527c22fd598151b521f9122b7e9583a0a834086
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Wed Jan 29 16:16:28 2020 -0600
+
+    RLS 1.0.0
+
+commit d8578e0f8f28c544b89d63f2e6970c3e065792ca
+Merge: 9a329ab 770092c
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Sun Nov 3 18:38:26 2019 -0500
+
+    Merge pull request #72 from regro-cf-autotick-bot/rebuild-python3801
+    
+    Rebuild for python38
+
+commit 770092cab1444d78a68a75bdf496abd346db3fb4
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sun Nov 3 22:22:32 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.18.11, conda-smithy 3.6.1, and conda-forge-pinning 2019.11.01
+
+commit 9789a44f93ad599ecff8ea965a60d24389da94db
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sun Nov 3 22:22:14 2019 +0000
+
+    bump build number
+
+commit 9a329aba89cee34300f530b51a713667d7b80e21
+Merge: 10f8714 7e23a13
+Author: William Ayd <will_ayd@innobi.io>
+Date:   Fri Nov 1 07:39:01 2019 -0700
+
+    Merge pull request #71 from WillAyd/RLS-0.25.3
+    
+    RLS 0.25.3
+
+commit 7e23a13d1f26279eecf57a473883c77ea09fe665
+Author: Will Ayd <william.ayd@icloud.com>
+Date:   Thu Oct 31 15:24:08 2019 -0700
+
+    RLS 0.25.3
+
+commit 10f8714204199ac0cc1fdc5e85991c081e668a56
+Merge: 61269f2 35e6fd4
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Fri Oct 18 16:48:06 2019 -0500
+
+    Merge pull request #70 from jbrockmendel/RLS-0.25.2
+    
+    Rls 0.25.2
+
+commit 35e6fd4303422e134ad9e4e11031e7372b8738f6
+Author: jbrockmendel <jbrockmendel@gmail.com>
+Date:   Fri Oct 18 12:49:17 2019 -0700
+
+    MNT: Re-rendered with conda-build 3.18.10, conda-smithy 3.6.0, and conda-forge-pinning 2019.10.11
+
+commit aac5ca9d70f301d59f457c45c02172ea57325b15
+Author: jbrockmendel <jbrockmendel@gmail.com>
+Date:   Fri Oct 18 12:48:36 2019 -0700
+
+    RLS 0.25.2
+
+commit 61269f2a3f9157347f3a9164562c47963dfa2850
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Sep 6 18:32:33 2019 -0500
+
+    [ci skip] ***NO_CI*** Move from appveyor to azure.
+    
+    See https://github.com/conda-forge/conda-forge.github.io/issues/857
+
+commit 9941d98a452b9548344838a4aea69390bf4904d2
+Merge: 6e5683f 56e9f82
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Thu Aug 22 12:42:38 2019 -0500
+
+    Merge pull request #68 from TomAugspurger/RLS-0.25.1
+    
+    Rls 0.25.1
+
+commit 56e9f82f8e35ff08ad42cbd9fe8d8e8fd07dbd08
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Thu Aug 22 10:28:19 2019 -0500
+
+    MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.4.1, and conda-forge-pinning 2019.08.19
+
+commit 730447a1fba0886040fc5468beb1981b9c33f96f
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Thu Aug 22 10:27:15 2019 -0500
+
+    RLS 0.25.1
+
+commit 6e5683fde2b01d8e8344459da6f8944451f77347
+Merge: 83a6b8e 68a8cb7
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Thu Jul 18 16:36:35 2019 -0500
+
+    Merge pull request #66 from WillAyd/RLS-0.25.0
+    
+    Rls 0.25.0
+
+commit 68a8cb7305c35191bef2a4286c3c904e841a25db
+Author: Will Ayd <william.ayd@icloud.com>
+Date:   Thu Jul 18 12:26:47 2019 -0700
+
+    Updated recipe
+
+commit 285a1c1f7bfefd90d4fafa794439a2d0a9a73397
+Author: Will Ayd <william.ayd@icloud.com>
+Date:   Thu Jul 18 12:22:42 2019 -0700
+
+    MNT: Re-rendered with conda-build 3.18.8, conda-smithy 3.4.1, and conda-forge-pinning 2019.07.15
+
+commit 6cb623cd17f8af5100437ca6a5fdbb9e998a59bc
+Author: Will Ayd <william.ayd@icloud.com>
+Date:   Thu Jul 18 12:06:17 2019 -0700
+
+    MNT: Re-rendered with conda-build 3.18.8, conda-smithy 3.4.1, and conda-forge-pinning 2019.07.15
+
+commit a926b297a908a2843eb66c35607e28ee8f90220e
+Author: Will Ayd <william.ayd@icloud.com>
+Date:   Thu Jul 18 12:05:55 2019 -0700
+
+    RLS 0.25.0
+
+commit 83a6b8e43263b4d03aa3deca5a4bf0f7c341fa36
+Merge: 35b6319 0d9fa35
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Sun May 26 09:05:31 2019 -0400
+
+    Merge pull request #62 from regro-cf-autotick-bot/rebuildaarch64_and_ppc64le_addition1_arch
+    
+    Arch Migrator
+
+commit 0d9fa3552fbecd1470ffbd759ff91aa970428613
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat May 25 21:45:14 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.3.4, and conda-forge-pinning 2019.05.25
+
+commit abe524ac67c668066fbb2ae5295974251fb7d033
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Sat May 25 17:44:28 2019 -0400
+
+    Rename conda_build_config.yml to conda_build_config.yaml
+
+commit 2402bf6dd8deab9d22865af6a8c9ec96d23cca87
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat May 25 21:23:05 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.3.4, and conda-forge-pinning 2019.05.25
+
+commit 1a31642f152311ef4bcfbf0ab74db4b466ae19b7
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat May 25 20:41:09 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.3.4, and conda-forge-pinning 2019.05.21
+
+commit a0580f194f2f5c2b387251026f13fc899a59c6a5
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Sat May 25 16:40:33 2019 -0400
+
+    Update meta.yaml
+
+commit 1ef8f40a9be448022953234e8e33e3131eb687c8
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Sat May 25 16:36:40 2019 -0400
+
+    Rename conda_build_config.yaml to conda_build_config.yml
+
+commit 26ba649c4ea408ddc9db443d2e317742cb7d030a
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Sat May 25 16:35:46 2019 -0400
+
+    Rename conda_buid_config.yml to conda_build_config.yaml
+
+commit 4f1af0ab4b8a4518b06217f747f5f0a3fa3325da
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Sat May 25 16:35:22 2019 -0400
+
+    Rename conda_buid_config.yaml to conda_buid_config.yml
+
+commit 9bd8aa41f19dea6e0ace34cefb61d29beb1b2d47
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Sat May 25 16:33:43 2019 -0400
+
+    Create conda_buid_config.yaml
+
+commit 916cd1b8cad715e7e56d40b4cdd22d67f13f34d6
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sat May 25 17:34:40 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.3.4, and conda-forge-pinning 2019.05.21
+
+commit 800aac9c4b04a4d11bb5e971d8cd51a2f872a955
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sat May 25 17:34:25 2019 +0000
+
+    bump build number
+
+commit 35b6319c4180f1e89533fe543e540ed16c4c569c
+Merge: 5419f95 e6d1c4a
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Wed Mar 13 07:51:40 2019 +0100
+
+    Merge pull request #61 from jorisvandenbossche/RLS-0.24.2
+    
+    Rls 0.24.2
+
+commit e6d1c4a9a4dbe9cbb21322525f924608411c9ca5
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Tue Mar 12 23:17:15 2019 +0100
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.2.14, and conda-forge-pinning 2019.03.11
+
+commit 4c8abdff6666cf3453ec520480451524345e0b8b
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Tue Mar 12 23:16:59 2019 +0100
+
+    RLS 0.24.2
+
+commit 5419f95b82e2e9fe3a2ae65dac220c3d5f9d7657
+Merge: 8e142f2 dea0900
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Sun Feb 3 20:40:52 2019 -0600
+
+    Merge pull request #60 from TomAugspurger/RLS-0.24.1
+    
+    Rls 0.24.1
+
+commit dea09007c7a03dd89fa94203e3632cc68e111a95
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Sun Feb 3 15:29:05 2019 -0600
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.2.12, and conda-forge-pinning 2019.01.29
+
+commit 836b48f743784d7827dc02c644681c3e696b1bd7
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Sun Feb 3 15:28:13 2019 -0600
+
+    RLS 0.24.1
+
+commit 8e142f20b2247414b2ba3caef477970543261b18
+Merge: d7750d1 a1ed562
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Fri Jan 25 13:05:46 2019 -0600
+
+    Merge pull request #59 from TomAugspurger/RLS-0.24.0
+    
+    Rls 0.24.0
+
+commit a1ed562024feb444990c2ab29ffcba5c3168e9a9
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Jan 25 10:28:58 2019 -0600
+
+    Rerun, sdist publishsed
+
+commit 49846b7a797740bcf822d6a76e2442209b093d83
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Jan 25 10:19:45 2019 -0600
+
+    alternate syntax
+
+commit 8d5957fdf98251a0ed11d9fd5fb72e60e215eba5
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Jan 25 10:13:15 2019 -0600
+
+    fix selector space
+
+commit 69d61db39089b1d6b57afa7670c20a6b1eb5fa87
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Jan 25 10:07:55 2019 -0600
+
+    Minimum numpy
+
+commit ba2ff23205b88519d10f1679cc9a70cf18f37df2
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Jan 25 09:45:20 2019 -0600
+
+    MNT: Re-rendered with conda-build 3.17.7, conda-smithy 3.2.9, and conda-forge-pinning 2019.01.21
+
+commit dc57357f9b5cd665c2dbf9b3546bc5efdc6403c2
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Jan 25 09:45:05 2019 -0600
+
+    RLS 0.24.0
+
+commit d7750d199f8c6d23114aa16b9d57044e45d3c237
+Merge: 1f0c2ec 88900dc
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sat Oct 13 00:55:48 2018 -0400
+
+    Merge pull request #53 from regro-cf-autotick-bot/rebuild
+    
+    Rebuild for Python 3.7, GCC 7, R 3.5.1, openBLAS 0.3.2
+
+commit 88900dce3903d24e80727f57587f3c15bff648f0
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Oct 12 18:59:17 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.10.11
+
+commit be201c6214a9557e2498b7ca9d1a37b82d01648c
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Oct 12 18:59:12 2018 +0000
+
+    bump build number
+
+commit 1f0c2ec739726ff6daad4ebc73b1f5f365451281
+Merge: ac1ed2b 8c0d604
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Aug 25 09:00:22 2018 -0700
+
+    Merge pull request #50 from ocefpaf/py37
+    
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.08.21
+
+commit 8c0d604683d285118d23faa81e41017561eb583e
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sat Aug 25 08:34:41 2018 -0700
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.08.21
+
+commit ac1ed2b6885559df5ab14a0c5b3e698a13ebc1e7
+Author: Travis CI User <travis@example.org>
+Date:   Sat Aug 4 17:13:22 2018 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit b3e1800ac9aa4e602d164a4dd8909a17faaccc5a
+Merge: 838ee54 72cdb7e
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Sat Aug 4 08:12:40 2018 -0500
+
+    Merge pull request #49 from TomAugspurger/RLS-0.23.4
+    
+    Rls 0.23.4
+
+commit 72cdb7e80d77c2e36e4029479d1687ffe0cc49c3
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Aug 3 14:48:38 2018 -0500
+
+    MNT: Re-rendered with conda-smithy 3.1.10 and pinning 2018.07.24
+
+commit 83c0aaa98c67c9579078a5f78bac526ae7de87ca
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Aug 3 14:44:24 2018 -0500
+
+    RLS 0.23.4
+
+commit 838ee546702b7ebc7d8aa71fed8aee400036311c
+Merge: 94bd8b6 d833152
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jul 26 19:35:51 2018 -0300
+
+    Merge pull request #48 from regro-cf-autotick-bot/compiler_migration2
+    
+    Migrate to Jinja2 compiler syntax
+
+commit d8331520098e79b190abfae1c4093470cccc28bc
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jul 26 14:58:57 2018 -0300
+
+    Update meta.yaml
+
+commit fee95a78bf1ceb9cfb9b5f6d11073eedfd49913e
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Jul 26 16:21:37 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.1.8 and pinning 2018.07.24
+
+commit 964811210e6359217f151e9431c693e4bc490766
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Jul 26 16:21:31 2018 +0000
+
+    migrated to Jinja2 compiler syntax build
+
+commit 94bd8b6bbed3b287fada69e66bece100f60dd15c
+Merge: 2be359d 50e8ba8
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Sat Jul 7 13:05:18 2018 -0500
+
+    Merge pull request #47 from TomAugspurger/RLS-0.23.3
+    
+    RLS 0.23.3
+
+commit 50e8ba8116428f984b277fb2508f6664bcf0214d
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Sat Jul 7 11:36:55 2018 -0500
+
+    RLS 0.23.3
+
+commit 2be359dac45656f6593978bff6788bbdbef9882e
+Merge: 70d481e b7865ab
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Thu Jul 5 19:54:03 2018 -0500
+
+    Merge pull request #46 from TomAugspurger/RLS-0.23.2
+    
+    RLS 0.23.2
+
+commit b7865ab23f5279f740ef6213532444a3e79ab7d7
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Thu Jul 5 17:27:45 2018 -0500
+
+    RLS 0.23.2
+
+commit 70d481e91062a847c63ad1b7dc46812d2732a597
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue Jun 12 13:52:16 2018 -0500
+
+    MNT: Re-rendered with conda-smithy 3.1.5 and pinning 2018.05.22
+
+commit abf54897e37e95f95bfc0aad3b620322589e1c3d
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue Jun 12 13:42:52 2018 -0500
+
+    RLS 0.23.1
+
+commit aa7372fdfe115c644f0552cb4d51dcae04e8a1d8
+Merge: 83c2a3c 8de86cf
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Sun May 20 16:06:44 2018 -0500
+
+    Merge pull request #44 from daler/pin-python-dateutils
+    
+    Pin python dateutils
+
+commit 8de86cf2135b2d3d3e9cff83516f2fd8858e1fdf
+Author: Ryan Dale <dalerr@niddk.nih.gov>
+Date:   Sun May 20 14:11:54 2018 -0400
+
+    bump build number
+
+commit 9395c49aafbf70f29625f4bf93e6a7c84da0f8f2
+Author: Ryan Dale <dalerr@niddk.nih.gov>
+Date:   Sun May 20 14:10:37 2018 -0400
+
+    pin python-dateutils
+
+commit 83c2a3c8aafcfeaaba89251c6dc44f8eb7b8de3e
+Merge: c5f0fe8 2ff98bc
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Tue May 15 18:07:03 2018 -0500
+
+    Merge pull request #43 from TomAugspurger/RLS-0.23.0
+    
+    RLS 0.23.0
+
+commit 2ff98bc6a62e9aa2cb51be7ea477b3a4e5653589
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue May 15 15:42:44 2018 -0500
+
+    Fixed name subs
+
+commit eca4c77d4bc6bcd304dd08d8acf24d7952375ff4
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue May 15 15:39:14 2018 -0500
+
+    change back to GH-release for source
+
+commit f38cbc4f15b2d02d9974837fa3bc08c5fa2c9029
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue May 15 15:27:58 2018 -0500
+
+    RLS 0.23.0
+
+commit c5f0fe817349384ec7185db139f27f7c749fdf44
+Merge: 6882542 35ca614
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed May 2 12:47:36 2018 -0300
+
+    Merge pull request #42 from ocefpaf/update_recipe
+    
+    Update recipe
+
+commit 35ca614c7b4cc31ded7e60512302aa33c2c27ac0
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Wed May 2 09:30:31 2018 -0300
+
+    update recipe
+
+commit 195e89dcd8e438ad63f91de24352399441f4d9bd
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Wed May 2 09:30:21 2018 -0300
+
+    rerender
+
+commit 68825429f73be459800c57666a2b56983d1545b2
+Merge: 8213d5e be8881c
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Sat Dec 30 16:56:57 2017 -0600
+
+    Merge pull request #39 from TomAugspurger/RLS-0.22.0
+    
+    RLS: v0.22.0
+
+commit be8881ca307c13730320f7fa962bdc63d2fd3681
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat Dec 30 20:11:20 2017 +0000
+
+    MNT: Re-rendered with conda-smithy 2.4.5
+
+commit 01ca5f38708e24676b3c07b8a6753cd16b6548ce
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Sat Dec 30 14:07:07 2017 -0600
+
+    RLS: v0.22.0
+
+commit 8213d5eb488b651cdfdb200355257edf0822154d
+Merge: 937d201 4a60794
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Tue Dec 12 12:05:51 2017 -0600
+
+    Merge pull request #38 from TomAugspurger/RLS-0.21.1
+    
+    RLS: 0.21.1
+
+commit 4a6079438fe97fd681d33e1164353b77a4ee0ee3
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Mon Dec 11 22:04:36 2017 -0600
+
+    RLS: 0.21.1
+
+commit 937d201b291b843d3308b8f9567c958eb8d25c2c
+Merge: 6163cf9 732b8ae
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Sat Oct 28 13:39:49 2017 -0500
+
+    Merge pull request #36 from TomAugspurger/rls-0.21.0
+    
+    RLS: 0.21.0
+
+commit 732b8ae98b446f58069fa70fb3a1de3e8e973e41
+Merge: d6de8a2 c8a8fe4
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Oct 27 11:19:15 2017 -0500
+
+    Merge branch 'rls-0.21.0' of https://github.com/TomAugspurger/pandas-feedstock into rls-0.21.0
+
+commit d6de8a281d433d61a26398480047e1843e61722d
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Oct 27 11:18:41 2017 -0500
+
+    fixed version
+
+commit c8a8fe4cb824d5b888338410f5b8715271cc5e98
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Oct 27 16:18:53 2017 +0000
+
+    MNT: Re-rendered with conda-smithy 2.4.2
+
+commit 4eca5d63d6052638c42dbd55618f82b466d3c33c
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Oct 27 11:14:36 2017 -0500
+
+    RLS: 0.21.0
+
+commit 6163cf98654598d5abd80031cd1325f9190375ea
+Merge: 35fb07a d3bc94c
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Wed Oct 18 07:45:33 2017 -0500
+
+    Merge pull request #35 from TomAugspurger/RLS-0.21.0rc1
+    
+    RLS v0.21.0rc1
+
+commit d3bc94c09be6405c87bab8d2566177b6a52ec469
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Thu Oct 12 22:04:05 2017 -0500
+
+    Update numpy versions
+
+commit aedea61e797317964c36f0930847c3e2dd5d4711
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Oct 13 02:42:09 2017 +0000
+
+    MNT: Re-rendered with conda-smithy 2.4.2
+
+commit c30370998acde858167e8fe886b0ee49615a6ac2
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Thu Oct 12 21:38:37 2017 -0500
+
+    RLS v0.21.0rc1
+
+commit 35fb07a65711f8eaf0432f2cbbebb5d2c216e039
+Merge: e078223 194fdf0
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Aug 28 21:24:19 2017 -0300
+
+    Merge pull request #34 from ocefpaf/rerender_py34
+    
+    Re-render for Python 3.4
+
+commit 194fdf0fd2868c0ff87a43cce6939af1a6eb51a0
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Aug 28 14:31:22 2017 -0300
+
+    update numpy matrix
+
+commit de000ebb3eecffbb932efa485e28ffdcb6ea7071
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Aug 28 13:48:18 2017 -0300
+
+    rerender for Python 3.4
+
+commit e0782238197c598266f91d43198ab72b527b3b0f
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 19:36:21 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit b4df254fe99254cedc3c656a8445fc1c917e52d7
+Merge: 66cde64 f0532b9
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Jul 15 20:01:09 2017 -0300
+
+    Merge pull request #32 from jjhelmus/no_np_ver
+    
+    Build packages compatible with multiple NumPy version
+
+commit f0532b9e14d5aa21952fa8b87893bb7cf8c913fd
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Sat Jul 8 07:06:55 2017 -0500
+
+    MNT: Re-rendered with conda-smithy 2.3.2
+
+commit 2fb1c6bcd40a5a1c75d99cc99a4121bac5f2a6fc
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Sat Jul 8 06:54:41 2017 -0500
+
+    Build packages compatible with multiple numpys
+    
+    NumPy maintains backwards compatibility and therefore extensions built with a
+    older version of NumPy will work with newer versions. To take advantage of this
+    and build a single pandas package that will work with multiple version of
+    NumPy, the oldest version of NumPy provided for a particular Python
+    version (Python 3.5 - 1.9 Python 3.6 - 1.11) or in the case of Python 2.7
+    the minimum version required by Pandas (1.7) is pinned as a build requirement.
+    The run requirement is then specified as any NumPy version greater than or
+    equal to this pinned version.
+
+commit 66cde6496b266fab0954899838e50f1e8728717b
+Merge: be19ebc 70f578f
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Fri Jul 7 21:07:09 2017 -0500
+
+    Merge pull request #31 from TomAugspurger/0.20.3
+    
+    RLS: 0.20.3
+
+commit 70f578f3868e9f727d1594e21d49cbf74c05666a
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Jul 7 13:01:23 2017 -0500
+
+    Fixed url
+
+commit 2566cb5c934a3cc95c24a0443874a69e63e9da05
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri Jul 7 12:42:04 2017 -0500
+
+    RLS: 0.20.3
+
+commit be19ebc861025d666231611cf168de8fccb06292
+Merge: de6c60f ea15614
+Author: Jeff Reback <jeff@reback.net>
+Date:   Mon Jun 12 08:11:53 2017 -0400
+
+    Merge pull request #30 from jreback/rerender
+    
+    MNT: Re-rendered with conda-smithy 2.3.1
+
+commit ea156144e44171628073000c46ff1617667f0039
+Author: Jeff Reback <jeff.reback@twosigma.com>
+Date:   Mon Jun 12 06:26:45 2017 -0400
+
+    MNT: Re-rendered with conda-smithy 2.3.1
+
+commit de6c60f59848c5b53757dadb3cf832da0f689f1d
+Merge: 234f3c6 c7a64b7
+Author: Jeff Reback <jeff@reback.net>
+Date:   Mon Jun 12 06:22:12 2017 -0400
+
+    Merge pull request #28 from jakirkham/cleanup
+    
+    Minor cleanup
+
+commit c7a64b79614da99921d6282b05b5be3aa8f5b37f
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Sat Jun 10 12:36:18 2017 -0400
+
+    Bump build number to 1
+    
+    Needed to build packages that have the license file.
+
+commit 0e2bb136fafe05e4450a64bfc282a1f7828d7de7
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Sat Jun 10 12:36:02 2017 -0400
+
+    Package the license file
+
+commit fd47ca7dd33db10d6f31496abb0250ae72095564
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Sat Jun 10 12:34:17 2017 -0400
+
+    Get source from PyPI
+    
+    Avoids having potentially changing checksums. Thus it is easier to be
+    confident about the state of the source.
+
+commit 234f3c65e5d0baa6d262e37682d8a0e202b18318
+Merge: fc12a61 1b43192
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Sun Jun 4 18:35:07 2017 -0500
+
+    Merge pull request #26 from TomAugspurger/v0.20.2
+    
+    RLS: 0.20.2
+
+commit 1b4319235aadaea57cc02cccf516144eba7a6eb5
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Sun Jun 4 16:04:12 2017 -0500
+
+    RLS: 0.20.2
+
+commit fc12a6135efa90f34135a7b769cff350f8707ed8
+Merge: 9f10e12 8a26217
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Mon May 8 12:58:24 2017 +0200
+
+    Merge pull request #25 from jorisvandenbossche/release-0.20.1
+    
+    Update checksum
+
+commit 8a26217b5d671b11c3212743c447956cb80f40e8
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Mon May 8 10:56:29 2017 +0200
+
+    update
+
+commit 978f40e319cbd12578fdb81f5fa98dda0b36465c
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Mon May 8 09:17:54 2017 +0200
+
+    Update checksum
+
+commit 9f10e12c6d92447538e2e6ff0cf6b435685f21bb
+Merge: 779ef0e 66c4f66
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Fri May 5 14:36:44 2017 -0500
+
+    Merge pull request #24 from TomAugspurger/v0.20.1
+    
+    RLS: 0.20.1
+
+commit 66c4f667afb2d0aa50cc55699f1b10b2d90c509e
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri May 5 14:11:48 2017 -0500
+
+    Set build number to 0
+
+commit ac2ff791755f08f91b8a35f403ab2737acc1fa9f
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Fri May 5 12:18:44 2017 -0500
+
+    RLS: 0.20.1
+
+commit 779ef0e903f7930979444947f0781a0970d90317
+Merge: 607a8d3 c5d8450
+Author: Tom Augspurger <TomAugspurger@users.noreply.github.com>
+Date:   Thu May 4 22:44:49 2017 -0500
+
+    Merge pull request #23 from TomAugspurger/v0.20.0
+    
+    RLS: 0.20.0
+
+commit c5d8450b6a11f6336206dcdc8343f9b5e6191428
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Thu May 4 21:48:01 2017 -0500
+
+    RLS: 0.20.0
+
+commit 607a8d3faee5ed3d8d4f74247e24fa40aa31e378
+Merge: d3add55 2cdb437
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Tue Apr 18 16:49:00 2017 +0200
+
+    Merge pull request #22 from TomAugspurger/add-tom
+    
+    Added TomAugspurger as maintainer
+
+commit 2cdb437105ea839e1e58119c9e9fa36b60961b4c
+Author: Tom Augspurger <tom.w.augspurger@gmail.com>
+Date:   Tue Apr 18 09:42:57 2017 -0500
+
+    Added TomAugspurger as maintainer
+    
+    [ci skip]
+
+commit d3add55f1b4a6f79e28e687bba14c1b28d5cfa8f
+Merge: c9f1b2a d490c1e
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sat Apr 8 16:02:40 2017 -0400
+
+    Merge pull request #21 from jakirkham/re-render__master__2.2.2
+    
+    Re-render 2.2.2 and NumPy 1.12 on Windows
+
+commit d490c1ed1ee256d02bad08efcddc1060ae944b45
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Sat Apr 8 14:50:08 2017 -0400
+
+    MNT: Re-rendered with conda-smithy 2.2.2
+
+commit c9f1b2a65d414e755de06b885a05f14f4ce90e94
+Merge: b4013bc 0cb25f4
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Jan 31 14:24:15 2017 -0300
+
+    Merge pull request #19 from astaric/np1.12
+    
+    Build packages for numpy 1.12
+
+commit 0cb25f4cc981185f1fec5f69368350871c540ee6
+Author: astaric <anze.staric@gmail.com>
+Date:   Mon Jan 30 11:04:17 2017 +0100
+
+    Update SHA
+
+commit a093553fdd6035707020798f03b9bdc3cd69c405
+Author: astaric <anze.staric@gmail.com>
+Date:   Mon Jan 30 10:35:54 2017 +0100
+
+    MNT: Re-rendered with conda-smithy 2.0.1
+
+commit b4013bc6c95502e78824e10666b2497fef804a48
+Merge: bb5a191 06397cc
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Dec 25 18:04:40 2016 -0300
+
+    Merge pull request #17 from ocefpaf/conda_build_2
+    
+    Build with conda-build 2
+
+commit 06397cc7f04a5c05e9381a0d558a5911f88d4f3f
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Dec 25 16:27:55 2016 -0300
+
+    dedent and build with conda-build 2
+
+commit de3d1eeee2776b3a3d992e7b041eedac047a7b8f
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Dec 25 16:27:33 2016 -0300
+
+    rerendered with auto with conda-build 2
+
+commit bb5a19140ac8e0a9f348491800f948eed0615346
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Sat Dec 24 17:57:06 2016 +0100
+
+    Release 0.19.2
+
+commit 300ec3a07217d46470d79a2ed9caab7ae7f1d73b
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Sat Dec 24 17:40:15 2016 +0100
+
+    MNT: Re-rendered with conda-smithy 1.6.0
+
+commit 9f8af6908bcc4a2e1a7d963894fb74eac5435438
+Merge: d722662 e58e574
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Fri Nov 4 11:38:26 2016 +0100
+
+    Merge pull request #14 from jorisvandenbossche/release-0.19.1
+    
+    Release 0.19.1
+
+commit e58e5746f117d4d1be7c5b352fc86df2d3970628
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Fri Nov 4 09:21:41 2016 +0100
+
+    MNT: Re-rendered with conda-smithy 1.4.6
+
+commit 8eb2bef7cb155ed6d69ef5c356399c7ef61918bb
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Thu Nov 3 16:36:52 2016 +0100
+
+    Release 0.19.1
+
+commit d72266236203880e31a727657eaeb5582e13a3fe
+Merge: b6121c5 26a854c
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Oct 15 19:43:16 2016 -0300
+
+    Merge pull request #12 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 26a854c81dd50f7aa2afd582ff0dcce8c730d743
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat Oct 15 21:10:48 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.3.3.
+
+commit b6121c5d8b9fc74bff272fe10333147feb345952
+Merge: 6f7df6a 653da99
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Thu Oct 6 19:22:15 2016 -0400
+
+    Merge pull request #10 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 653da99608b5c36e483cb4b70c2433fb572d076b
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Thu Oct 6 11:25:20 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.3.2.
+
+commit 6f7df6a4834367e3580914a0ec79adf60500f3a0
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Sun Oct 2 19:32:27 2016 +0200
+
+    MNT: rerender with conda-smithy 1.3.1
+
+commit afe2908e6b1e1e8afc8e76bd4a094c1addb69f2c
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Sun Oct 2 17:33:40 2016 +0200
+
+    TEMP: comment inspect for release
+
+commit 48e3d6760f49666588d8ba7e398822465fca6716
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Sun Oct 2 16:24:45 2016 +0200
+
+    Release 0.19.0
+
+commit 41f674d92fbdb99f75d963bf848728f41b83d5f5
+Merge: fa4eebf d6bd3d0
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Tue Sep 13 10:58:00 2016 +0100
+
+    Merge pull request #7 from jorisvandenbossche/fix-double-me
+    
+    Fix double maintainer
+
+commit d6bd3d0e4e892acb3920b3101c7f14a0b99d6124
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Wed Sep 7 16:13:52 2016 +0200
+
+    Fix double maintainer
+
+commit fa4eebf489f8f6acba45a86ecf17cbf4069aee87
+Merge: 3545dd1 12792a1
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Wed Sep 7 07:41:52 2016 -0500
+
+    Merge pull request #6 from jorisvandenbossche/add-myself
+    
+    Add myself (jorisvandenbossche) as maintainer
+
+commit 3545dd1e22bd50e95fd4ec90da8a86f52883bce6
+Author: Jeff Reback <jeff@reback.net>
+Date:   Wed Sep 7 08:38:46 2016 -0400
+
+    add jorisvandenbossche as a maintainer
+
+commit 12792a1e3e3e8b2921e0756890fcc71f1411bbc2
+Author: Joris Van den Bossche <jorisvandenbossche@gmail.com>
+Date:   Wed Sep 7 14:35:33 2016 +0200
+
+    Add myself (jorisvandenbossche) as maintainer
+
+commit 5fd5ddffd8a1817c0f488a5f4b99a8705d37ac16
+Merge: 55f4cfb 371f148
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Jul 25 14:35:55 2016 -0300
+
+    Merge pull request #5 from ocefpaf/inspect_linkages
+    
+    Add inspect linkages test
+
+commit 371f1488b66e1320a579fa970884b6df2c878f77
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Jul 24 20:22:34 2016 -0300
+
+    Add inspect linkages test
+
+commit 55f4cfb23b85fed302464236732f8daa688c5059
+Merge: 7c90629 c60e504
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Jul 24 12:10:39 2016 -0300
+
+    Merge pull request #2 from ocefpaf/bump
+    
+    Bump
+
+commit c60e50401d3a09fe5623e1c904a37b8ce97f12e8
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Jun 22 10:56:40 2016 -0300
+
+    Bump
+
+commit 7c906298d2f78cace52b7937d4da10b341d095e8
+Merge: 0c097bd 5b1b2c2
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sat Jun 4 16:06:54 2016 -0400
+
+    Merge pull request #1 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit 5b1b2c2d50f1a162a0c636dcbdf4e5d1d5339a6e
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Mon May 16 04:44:03 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit 0c097bdc9ee9f53fd413b283e2e71b241c4b5f21
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue May 3 19:36:51 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 843ca9b3abfa0ee38e082d756b86df3804399843
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue May 3 19:36:00 2016 +0000
+
+    Initial commit of the pandas feedstock.

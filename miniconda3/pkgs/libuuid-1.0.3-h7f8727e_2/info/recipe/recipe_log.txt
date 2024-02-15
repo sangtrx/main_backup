@@ -1,0 +1,179 @@
+commit ee48214a8eb5b71a76481368c589bcf873b13752
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Wed Oct 6 09:48:33 2021 +0200
+
+    update download url
+
+commit 02c40a84f299d87449e2ba031322b5ac3c8ec68f
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Thu Sep 2 10:53:01 2021 +0200
+
+    add osx-arm64 support
+
+commit 63272d23bf7b2198e1a7086feb2f091e034a6ef7
+Author: Ilan Schnell <ilanschnell@gmail.com>
+Date:   Thu Mar 4 13:10:40 2021 -0600
+
+    convert tab to spaces
+
+commit b3037a8bf24def4e92907a6203506a17659a7d7f
+Author: Ilan Schnell <ilanschnell@gmail.com>
+Date:   Thu Mar 4 12:59:36 2021 -0600
+
+    add make as build dependency
+
+commit 55c7f6a14d2f7fa11a2f1d2a2574ae11b8a71fa4
+Author: Cheng H. Lee <clee@anaconda.com>
+Date:   Wed Feb 3 19:23:21 2021 -0600
+
+    Update source URL
+
+commit 6d2bbf2fb3cff9a44124887de311ca9648df34e2
+Author: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date:   Sat Jan 20 07:31:09 2018 -0500
+
+    Specify $BUILD to configure script
+
+commit a3a9811f6989087a3b10340da57677f4a09689eb
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Thu Jan 11 11:01:12 2018 -0600
+
+    add run exports, adjust source
+    
+    original source no longer works, update to sourceforge mirror
+
+commit 48c09d81e645098e94e8e6d9dc546ca93e7739a1
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Wed Nov 1 13:50:02 2017 -0500
+
+    add run_exports
+
+commit 77540dff30abda857f91e76086c73611c784bcd8
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Sep 8 09:43:32 2017 +0000
+
+    Add a C compiler
+
+commit bc3f03593aeaff66f865ed60aa1bcba52c5d282a
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Aug 27 17:28:09 2017 +0100
+
+    Generalize logging
+
+commit 84edee801fd106538dc85ea6647ec23bd5907869
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Aug 18 12:51:44 2017 +0100
+
+    Fix inspect linkages test
+
+commit 5b8eb27348fec913fb86b86da7c142b87011e1f6
+Merge: 4c7e463 f3592b7
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Jul 27 22:25:42 2016 -0300
+
+    Merge pull request #7 from ocefpaf/bump
+    
+    Bump build number
+
+commit f3592b74eacc9d6f02ccbd1c241f61edf317eb30
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Jul 27 22:23:44 2016 -0300
+
+    Bump build number
+
+commit 4c7e4636de110cd07f8a5c35cb70c46f2eda7ba5
+Merge: 5c2cdd5 f88887d
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Jul 27 21:58:26 2016 -0300
+
+    Merge pull request #6 from ocefpaf/updates
+    
+    Updates
+
+commit f88887dcc1b73b60898522ebe76781c27e65e905
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Jul 27 21:51:42 2016 -0300
+
+    inspect linkages
+
+commit 07e5598426bc33e71a3e445de46cd3dc5bd16fa8
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Jul 27 21:51:18 2016 -0300
+
+    rerender
+
+commit 5c2cdd533cddc36ddb7d6385bcd8f9ad96db0c98
+Merge: 945a892 6530135
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue May 17 08:52:12 2016 -0300
+
+    Merge pull request #5 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit 653013545a0a77d6c40fe4a97123afbe48faee7e
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Mon May 16 21:45:15 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit 945a892ca8065a0dc67b97e47d71a01f96f63587
+Merge: 8c2685b fa1f7c5
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri May 13 10:13:38 2016 -0300
+
+    Merge pull request #4 from ocefpaf/fix_lint
+    
+    Fix lint
+
+commit fa1f7c5ddcecf618ca8c636fc50a779e9110218d
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Fri May 13 10:06:13 2016 -0300
+
+    Fix lint
+
+commit 8c2685b9f418767f8306069b76638e84ef05d080
+Merge: b5b9d1c f582140
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri May 13 09:57:49 2016 -0300
+
+    Merge pull request #3 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit f582140b79daa6398862a7dff92009b087f406aa
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri May 13 12:56:29 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit b5b9d1c8930d8e497dcfee8fee282edd652ee97e
+Merge: 5a1dde5 ef91996
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Apr 4 18:17:58 2016 -0300
+
+    Merge pull request #1 from ocefpaf/rerender
+    
+    rerender
+
+commit ef919967d2d2302801bfb242507ced2840310a5b
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Apr 4 18:07:41 2016 -0300
+
+    rerender
+
+commit 5a1dde5616807d44ac6b53230062c899fd999ce7
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Mar 19 19:58:02 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 7a2072a6a8a0f4fe8e87734c86d55c4bf8c50b48
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Mar 19 19:56:56 2016 +0000
+
+    Initial commit of the libuuid feedstock.

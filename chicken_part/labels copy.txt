@@ -1,0 +1,9 @@
+wing
+breast
+tender
+carcass
+butt
+thigh
+drumstick
+skin
+fat

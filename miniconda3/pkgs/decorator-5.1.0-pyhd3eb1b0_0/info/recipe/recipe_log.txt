@@ -1,0 +1,287 @@
+commit 12d4d73f75fc206bd75c1da85281d8aa6a81bd43
+Author: Dan Komisar <dkomisar@anaconda.com>
+Date:   Mon Sep 27 16:30:22 2021 -0400
+
+    update doc_url
+
+commit 2af100811fdfa925aaebc95c4a177258bbdbb6fd
+Author: Dan Komisar <dkomisar@anaconda.com>
+Date:   Mon Sep 27 16:23:47 2021 -0400
+
+    add setuptools and wheel
+
+commit a60e497bbabb24a789f879f4812ae771bfb40209
+Author: Dan Komisar <dkomisar@anaconda.com>
+Date:   Mon Sep 27 16:23:03 2021 -0400
+
+    fix last commit
+
+commit d63a63775aebff2073cc5afe0b959c11645037e7
+Author: Dan Komisar <dkomisar@anaconda.com>
+Date:   Mon Sep 27 16:18:52 2021 -0400
+
+    remove python >= 3.5
+
+commit 5a9106d507c454b343b43bc2b4c376943a1a21e1
+Author: Dan Komisar <dkomisar@anaconda.com>
+Date:   Mon Sep 27 16:16:52 2021 -0400
+
+    update to 5.1.0
+
+commit 811e894750501cbbc73f9f030bea4c2d85766a3d
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Mon May 17 13:42:12 2021 +0000
+
+    DOR update to 5.0.9
+
+commit c9199b672009b33eee9c130dd0848dcb0e71314d
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Thu May 13 15:20:49 2021 +0300
+
+    Fix the License from upstream source
+
+commit 915e2f2002fac963b71dc51e6193453b6947604a
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Wed May 12 13:55:45 2021 +0000
+
+    DOR update to 5.0.7
+
+commit b507cad477239aa14704fa5fbc8f73e66b27b804
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Thu Apr 8 20:33:07 2021 +0000
+
+    DOR update to 5.0.6
+
+commit 4ed47e7dcc79f65ae062f63d035dad9b5562566a
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Mon Apr 5 20:34:51 2021 +0000
+
+    DOR update to 5.0.5
+
+commit a2d96a5f8b24b54e4af14f05e0f2b93525bb8611
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Sat Apr 3 19:36:40 2021 +0000
+
+    DOR update to 5.0.4
+
+commit 72c35fb8b97112f84127a382dfc5418605d1b980
+Author: Anju Thomas <anthomas@anaconda.com>
+Date:   Fri Apr 2 14:40:56 2021 -0500
+
+    Added constraint Python>=3.5
+
+commit 074ecbd0e648b18ee1f6b0448fb0efc1c3218962
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Fri Apr 2 17:18:13 2021 +0000
+
+    DOR update to 5.0.3
+
+commit 181ce88baef0033db436cb292c599e719abd8e5e
+Author: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date:   Sun Jul 30 14:55:04 2017 +0000
+
+    Update about section
+
+commit f11fc332d7e6d0c85a508b8fec1eb29d009a3a0b
+Author: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date:   Sun Jul 30 14:50:27 2017 +0000
+
+    Make recipe cross-compile capable
+
+commit fadb04228a1a17127eec90856301eb7981c88487
+Author: conda-forge-admin <conda-forge-admin@email.com>
+Date:   Mon Mar 2 18:55:26 2020 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration AutomergeAndRerender
+
+commit 99e77170b9ee86f885e8c4b3323a4cae1b226cb0
+Merge: 9152853 5ab8724
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Mar 2 10:02:26 2020 -0300
+
+    Merge pull request #11 from ocefpaf/add_pip-check
+    
+    Add pip check
+
+commit 5ab8724aa67f36fae32f2c0b0241f3becb14f262
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Mar 2 09:55:35 2020 -0300
+
+    MNT: Re-rendered with conda-build 3.18.11, conda-smithy 3.6.8, and conda-forge-pinning 2020.02.20
+
+commit 6b77589dab9c06a239e9b8ed5acfad39b058a5a5
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Mar 2 09:53:48 2020 -0300
+
+    add pip check
+
+commit 9152853a1478d8a3862928d3ec62ee3cf67fbb45
+Merge: 7c30b0a 7e5ebf1
+Author: Anthony Scopatz <scopatz@gmail.com>
+Date:   Sat Feb 29 16:42:52 2020 -0500
+
+    Merge pull request #10 from conda-forge-linter/conda_forge_admin_9
+    
+    [ci skip] ***NO_CI*** adding bot automerge
+
+commit 7e5ebf101a23948c796c7db77199aa4374c1f326
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat Feb 29 21:33:20 2020 +0000
+
+    [ci skip] ***NO_CI*** added bot automerge
+
+commit 7c30b0a86eecc81c2bd0e19a5bf80530c17fac30
+Merge: 6e3b8fa 1519cdd
+Author: Anthony Scopatz <scopatz@gmail.com>
+Date:   Sat Feb 29 16:29:48 2020 -0500
+
+    Merge pull request #8 from regro-cf-autotick-bot/4.4.2
+    
+    decorator v4.4.2
+
+commit 1519cddf7a10be2b08d1f6d13936290faaf4a6de
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sat Feb 29 06:22:02 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.18.11, conda-smithy 3.6.8, and conda-forge-pinning 2020.02.20
+
+commit a504856b86fff9881898d00b9002adbf4efea210
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sat Feb 29 06:21:29 2020 +0000
+
+    updated v4.4.2
+
+commit 6e3b8fa29ad87a561c41b56091b7ca469c65e924
+Merge: 448a1b1 b48310c
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Oct 27 08:34:18 2019 -0300
+
+    Merge pull request #6 from regro-cf-autotick-bot/4.4.1
+    
+    decorator v4.4.1
+
+commit b48310ce2bd8e11ab2d570f8cd68621a2a6f50d3
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sun Oct 27 08:19:04 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.18.10, conda-smithy 3.6.0, and conda-forge-pinning 2019.10.25
+
+commit d6fb0b1bd7194c5c7ca65e670d8355cbb7483f3c
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sun Oct 27 08:18:39 2019 +0000
+
+    updated v4.4.1
+
+commit 448a1b183f454a5bfd7e73d42f4b9c569c712e6a
+Merge: 7467035 50d01a3
+Author: Anthony Scopatz <scopatz@gmail.com>
+Date:   Sat Mar 16 23:40:15 2019 -0400
+
+    Merge pull request #4 from regro-cf-autotick-bot/4.4.0
+    
+    decorator v4.4.0
+
+commit 50d01a35909dd932a0bbba142a960ab986f6f358
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sat Mar 16 21:26:43 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.2.14, and conda-forge-pinning 2019.03.15
+
+commit 6f2d9e1b76ad12c5a2bcec001026214a6cb5f4b3
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sat Mar 16 21:26:33 2019 +0000
+
+    updated v4.4.0
+
+commit 74670350bce1e73b492168226e3cd7540a496782
+Merge: b299e8a 50bd11a
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Jan 25 20:10:25 2019 -0200
+
+    Merge pull request #3 from regro-cf-autotick-bot/4.3.2
+    
+    decorator v4.3.2
+
+commit 50bd11a34d6c28131a44f8465bcbb89d3076584a
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Jan 25 19:36:10 2019 -0200
+
+    Update meta.yaml
+
+commit 7ac4f96ef38811820c3ee7bd4093c5cf4c6a842b
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Jan 25 21:24:16 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.7, conda-smithy 3.2.9, and conda-forge-pinning 2019.01.21
+
+commit 2b4aadec46d20ca2012582ccde45647fc5aa5b23
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Jan 25 21:24:11 2019 +0000
+
+    updated v4.3.2
+
+commit b299e8a1490ab11b72a0adafa22d7e0881479997
+Author: Travis CI User <travis@example.org>
+Date:   Sat Aug 4 18:20:18 2018 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit 72f4418a504c1ba8652cedaacfee0a5fb69f56a7
+Merge: 040e6c9 366acec
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Apr 15 14:55:10 2018 -0300
+
+    Merge pull request #2 from regro-cf-autotick-bot/4.3.0
+    
+    decorator v4.3.0
+
+commit 366acec5a65ca87fd5b53997f36e8956b5e0a5df
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sun Apr 15 17:51:02 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 2.4.5
+
+commit 5f2f5f5763cdcafa4ef7e1b5c089ae571c55b30e
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sun Apr 15 17:50:30 2018 +0000
+
+    Add noarch:python option
+
+commit bdbabc4c6517c4eb17b581c9cd9f5d9721c68d4e
+Author: Travis CI User <travis@example.org>
+Date:   Sun Apr 15 17:11:48 2018 +0000
+
+    updated v4.3.0
+
+commit 040e6c975fdda8208b7c2203eddc132a46d93f3e
+Merge: 6a564aa e991b06
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Mar 1 09:46:47 2018 -0300
+
+    Merge pull request #1 from regro-cf-autotick-bot/4.2.1
+    
+    decorator v4.2.1
+
+commit e991b064e55bc891f2d4d519f4ff288ef753381e
+Author: Travis CI User <travis@example.org>
+Date:   Thu Mar 1 04:59:11 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 2.4.5
+
+commit f53e80e2cc2c768a8859f8d3be6c4ce9c82cab5f
+Author: Travis CI User <travis@example.org>
+Date:   Thu Mar 1 04:58:20 2018 +0000
+
+    updated v4.2.1
+
+commit 6a564aa066531efd9b8bb4ceed672e19a4d74401
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue Aug 15 13:10:21 2017 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 29c169cb09f9b108427cb8eceb6cd65e9975c135
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue Aug 15 13:07:44 2017 +0000
+
+    Initial feedstock commit with conda-smithy 2.3.3.

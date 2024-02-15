@@ -1,0 +1,83 @@
+commit 407f22128d829a2fa4cfd9784367f82f6a74f9dd
+Merge: 0cbc604 fb7953f
+Author: martinRenou <martin.renou@gmail.com>
+Date:   Tue Apr 20 18:17:20 2021 +0200
+
+    Merge pull request #4 from martinRenou/update_maintainers
+    
+    Update maintainers
+
+commit fb7953f795ec65503d52de97bbf3fdf3fc225f9d
+Author: martinRenou <martin.renou@gmail.com>
+Date:   Tue Apr 20 17:59:04 2021 +0200
+
+    Update maintainers
+
+commit 0cbc604a4f706684da88db2d9ae1b66605fa5657
+Merge: d24899e 29ff227
+Author: Sylvain Corlay <sylvain.corlay@gmail.com>
+Date:   Tue Apr 20 17:54:39 2021 +0200
+
+    Merge pull request #3 from martinRenou/update_url
+    
+    Update project URL
+
+commit 29ff227b0631281ab0574764a08737bb360dc22b
+Author: martinRenou <martin.renou@gmail.com>
+Date:   Tue Apr 20 17:42:52 2021 +0200
+
+    Update project URL
+
+commit d24899e33a0db71ded59576e4be87a048ae7afd9
+Merge: 2ffeb67 3c0741f
+Author: martinRenou <martin.renou@gmail.com>
+Date:   Tue Apr 20 10:16:27 2021 +0200
+
+    Merge pull request #2 from martinRenou/release_0.1.2
+    
+    Release 0.1.2
+
+commit 3c0741fd8b5ea7a9a06ba43a03781553cc75f5b7
+Author: martinRenou <martin.renou@gmail.com>
+Date:   Tue Apr 20 10:07:55 2021 +0200
+
+    Release 0.1.2
+
+commit 2ffeb67a38b79997fe6f1792fc1b3885a1f6b64d
+Merge: 64ccee1 3e75e2a
+Author: martinRenou <martin.renou@gmail.com>
+Date:   Thu Apr 15 09:32:45 2021 +0200
+
+    Merge pull request #1 from regro-cf-autotick-bot/matplotlib-to-matplotlib-base-migration-0_h753343
+    
+    Suggestion: depend on matplotlib-base instead of matplotlib
+
+commit 3e75e2af39c3a6aa77fcee33b73f541e005dd369
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Wed Apr 14 20:15:26 2021 +0000
+
+    MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.10.0, and conda-forge-pinning 2021.04.14.08.37.12
+
+commit ee833f8c7f8ec99e286f8f5f0aeb95cea322107a
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Wed Apr 14 20:15:20 2021 +0000
+
+    use matplotlib-base instead of matplotlib
+
+commit 64ccee1c39c7378a57c51c06a321e62ad43c245e
+Author: cf-blacksmithy <41433396+cf-blacksmithy@users.noreply.github.com>
+Date:   Wed Apr 14 19:24:09 2021 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration CFEP13TokenCleanup
+
+commit 85a34e71fdcc01db09ac2c973bff50e951eed61c
+Author: GitHub Actions on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Apr 14 16:08:40 2021 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit bbd75c8ad76cfde4e4ba140ae3b4dbe4e54968bf
+Author: GitHub Actions on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Apr 14 16:04:26 2021 +0000
+
+    Initial feedstock commit with conda-smithy 3.10.0.

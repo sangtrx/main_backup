@@ -1,0 +1,80 @@
+commit 943ce2729328213c76c23fc31041012235be84f9
+Merge: 8c21918 af7dce7
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Wed Feb 27 08:44:15 2019 -0600
+
+    Merge pull request #4 from regro-cf-autotick-bot/rebuildaarch64_and_ppc64le_addition1_arch
+    
+    Arch Migrator
+
+commit af7dce75b7b9e4b6c4e03ef0c10b189b8005ba79
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Wed Feb 27 07:41:54 2019 -0600
+
+    Add make as build requirement
+
+commit d49c0f58d4fc7d1d10c1b5ba91c106f3f67d5c41
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Wed Feb 27 08:37:38 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.2.14, and conda-forge-pinning 2019.02.24
+
+commit 9c6987564d8421fde09168bbf3e7e514327498a5
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Wed Feb 27 08:37:27 2019 +0000
+
+    bump build number
+
+commit 8c21918e073a09437abb5fac8a06893c407eea47
+Merge: aba45e1 a3e253e
+Author: Soumith Chintala <soumith@gmail.com>
+Date:   Sun Feb 24 11:04:41 2019 -0500
+
+    Merge pull request #3 from sdvillal/exportpin
+    
+    Add run_exports
+
+commit a3e253e0a345232727c2e00ad589dac5e4f98b4e
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sun Feb 24 08:08:48 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.2.14, and conda-forge-pinning 2019.02.21
+
+commit 20ff5522d0cc7fbf609fcc9fe6d2dffc20f51778
+Author: Santi Villalba <sdvillal@gmail.com>
+Date:   Sun Feb 24 09:04:31 2019 +0100
+
+    add pin
+
+commit aba45e1793b7ca5dc6f8879ec1f6d2137c6c8e6d
+Merge: f32e07f ca7f8c2
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Dec 27 19:05:35 2018 -0200
+
+    Merge pull request #1 from regro-cf-autotick-bot/rebuild
+    
+    Rebuild for Python 3.7, GCC 7, R 3.5.1, openBLAS 0.3.2
+
+commit ca7f8c283a3fe87bdb5d5ea59219c8ca71099ac4
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Dec 27 20:15:39 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.2.2 and pinning 2018.12.18
+
+commit dfbc3a1d1581cdb739f3eb09e8b31f87a35f34e4
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Dec 27 20:15:34 2018 +0000
+
+    bump build number
+
+commit f32e07f07c0321db85d9f2ce47b8e4e4f0bccf4c
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Thu Dec 27 19:39:13 2018 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 6dbc7bd8f2476bfa2105366448d6d548d965238b
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Thu Dec 27 19:34:57 2018 +0000
+
+    Initial feedstock commit with conda-smithy 3.2.2.

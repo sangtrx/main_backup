@@ -1,0 +1,219 @@
+commit e97bea013297f417b31630c8368472017a984df9
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Fri Oct 8 15:49:31 2021 +0200
+
+    disable s390x and fix ppc64le
+
+commit 4af6b7eb1fbb084040d18f8166a3f109a2bd9ad7
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Fri Oct 8 12:52:57 2021 +0200
+
+    add standard OS runtimes as whitelisted DSOs
+
+commit f7127dece9a7d33c917f3f3c4f93d4ba4c824a98
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Fri Oct 8 12:49:53 2021 +0200
+
+    add missing bld.bat file
+
+commit 4c89c8bd06c4f1a9cd6ded702c9e9b43416aaece
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Fri Oct 8 12:47:58 2021 +0200
+
+    fix url, enable Windows
+
+commit 10dc521e1378371f66e4c02f0efca04ea1ca4290
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed May 23 02:33:13 2018 +0100
+
+    Add GLUT framework DSO to whitelist and libxi CDT package
+
+commit 7c2f30b6a5b6d59ee393b982a212b845eafbd75f
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed May 23 02:03:02 2018 +0100
+
+    Add make dep
+
+commit 7ad5664211d970c9517a5e430c097fc41addeffe
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed May 23 01:59:04 2018 +0100
+
+    Fix CVE-2018-9055
+
+commit fe89c3f33b5cbfe22557af2bf005ea859db4e77e
+Author: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date:   Sun Mar 11 08:38:54 2018 -0500
+
+    Bump version to 2.0.14
+
+commit 6ffd4cc34df8259dc54d2e34613e063a47227b95
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Wed Dec 20 13:25:14 2017 -0600
+
+    cb3-ize
+
+commit af1b5f8440d252bbed1a3cadf4f7f07a9eb3b108
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 19:08:39 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit 732f17666a7a80917e449fa007726ce1dcc9acdb
+Merge: 2739a19 9aecfc7
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue Feb 28 00:26:09 2017 -0500
+
+    Merge pull request #15 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 9aecfc74ffabdf47d30c048376c80bf9ee644c9d
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Mon Feb 27 01:43:20 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 2.1.1.
+
+commit 2739a196f0f6c0474107e979d58600e980fe839d
+Merge: 10b7831 4239fda
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Feb 5 16:48:45 2017 -0300
+
+    Merge pull request #14 from ocefpaf/refresh
+    
+    Refresh
+
+commit 4239fda0c99f1b50d849207f77838af0542d0f17
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Feb 5 16:33:59 2017 -0300
+
+    lic
+
+commit 8643748602f376f6792369162d0e0f59527a5c09
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Feb 5 16:26:32 2017 -0300
+
+    update feedstock
+
+commit 34946eb9c1ab233b46118093826eba529b4ea39e
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Feb 5 16:26:23 2017 -0300
+
+    re-render with auto
+
+commit 10b7831f0d72cebdc2aa67a327ba4a8f152cd0fa
+Merge: 4716383 cbf481c
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sat Aug 6 23:44:05 2016 -0400
+
+    Merge pull request #10 from conda-forge-admin/feedstock_version_pin_master
+    
+    MNT: Update pinned versions.
+
+commit cbf481cb1a950f023339a455db44438c6484449b
+Author: conda-forge-admin <conda-forge@googlegroups.com>
+Date:   Sun Aug 7 03:33:35 2016 +0000
+
+    MNT: Updated some of the pinned versions
+
+commit 4716383a4095a80af723e40193e9bb94ceb63cd6
+Merge: 7670751 b93d1d4
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun May 15 18:11:22 2016 -0300
+
+    Merge pull request #7 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit b93d1d441a39a3995d9fe52afc139a3ea33ef09e
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sun May 15 16:43:35 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit 7670751fc589ab1793d38a0a06675e7c82a83bce
+Merge: 71d9f5c e1e2ea9
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Apr 19 16:28:44 2016 -0300
+
+    Merge pull request #6 from ocefpaf/bump
+    
+    Bump
+
+commit e1e2ea9c149040f39c31bc89103636921bb5fc8b
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Tue Apr 19 15:02:04 2016 -0300
+
+    Bump
+
+commit 71d9f5c51afe680b745e01902bc6087631e6e826
+Merge: ba2f95c 217242d
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Apr 16 15:32:01 2016 -0300
+
+    Merge pull request #4 from ocefpaf/annotate_version
+    
+    Annotate jpeg version
+
+commit 217242dc08a9cd9876b9b06f758fdd960c2a3d1b
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sat Apr 16 15:18:57 2016 -0300
+
+    Annotate jpeg version
+
+commit ba2f95c8710e23a508b192b114140462fee6ab65
+Merge: 01dc38f 94deb5a
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Apr 15 16:17:30 2016 -0300
+
+    Merge pull request #3 from ocefpaf/rerender
+    
+    Re-build
+
+commit 94deb5a4133e37e9465106381c55439fa0e359df
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Fri Apr 15 16:10:51 2016 -0300
+
+    Re-build
+
+commit 01dc38f8c85d48f409b4b272e4555cc4ef49cd56
+Merge: 432a7c1 bd37d2e
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Fri Apr 15 09:05:04 2016 +0100
+
+    Merge pull request #1 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit bd37d2e889b8ec6499bb3c8b073f70652dc2ed8f
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Apr 15 07:15:25 2016 +0100
+
+    MNT: Updated the feedstock for conda-smithy version 0.8.4.
+    
+    [ci skip]
+
+commit 432a7c194d11e4e5a6a3eb6608bb073cf469db55
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Mar 16 11:22:52 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit a76f4c48ced23f5a48a41f4b51ac92cfbdb488f2
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Mar 16 08:17:29 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 88e46f330ad98cc061c2cb673978b2603d55abb1
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Mar 16 08:16:35 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 12dc0598586d3487810eae84a34c1c5141bd2c1b
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Mar 16 08:15:17 2016 +0000
+
+    Initial commit of the jasper feedstock.

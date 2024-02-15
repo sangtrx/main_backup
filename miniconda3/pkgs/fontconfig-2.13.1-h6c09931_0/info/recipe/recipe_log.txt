@@ -1,0 +1,356 @@
+commit c6c16b77bc52559ab5fad7016355029228a06848
+Author: Cheng H. Lee <clee@anaconda.com>
+Date:   Thu Feb 4 08:50:28 2021 -0600
+
+    Remove macOS libiconv dep to fix over-depending error
+
+commit 69d185dc7acd6c687b4445cd082ee137ec8cf215
+Author: Cheng H. Lee <clee@anaconda.com>
+Date:   Thu Feb 4 06:33:16 2021 -0600
+
+    Fix 2.13.1 build on macOS
+
+commit ccc21e5db00fbbe2f5628f90feb286c5b905f5d2
+Author: Cheng H. Lee <clee@anaconda.com>
+Date:   Wed Feb 3 19:36:41 2021 -0600
+
+    Bump version to 2.13.1
+    
+    Also, remove unnecessary/deprecated ICU and libpng host deps
+
+commit 6e774e249e292c38c1a2b2418e6be40fba0eaff4
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu Jun 14 19:34:01 2018 +0100
+
+    macOS updates and fixes: does not need libuuid also add system fonts
+
+commit 6167e27cce56490662f7910e766c82f8501b31a0
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri May 25 12:55:45 2018 +0000
+
+    Update libtool by running autoreconf -vfi
+
+commit b6854cf45f6f8cc169d48cbddffa641338f0ed3c
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri May 25 12:49:17 2018 +0100
+
+    AD changes rebased
+
+commit be61df0fa594242fd94227fb4ffa59e7fa6b1553
+Merge: 57ef654 94e274b
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sun Mar 18 16:14:58 2018 -0400
+
+    Merge pull request #24 from regro-cf-autotick-bot/2.13.0
+    
+    fontconfig v2.13.0
+
+commit 94e274bf491c19bbf6530eb10fee766e8993cec2
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Sat Mar 17 15:54:53 2018 -0400
+
+    Use libuuid
+
+commit 0cdeadbfed685eceaa7aee1bd46d2b0bbf7c18a2
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Fri Mar 16 19:53:18 2018 -0400
+
+    Package the license file
+
+commit 414c1d438aad637a998bfae185e08d76eee36849
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Fri Mar 16 19:51:11 2018 -0400
+
+    Update binary prefix file version
+
+commit 5f182541f4625454525b7b5098e19479aa575315
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Mar 16 16:58:42 2018 -0300
+
+    Update meta.yaml
+
+commit 421f851e9a3745d2583e4ec0f2f51a8413616b0c
+Author: Travis CI User <travis@example.org>
+Date:   Fri Mar 16 18:12:27 2018 +0000
+
+    updated v2.13.0
+
+commit 57ef654b66e896ad7c23c4a6aacb82ecb642cdcb
+Merge: 61e6cd9 1721599
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Nov 25 10:18:54 2017 -0200
+
+    Merge pull request #22 from ocefpaf/update_to_2.12.6
+    
+    Update to 2.12.6
+
+commit 172159970154aac10811b31d771737427ae16cb3
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Nov 24 16:24:36 2017 -0200
+
+    add gperf
+
+commit fea3eee97e6342a118a310d4d82984ee41ef282d
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Nov 24 16:24:28 2017 -0200
+
+    add fonts
+
+commit 49dfae8c103dc30e3b5cf7f80f9f1669492a6e71
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Nov 24 16:24:09 2017 -0200
+
+    remove patch
+
+commit ee59c50f49bef7bfdeafe2979fb6815ec3062aaa
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Nov 24 16:08:05 2017 -0200
+
+    update to 2.12.6
+
+commit 61e6cd90214e1fd3774a6e51cb1c7c6ec34d8843
+Merge: 27ccbb0 256adc9
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Nov 23 17:25:26 2017 -0200
+
+    Merge pull request #21 from ocefpaf/pin_libiconv
+    
+    pin iconv to 1.15
+
+commit 256adc914e255f8d98ffc9273632477417b4fd43
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Thu Nov 23 15:23:13 2017 -0200
+
+    pin iconv to 1.15
+
+commit 27ccbb03f9eb10f7a7a2053aea9db56af84c062a
+Merge: 4b2b7ef 759122c
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Nov 6 10:00:10 2017 -0200
+
+    Merge pull request #20 from ocefpaf/update_pins
+    
+    Update pins
+
+commit 759122cc867e1db324c5089c66bfd5331bbcd93d
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sun Nov 5 08:33:24 2017 -0200
+
+    update pins
+
+commit 5bedcdc07c654fafd6b76b628ecce496c9674be4
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sun Nov 5 08:33:19 2017 -0200
+
+    rerender
+
+commit 4b2b7efb14ee7d62ddde94843fe036f88420c892
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 19:34:13 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit 8a9ffe665ae5e09517a106346d8b3767e78c1ae3
+Merge: 8be2aa4 221b517
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Feb 4 16:46:18 2017 -0300
+
+    Merge pull request #16 from ocefpaf/rerender
+    
+    re-render with auto
+
+commit 221b517b98cfa4100149deabfcd426e8d3cf09ef
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sat Feb 4 12:37:44 2017 -0300
+
+    re-render with auto
+
+commit 8be2aa431bb1a92f869690045515eb64544bc560
+Merge: cf3577d 9df3e02
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Feb 3 19:20:56 2017 -0300
+
+    Merge pull request #15 from ocefpaf/update_icu_pin
+    
+    Update ICU pin
+
+commit 9df3e02c5b70fa5544c794b0f24a75763615e219
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Feb 1 15:58:30 2017 -0300
+
+    Update ICU pin
+
+commit cf3577d26a0d15396d8d914f76ac1550a8b2a2ad
+Merge: 74439c1 1e56a81
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Jan 4 05:42:15 2017 -0300
+
+    Merge pull request #13 from conda-forge-admin/feedstock_version_pin_master
+    
+    MNT: Update pinned versions.
+
+commit 1e56a81931c8803057bc038f4afc00cc82fd8c8b
+Author: conda-forge-admin <conda-forge@googlegroups.com>
+Date:   Wed Jan 4 02:05:53 2017 +0000
+
+    MNT: Updated some of the pinned versions
+
+commit 74439c14ca87513746634fdd774deae416e6f441
+Merge: 97b7dfe b200f2c
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Dec 22 22:19:07 2016 -0300
+
+    Merge pull request #12 from pkgw/patch-1
+    
+    Bump build number and rebuild against freetype 2.7
+
+commit b200f2ce9999641e7a53561b4b5571460ac7ee3b
+Author: Peter Williams <peter@newton.cx>
+Date:   Thu Dec 22 16:04:45 2016 -0500
+
+    Better syntax in the freetype pin specification.
+
+commit b1f0ff5de1db1ece0a8c5376a050fbed3fdd583c
+Author: Peter Williams <peter@newton.cx>
+Date:   Thu Dec 22 13:52:05 2016 -0500
+
+    Add self as maintainer
+    
+    This is also a dummy commit to trigger the CircleCI build.
+
+commit 72ca1790271a63c81f5c2f1a1317ad945768da34
+Author: Peter Williams <peter@newton.cx>
+Date:   Thu Dec 22 13:50:13 2016 -0500
+
+    Bump build number and rebuild against freetype 2.7
+
+commit 97b7dfec29a3f6199a939d960665e0f64a4a0894
+Merge: 7680cf0 7129109
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Dec 6 19:37:45 2016 -0300
+
+    Merge pull request #10 from jjhelmus/long_prefix
+    
+    Build long prefix package using conda-build 2.x
+
+commit 71291093429099f6f1b5aaad781828767606a121
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Dec 6 11:06:22 2016 -0600
+
+    Build long prefix package using conda-build 2.x
+
+commit 26442ebafb67496d9c8a8d69ab02cfbdefe7ce8d
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Dec 6 11:05:30 2016 -0600
+
+    MNT: Re-rendered with conda-smithy 1.6.1
+
+commit 7680cf09d68a33a874ae69f1854ec8a8fed1d7aa
+Merge: d032065 a398a94
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Oct 10 08:01:28 2016 -0300
+
+    Merge pull request #7 from ocefpaf/refresh
+    
+    Update to 2.12.1
+
+commit a398a94d157d372dc0419be41576b2fe2401bdff
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Oct 10 07:52:57 2016 -0300
+
+    Update to 2.12.1
+
+commit 6774c8f75e5e6c4a7fde056c39011f00fb054cee
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Oct 10 07:44:35 2016 -0300
+
+    rerender
+
+commit d03206580ffdbcd50681e4fbf7ff9a91763462a2
+Merge: 663bf7e 2cd71e7
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Oct 10 07:40:01 2016 -0300
+
+    Merge pull request #6 from conda-forge-admin/feedstock_version_pin_master
+    
+    MNT: Update pinned versions.
+
+commit 2cd71e7db4c94ea97282c829a33525dc8495e545
+Author: conda-forge-admin <conda-forge@googlegroups.com>
+Date:   Mon Oct 10 02:05:00 2016 +0000
+
+    MNT: Updated some of the pinned versions
+
+commit 663bf7e0d0483b0debc8eb8bbe30a0ab75dc53d4
+Merge: 73ef1b6 72a0931
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jun 23 14:42:46 2016 -0300
+
+    Merge pull request #4 from ocefpaf/update_pin
+    
+    Update pinnings...
+
+commit 72a0931ff2a1c16253e5e5ffcdfa4343ef4d2da1
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Jun 23 12:28:50 2016 -0300
+
+    Update pinnings
+
+commit 73ef1b6a3156977c34ced54931de6f1b417d2736
+Merge: 7411ce3 7470d40
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue May 24 17:50:02 2016 -0400
+
+    Merge pull request #3 from ocefpaf/pin_freetype
+    
+    Pin freetype
+
+commit 7470d409973460ed0ad239ec0195bb43e5c166ac
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Tue May 24 17:24:42 2016 -0300
+
+    Pin freetype
+
+commit 7411ce3c74fc695492b7b75050123ae3593c4ca4
+Merge: 573d1e3 ef4aaf7
+Author: Carlos Cordoba <ccordoba12@gmail.com>
+Date:   Sat May 14 14:40:50 2016 -0500
+
+    Merge pull request #2 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit ef4aaf70c326e7a75d7c6dd592a0694b8d251d8f
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat May 14 07:43:46 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit 573d1e39c4c5a0539b370012c2c546bea107b423
+Merge: 10057ff 805f11e
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Thu Apr 28 20:45:50 2016 -0400
+
+    Merge pull request #1 from jakirkham/fix_pinnings
+    
+    Pin libpng 1.6*
+
+commit 805f11eb945ea8a1bcdc5ce2a7698874d1517dd9
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Apr 28 20:42:15 2016 -0400
+
+    recipe: Pin libpng.
+
+commit 10057ffc0fe0be0760690a168488bf817170e2f9
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Apr 29 00:12:55 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit b65bc60ba55bd77f925f1d4b12548c5a3dde9221
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Apr 29 00:12:14 2016 +0000
+
+    Initial commit of the fontconfig feedstock.

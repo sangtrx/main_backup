@@ -1,0 +1,119 @@
+commit d3b278bd197ae0b3b66d547f6a2246ef8f1ecb0d
+Author: Cheng H. Lee <clee@anaconda.com>
+Date:   Tue Jun 30 11:33:16 2020 -0500
+
+    Update to libxcb 1.14
+
+commit 1a33dd626fa06aaddbe554f41614b59b0a7cf60b
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Apr 9 21:07:33 2018 +0100
+
+    Fix some SLES11 libxcb-xlib.so.0 support
+
+commit de2f68284610d90801cb47133d731c43f775b1ff
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Mon Apr 2 15:33:32 2018 -0500
+
+    1.13 update; combine with xcb-proto
+
+commit 99e7f506f8359eac429d1de68a19a3f22290880b
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Wed Nov 22 15:45:32 2017 -0600
+
+    fix cross-compiling on windows
+
+commit c5f1509f5705708f8bb2774ca84cf80e938eefed
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Tue Nov 21 13:32:47 2017 -0600
+
+    remove vc features
+
+commit 2ce299cb2df11d77e5a32768ba475dc7b0b62a1e
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Thu Oct 5 23:54:47 2017 -0500
+
+    simplify using run_exports
+
+commit 1a6a4cde8a5cbb0a5434a49c1b2b593c88869bfe
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Sep 1 13:09:28 2017 +0100
+
+    Remove python dependency
+
+commit 612d5648189b4a86b2bfec46b4d7c5f635ae6c73
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Aug 28 23:51:26 2017 +0100
+
+    cdts are linux-only
+
+commit 8f3705523df7ec14a3aa60168caea266e33b69be
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Aug 27 01:36:39 2017 +0100
+
+    Generalize logging
+
+commit 52fc3c34c838f0710d09a5a137daf6bf2abe462c
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu Aug 24 10:24:01 2017 +0100
+
+    Add cross-compilation support
+
+commit 789c982e436cfb7e0420db9527460f3aed4c18a8
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Aug 23 13:14:52 2017 +0100
+
+    Add cross-compilation support
+
+commit 3825df1088955e367a8b4f9506609c918545eae7
+Merge: 963c0b6 a9aaeb5
+Author: Peter Williams <peter@newton.cx>
+Date:   Tue Mar 21 10:50:26 2017 -0400
+
+    Merge pull request #4 from conda-forge-admin/feedstock_version_pin_master
+    
+    This actually just changes the line endings on `bld.bat`.
+
+commit a9aaeb5b619bd7310f424e4c596c59114addbd59
+Author: conda-forge-admin <conda-forge@googlegroups.com>
+Date:   Tue Mar 21 02:19:12 2017 +0000
+
+    MNT: Updated some of the pinned versions
+
+commit 963c0b62a3ec708d83b7100a897fa18dfe07de96
+Merge: 1a8043e 85d3104
+Author: Carlos Cordoba <ccordoba12@gmail.com>
+Date:   Thu Feb 9 20:36:14 2017 +0100
+
+    Merge pull request #3 from pkgw/pr-xorgify
+    
+    Import the recipe from my cross-platform X.org work.
+
+commit 85d31048e828e00d8112b81504e99bded943b972
+Author: Peter Williams <peter@newton.cx>
+Date:   Wed Feb 8 22:20:22 2017 -0500
+
+    Re-rerender: now we matrix properly across Windows versions.
+
+commit 4c5ab40a87925f0fe67d96f0be7472a549f03ba6
+Author: Peter Williams <peter@newton.cx>
+Date:   Sat Feb 4 15:40:59 2017 -0500
+
+    MNT: Re-rendered with conda-smithy 2.0.1
+
+commit 00281e1c824880e22fd89aecfac9fd0bab0f4013
+Author: Peter Williams <peter@newton.cx>
+Date:   Sat Feb 4 15:39:55 2017 -0500
+
+    Import the cross-platform recipe from my X.org work.
+
+commit 1a8043e281a2f98d708baea4ca2eac175ac49b9b
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Aug 31 10:54:27 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit feb3af1b5ffabf22a8d2cbb279afbd2fb282a5ca
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Aug 31 10:53:06 2016 +0000
+
+    Initial commit of the libxcb feedstock.

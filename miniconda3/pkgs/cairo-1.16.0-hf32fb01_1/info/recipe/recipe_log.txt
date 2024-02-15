@@ -1,0 +1,1012 @@
+commit cff9964b0e09c5bf13072cc6bc940b5314d1b886
+Author: Cheng H. Lee <clee@anaconda.com>
+Date:   Mon Mar 8 21:47:22 2021 -0600
+
+    Fix cairo build on systems without X11 installed
+    
+    Tell `pkg-config` to search the conda-provided sysroot for necessary X11
+    configuration (`.pc`) files.  Also, explicitly request XCB support so
+    `./configure` fails it can't find the needed libraries, rather than
+    building a Cairo package that over-depends on `libxcb`.
+
+commit d8df6b06a5033a43bc72fafb33d4e1cd81b3be5d
+Author: Cheng H. Lee <clee@anaconda.com>
+Date:   Tue Feb 9 19:44:35 2021 -0600
+
+    Remove unnecessary ICU dependency
+    
+    ICU needed only when building using harfbuzz (and even then, it's only
+    needed as a transitive dependency).
+
+commit 4d076412179250f7bf6b0339d9aeaa881f9b580e
+Author: Forrest Waters <fwaters@anaconda.com>
+Date:   Mon Nov 25 05:58:27 2019 -0600
+
+    switch back to cdt stuff and skip win for now
+
+commit ab90793898b57b20356cc2f0e818f57e770de169
+Merge: d2677ec 2ce3be8
+Author: Forrest Waters <fwaters@anaconda.com>
+Date:   Fri Nov 8 13:27:38 2019 -0600
+
+    rebase from conda forge
+
+commit d2677ec742ecfbdb51c09f4bc89f354aac2a102e
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu Jun 28 11:56:18 2018 -0700
+
+    Remove osx-64 libuuid dependency
+
+commit 22b871170a36c1ce160d9fb69a01dc61f3d69953
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri May 25 13:10:24 2018 +0100
+
+    Bump build number
+
+commit e7f3c5118304aa2397be3ba8337d6b4e898fed9c
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sat Apr 14 01:54:18 2018 +0100
+
+    Bump build number for new conda_build_config.yaml glib pinning
+
+commit f612ab68849bfa0b8c6f3dd9762dedecaa02ce64
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Apr 4 23:20:56 2018 +0100
+
+    macOS: Do not link to X
+    
+    Fixes: https://github.com/ContinuumIO/anaconda-issues/issues/9056
+
+commit 4e025b4b009d1af78424ea9a28080650423e8010
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Thu Nov 9 09:42:38 2017 -0600
+
+    remove vc features (use run_exports vc pkg instead)
+
+commit 0b1bff0d74dee122997bc68c383b4990c5e3fcc5
+Author: Maggie-M <maggie.mari@continuum.io>
+Date:   Thu Aug 31 14:37:51 2017 -0500
+
+    Update meta.yaml
+
+commit c3c7dcc951a417c83dc45482025b49ea419c8778
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Aug 29 05:28:46 2017 -0700
+
+    Fix darwin support.
+    
+    This was tricky; warnings about -pie not being used in compliation
+    caused Cairo's link test for pthreads to fail even though the link
+    worked.
+    
+    I guess it found output on stderr and assumed it was  a big issue.
+    
+    The fix, for posterity was:
+    
+    export LDFLAGS=${LDFLAGS_CC}
+    
+    We also --enable-threads since that catches the error at configure
+    time intead of getting more obscure compilation failures.
+
+commit 2c8213b68d8f7ffc2772d1425fb0d8ae3daacc0a
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Aug 25 12:40:49 2017 +0100
+
+    Fix glib dependency
+
+commit eff99465c4ae5137c3e17b80ffc50f07dacc5413
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Aug 29 05:29:06 2017 -0700
+
+    Update to 1.14.10 and change checksum to the published one
+
+commit ae9a94c2b8b34fa23fca6abf99e680eae763dd7d
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Sep 6 18:31:53 2019 -0500
+
+    [ci skip] ***NO_CI*** Move from appveyor to azure.
+    
+    See https://github.com/conda-forge/conda-forge.github.io/issues/857
+
+commit 28974ad270f78252e79f84d3c79d68eed8c01b86
+Merge: 7fe5e6d 9e5b4be
+Author: Peter Williams <peter@newton.cx>
+Date:   Fri Jul 19 21:57:56 2019 -0400
+
+    Merge pull request #50 from regro-cf-autotick-bot/rebuildicu-64.20
+    
+    Rebuild for icu-64.2
+
+commit 9e5b4be2e5fc3aefce92941f5a3b66f28c88f34a
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Jul 19 21:37:55 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.18.8, conda-smithy 3.4.1, and conda-forge-pinning 2019.07.19
+
+commit 4157bd2d73e18dcc3ee50e2dbff5a913bf1f4857
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Jul 19 21:37:40 2019 +0000
+
+    bump build number
+
+commit 7fe5e6da983c258e3d04440fb8475bf07fba8188
+Merge: ac5c656 88998d0
+Author: Marius van Niekerk <marius.v.niekerk@gmail.com>
+Date:   Sun Jun 16 22:19:55 2019 -0400
+
+    Merge pull request #48 from tjakob/ppc64le
+    
+    Add aarch64 and ppc64le
+
+commit 88998d02953f4395f55237bd471b9cd0c61d947e
+Author: Taylor Jakobson <tjakobs@us.ibm.com>
+Date:   Fri Jun 14 16:53:40 2019 +0000
+
+    Rerun CI
+
+commit 5dc4e074f7c05639ec4ffa99b2e50c302aea0b5e
+Author: Taylor Jakobson <tjakobs@us.ibm.com>
+Date:   Thu Jun 13 17:48:54 2019 +0000
+
+    Only specify ax_cv_c_float_words_bigendian for x86_64
+
+commit 2498a6906b2492b2a94e64260c88304ee0dd6b18
+Author: Taylor Jakobson <tjakobs@us.ibm.com>
+Date:   Wed Jun 12 21:52:43 2019 +0000
+
+    Set ax_cv_c_float_words_bigendian
+
+commit c6a198f9f237e4e4df6c59f09b63be103a4608e9
+Author: Taylor Jakobson <tjakobs@us.ibm.com>
+Date:   Mon Jun 10 19:25:05 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.3.7, and conda-forge-pinning 2019.06.09
+
+commit 11d16b0a587add11255dc1ed9c7b01277e94b2f3
+Author: Taylor Jakobson <tjakobs@us.ibm.com>
+Date:   Mon Jun 10 19:20:09 2019 +0000
+
+    Remove "-Wl,--gc-sections" from LDFLAGS
+    
+    This flag was added in the newer versions of gcc, and breaks the ax_cv_c_float_words_bigendian test
+
+commit cc1421e14e1c39c509626d144388540830b85200
+Author: Taylor Jakobson <tjakobs@us.ibm.com>
+Date:   Thu Jun 6 17:32:55 2019 +0000
+
+    Add make
+
+commit 6a0416cdcd0fcabe77fddfebe2aa445df8948d71
+Author: Taylor Jakobson <tjakobs@us.ibm.com>
+Date:   Thu Jun 6 17:13:49 2019 +0000
+
+    Update build number
+
+commit b925e11cee5e658600b4517af5562caff8950122
+Author: Taylor Jakobson <tjakobs@us.ibm.com>
+Date:   Thu Jun 6 17:09:49 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.16.3, conda-smithy 3.3.6, and conda-forge-pinning 2019.06.06
+
+commit 09d30c098ccbc7090a0cc2179020f5a653b8223e
+Author: Taylor Jakobson <tjakobs@us.ibm.com>
+Date:   Thu Jun 6 17:07:12 2019 +0000
+
+    Add aarch64 and ppc64le
+
+commit ac5c6560546d6f4eb92261bc32a97a28e7c1177e
+Merge: 2054279 1b9d95a
+Author: Peter Williams <peter@newton.cx>
+Date:   Sat Jan 5 11:52:44 2019 -0500
+
+    Merge pull request #44 from pkgw/v1.16.0
+    
+    Upstream 1.16.0
+
+commit 1b9d95a481f4abf56aa7effd9093e59a8c2b9164
+Author: Peter Williams <peter@newton.cx>
+Date:   Wed Oct 24 14:36:14 2018 -0400
+
+    Upstream 1.16.0.
+
+commit 205427960e7ece9efe1e96df69b14854b888ebd0
+Merge: 688fda2 549e089
+Author: Peter Williams <peter@newton.cx>
+Date:   Sat Dec 29 10:48:53 2018 -0500
+
+    Merge pull request #46 from pkgw/repin
+    
+    Repin (glib 2.58, libpng 1.6.35)
+
+commit 549e0895cb0d88da0bf6f11a2c57e44ccacc6377
+Author: Peter Williams <peter@newton.cx>
+Date:   Fri Dec 28 21:16:34 2018 -0500
+
+    MNT: Re-rendered with conda-smithy 3.2.2 and pinning 2018.12.28
+
+commit 70b84543342d47b5efb1b2900a0f2e7beadbc785
+Author: Peter Williams <peter@newton.cx>
+Date:   Fri Dec 28 21:16:17 2018 -0500
+
+    Bump build number in preparation for repinning via rerender.
+
+commit 688fda21d7f2bb71133377ab7609fb727a9c03de
+Merge: 2553c45 1e42436
+Author: Peter Williams <peter@newton.cx>
+Date:   Mon Nov 12 22:28:35 2018 -0500
+
+    Merge pull request #45 from dhimmel/patch-1
+    
+    Update meta.yaml with dev_url & doc_url [ci skip] [skip ci]
+
+commit 1e424364865473543aea7deae4d1f9d37ad2ebe3
+Author: Daniel Himmelstein <daniel.himmelstein@gmail.com>
+Date:   Mon Nov 12 14:38:55 2018 -0500
+
+    Update meta.yaml with dev_url & doc_url
+
+commit 2553c452f66a690a2cf4cf6424487a4c9dc9db0a
+Merge: 4b268d2 c5c67e3
+Author: Peter Williams <peter@newton.cx>
+Date:   Mon Oct 8 13:04:57 2018 -0700
+
+    Merge pull request #43 from regro-cf-autotick-bot/rebuild
+    
+    Rebuild for Python 3.7, GCC 7, R 3.5.1, openBLAS 0.3.2
+
+commit c5c67e3b9eaddcdf8500110962b0434199310646
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Mon Oct 8 17:02:13 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.10.03
+
+commit 548c28c13f67321e0d1475ba4237f073a8142dac
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Mon Oct 8 17:02:09 2018 +0000
+
+    bump build number
+
+commit 4b268d2027eb895ab3af02a158badcb56a4f81e1
+Merge: ca34406 a23eb3e
+Author: Peter Williams <peter@newton.cx>
+Date:   Sat Sep 15 06:51:06 2018 -0700
+
+    Merge pull request #42 from pkgw/rerender
+    
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.09.11
+
+commit a23eb3e06b8600d960254d3b27d26de5fba29abf
+Author: Peter Williams <peter@newton.cx>
+Date:   Fri Sep 14 19:10:04 2018 -0400
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.09.11
+
+commit ca34406b804cbe8306315fc94c2a6951e0eea86c
+Merge: b7757fe 9cd50fc
+Author: Peter Williams <peter@newton.cx>
+Date:   Tue Aug 7 14:02:46 2018 -0700
+
+    Merge pull request #37 from isuruf/rebuild
+    
+    run_exports and more tests
+
+commit 9cd50fc1ac15bf7c985b25ae520ce7ae59972d35
+Merge: 66636b9 b7757fe
+Author: Björn Grüning <bjoern@gruenings.eu>
+Date:   Tue Aug 7 22:41:13 2018 +0200
+
+    Merge branch 'master' into rebuild
+
+commit b7757fe43e56e7a682ef96b28f7e47fd7f7c4265
+Merge: 0d8455a 3c06c1b
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Aug 6 07:04:17 2018 -0300
+
+    Merge pull request #40 from bgruening/master
+    
+    MNT: Re-rendered with conda-smithy 3.1.10 and pinning 2018.08.05
+
+commit 3c06c1b89aac339b5670ed8e3f8a127d9f0ccd2d
+Author: Björn Grüning <bjoern@gruenings.eu>
+Date:   Mon Aug 6 09:06:43 2018 +0200
+
+    Update meta.yaml
+
+commit 78385c39764a622695144ee90f13176a4b5c7245
+Author: Bjoern Gruening <bjoern.gruening@gmail.com>
+Date:   Mon Aug 6 01:17:40 2018 +0200
+
+    MNT: Re-rendered with conda-smithy 3.1.10 and pinning 2018.08.05
+
+commit 0d8455afebb9ed8c3faa21bf0a7d66204274a0b1
+Author: Travis CI User <travis@example.org>
+Date:   Sat Aug 4 17:12:37 2018 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit 291ae06301034b7d179105c49ed81b474303f80f
+Merge: 4258cc1 88324b1
+Author: Peter Williams <peter@newton.cx>
+Date:   Sun Jul 22 23:44:16 2018 -0400
+
+    Merge pull request #39 from pkgw/xext-dep
+    
+    Rerender and add needed Linux dep on libXext [skip travis]
+
+commit 88324b154d25829616f80f13de75ad32af9dd023
+Author: Peter Williams <peter@newton.cx>
+Date:   Sun Jul 22 21:32:29 2018 -0400
+
+    MNT: Re-rendered with conda-smithy 3.1.6 and pinning 2018.07.20
+
+commit ca440c532ad18544abbefde21823a10a32409d03
+Author: Peter Williams <peter@newton.cx>
+Date:   Sun Jul 22 21:31:52 2018 -0400
+
+    recipe/meta.yaml: Cairo's X support also requires libXext
+
+commit 4258cc102bf55cc77e6298056aee8982da0736e1
+Merge: ac32501 d46fe1a
+Author: Björn Grüning <bjoern@gruenings.eu>
+Date:   Fri Jul 20 20:45:46 2018 +0200
+
+    Merge pull request #38 from pkgw/remove-la-files
+    
+    Stop packaging Libtool `.la` files.
+
+commit d46fe1aef7970b902e9adddb2b55ee658e8a891f
+Author: Peter Williams <peter@newton.cx>
+Date:   Fri Jul 20 12:25:52 2018 -0400
+
+    Stop packaging Libtool `.la` files.
+    
+    Pursuant to https://github.com/conda-forge/staged-recipes/issues/673 and
+    https://github.com/conda-forge/libxcb-feedstock/pull/9, we're going to remove
+    these files from our packages. Eventually conda-build will do this
+    automatically for us, but for now we take care of it manually. We need to
+    delete the files both before the build (because inconsistent complements of
+    `.la` files can break the build) and after (because we may have installed new
+    ones).
+
+commit 66636b9fe1d3549e69c9de99da996f6ac3906298
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Thu Jul 12 19:00:48 2018 -0600
+
+    Run autogen.sh and remove CFLAGS, CXXFLAGS, LDFLAGS
+
+commit 2a63f0cadc614bcf11641a2478baf548f93184f7
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Thu Jul 12 18:42:31 2018 -0600
+
+    Fix test
+
+commit 8264b484d0bea7ae491be49c965a18dc5d2fb529
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Thu Jul 12 18:13:04 2018 -0600
+
+    Add more tests
+
+commit e57439ddc90abdab68aa1e8cdb4baa7616563e4b
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Thu Jul 12 18:08:38 2018 -0600
+
+    Add run_exports
+
+commit ac32501974f483541863c97dfc80bc66fadd9919
+Merge: 99b54ac d252e5d
+Author: Peter Williams <peter@newton.cx>
+Date:   Fri Jul 6 09:16:20 2018 -0400
+
+    Merge pull request #35 from jakirkham-feedstocks/fix_missing_cairo_gui_pkg-config_files
+    
+    Fix missing cairo GUI pkgconfig files
+
+commit d252e5ddac26844d1fffefe8981afcc0f82b41c1
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Fri Jul 6 00:58:48 2018 -0400
+
+    Bump build number to 1
+    
+    Rebuild with new version of `fontconfig` and test to ensure the GUI
+    `pkgconfig` files are included in this release.
+
+commit ac01c8097d5fa0caf0f4f4a1d3f0b6aae4c321f3
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Jul 5 23:09:21 2018 -0400
+
+    Add checks for pkgconfig files for GUI backends
+    
+    These were missing due to a change in `fontconfig`, which included
+    `libuuid`. While this doesn't fix the issue, it does test to make sure
+    thes `pkg-config` files are included so the problem doesn't reoccur.
+
+commit 07f47a5021db325ed127a65ab5589a52fd8f84c1
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Jul 5 23:08:08 2018 -0400
+
+    Drop `conda inspect`
+    
+    This information is already provided by `conda-build` 3 and the `conda
+    inspect` command is deprecated. So go ahead and drop them.
+
+commit 99b54ac10cdc476b9c955066fa98015f0c902e7d
+Merge: 8df80fb 6891316
+Author: Peter Williams <peter@newton.cx>
+Date:   Thu Jul 5 14:59:32 2018 -0400
+
+    Merge pull request #33 from pkgw/v1.14.12
+    
+    Update to upstream 1.14.12
+
+commit 6891316795f90c080358e3d80fca017aa854966b
+Author: Peter Williams <peter@newton.cx>
+Date:   Thu Jul 5 14:23:57 2018 -0400
+
+    Update to upstream 1.14.12
+    
+    Also add the license file and go back to providing the cairo-xlib backend on
+    Linux, which is needed by GTK+3.
+
+commit 8df80fb2d244ddcb9230e04c6a430a90feb6dff9
+Merge: 014790c 1c8dfd1
+Author: Björn Grüning <bjoern@gruenings.eu>
+Date:   Wed Jul 4 11:48:37 2018 +0200
+
+    Merge pull request #32 from pkgw/cb3
+    
+    Move to conda-build 3
+
+commit 1c8dfd18e17172fc87b9eb4bf653fcefae4241db
+Author: Peter Williams <peter@newton.cx>
+Date:   Mon Jul 2 10:56:48 2018 -0400
+
+    MNT: Re-rendered with conda-smithy 3.1.6 and pinning 2018.07.01
+
+commit 209ee04eb0afc433ffe987f8393d3445be191549
+Author: Peter Williams <peter@newton.cx>
+Date:   Mon Jul 2 10:56:15 2018 -0400
+
+    Convert for conda-build 3.
+    
+    To build successfully on Linux, we have started using conda-forge's X11 (xcb)
+    libraries on that platform.
+
+commit 2ce3be85b7fcec8df5f76c6d9e93a2a2d7951eb1
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu Jun 28 11:56:18 2018 -0700
+
+    Remove osx-64 libuuid dependency
+
+commit a46e5853c80a843bef662c68599f94a418d12e16
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri May 25 13:10:24 2018 +0100
+
+    Bump build number
+
+commit 409e00dfbf6248c60197e5788416ea459f05082e
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu May 24 14:14:35 2018 +0100
+
+    Add make dep
+
+commit a026ac6f4f12f1d9276c4773230f072ad37618d5
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sat Apr 14 01:54:18 2018 +0100
+
+    Bump build number for new conda_build_config.yaml glib pinning
+
+commit 1343fe238ca7ed94f81fc68965447e38d3b4f3d3
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Apr 4 23:20:56 2018 +0100
+
+    macOS: Do not link to X
+    
+    Fixes: https://github.com/ContinuumIO/anaconda-issues/issues/9056
+
+commit a1bcaa17cb74ccfaf7b47b0082729f1c73ae2802
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Wed Jan 24 11:49:19 2018 -0600
+
+    1.14.12
+
+commit 434fb9add8091cca9488b7bed5df9f6d5e3e293e
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu Jan 4 21:25:28 2018 +0000
+
+    Removal of LDFLAGS_CC on macOS
+
+commit 014790c56d33b864c6b57703e865e2ed30889d2b
+Merge: eae5ea1 f90751a
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Nov 25 15:19:45 2017 -0200
+
+    Merge pull request #28 from ocefpaf/update_to_1.14.10
+    
+    Update to 1.14.10
+
+commit f90751a533487ac5fadf927fb956d84dadf4aded
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sat Nov 25 10:47:41 2017 -0200
+
+    try vc14
+
+commit f369cfd3aa56e9b659d56bdd39e6c8a769b225e2
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Nov 24 18:40:46 2017 -0200
+
+    CPU
+
+commit 36fe43e0719289b11aeefcc76cd147c2e84e251b
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Nov 24 18:11:02 2017 -0200
+
+    update to 1.14.10
+
+commit 7bd2f0e202c03a4ade21a271d6ca1933da2350c8
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Nov 24 18:10:51 2017 -0200
+
+    rerender
+
+commit 6016188be57ed1032c541551fe54134223b810e8
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Thu Nov 9 09:42:38 2017 -0600
+
+    remove vc features (use run_exports vc pkg instead)
+
+commit eae5ea122d1acf4e4a24fd43231d75d08fcc0a48
+Merge: 2fa1f40 6620201
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Nov 4 20:59:18 2017 -0200
+
+    Merge pull request #27 from ocefpaf/pin_zlib_1.2.11
+    
+    Pin zlib 1.2.11
+
+commit 66202012809cb54ab8b387703a1d5b5e9ac888fe
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sat Nov 4 18:08:30 2017 -0200
+
+    pin zlib 1.2.11
+
+commit 1c53247363c92ad0adcee351d0a97acd7bd22a57
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sat Nov 4 18:08:15 2017 -0200
+
+    rerender
+
+commit 38eea5cb4f7018f63eea32befe3e46dc89fb1a6f
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Thu Oct 5 23:53:23 2017 -0500
+
+    simplify uisng run_exports
+
+commit 5baa3f5795b7daf868c32cca3c17bf80d0963df5
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Sep 12 23:20:53 2017 -0700
+
+    libxcb is linux only
+
+commit ee281296e4973acb5fda564cfd6545d5f12d295c
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Sep 1 12:00:19 2017 +0100
+
+    linux fixes for cairo
+
+commit 9278c7e0baf4bc77a298eb76f44d413b64c81b28
+Author: Maggie-M <maggie.mari@continuum.io>
+Date:   Thu Aug 31 14:37:51 2017 -0500
+
+    Update meta.yaml
+
+commit 35d53c255dc50248d4287104b5b38abc25658365
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Aug 29 05:28:46 2017 -0700
+
+    Fix darwin support.
+    
+    This was tricky; warnings about -pie not being used in compliation
+    caused Cairo's link test for pthreads to fail even though the link
+    worked.
+    
+    I guess it found output on stderr and assumed it was  a big issue.
+    
+    The fix, for posterity was:
+    
+    export LDFLAGS=${LDFLAGS_CC}
+    
+    We also --enable-threads since that catches the error at configure
+    time intead of getting more obscure compilation failures.
+
+commit 607ddb1dc1ca0e657e4f1fb6b4b9d76df9aefba6
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Aug 27 01:31:54 2017 +0100
+
+    Generalize logging
+
+commit bb6232e31f3dabad1c4a5d142d747065ff4df0e4
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sat Aug 26 21:54:43 2017 +0100
+
+    Generalized pinning
+
+commit 959eb30bf8ae6a8e289c208c537c88dffc729cb0
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Aug 25 20:47:39 2017 +0100
+
+    Generalized pinning
+
+commit 55c53636f77a55b5675d9f1d8784f1bd197d018e
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Aug 25 12:40:49 2017 +0100
+
+    Fix glib dependency
+
+commit a0a4091c7bce08308c5a010b695a643c357dabbb
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Aug 29 05:29:06 2017 -0700
+
+    Update to 1.14.10 and change checksum to the published one
+
+commit 2fa1f40e1bc681e30b6ebe8739d34e20c6f5d5bd
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 19:34:22 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit 4c5f0552c87976ea513dcdf4d5d99f5d67616827
+Merge: 0560ab9 1d5535d
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Feb 4 18:48:46 2017 -0300
+
+    Merge pull request #21 from ocefpaf/rerender
+    
+    Rerender
+
+commit 1d5535d1de0c131dc6615235c44131272effe250
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sat Feb 4 18:19:21 2017 -0300
+
+    re-render with auto
+
+commit 80014c23a2f7bb8422a7260fc6f334742578b0f7
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sat Feb 4 18:19:19 2017 -0300
+
+    bump build number
+
+commit 0560ab94913dba103dc5de833d1392e65606b564
+Merge: 9a63f60 5f9e197
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Feb 4 17:55:04 2017 -0300
+
+    Merge pull request #20 from ocefpaf/update_icu_pin
+    
+    Update ICU pin
+
+commit 5f9e197448bc7b6c20acb3dbe4f0b1a20817230c
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Feb 1 14:06:36 2017 -0300
+
+    update ICU pin
+
+commit 9a63f60721d52ceab2059108f85b7618fec86a9e
+Merge: 3cf94d8 fef56e2
+Author: Peter Williams <peter@newton.cx>
+Date:   Sat Jan 14 11:52:09 2017 -0500
+
+    Merge pull request #19 from pkgw/pr-freetype-27
+    
+    Update package pins now that we're building again.
+
+commit fef56e221a29212c818f4db5b3dad322fa95d478
+Author: Peter Williams <peter@newton.cx>
+Date:   Fri Jan 13 17:47:48 2017 -0500
+
+    Update package pins now that we're building again.
+
+commit 3cf94d856e64bb6c211672d7ddfa019428f28b4d
+Merge: aa477a4 c7d6481
+Author: Peter Williams <peter@newton.cx>
+Date:   Thu Jan 12 08:20:05 2017 -0500
+
+    Merge pull request #18 from pkgw/pr-fix-win32
+    
+    Fixes the Windows build.
+
+commit c7d64819cbc8bcc4f2e0e714f4bdb1824cf050af
+Author: Peter Williams <peter@newton.cx>
+Date:   Wed Jan 11 16:05:36 2017 -0500
+
+    Tidy up the Windows fix
+    
+    Revert 83dba281 and tidy up the fix now that the culprit has been identified.
+
+commit 82f153ed5e60259518936e81838466ef0e5ab56c
+Author: Peter Williams <peter@newton.cx>
+Date:   Wed Jan 11 08:32:18 2017 -0500
+
+    recipe/bld.bat: arrrgggghhh typo
+    
+    Also, error out earlier while we're at it.
+
+commit 446ea7d9655c1587cf1cab81053be2d2a9be7409
+Author: Peter Williams <peter@newton.cx>
+Date:   Tue Jan 10 10:56:21 2017 -0500
+
+    Attempt to fix the Win32 build.
+
+commit aa477a42d05cf6c23c52a039dc27d2b65638def5
+Merge: 49dde4a 83dba28
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Dec 21 18:09:18 2016 -0300
+
+    Merge pull request #16 from pkgw/pr-glib
+    
+    Start building GObject bindings.
+
+commit 83dba281c5373e45d2b4a8b5901abc147abf29b8
+Author: Peter Williams <peter@newton.cx>
+Date:   Tue Dec 20 23:08:53 2016 -0500
+
+    Windows: take another tack, suggested by @ccordoba12
+
+commit d5342d0574eee6543297d14f66280eec0b5398fe
+Author: Peter Williams <peter@newton.cx>
+Date:   Tue Dec 20 11:56:24 2016 -0500
+
+    D'oh, need to update build number if we're adding new deps.
+
+commit 39dc01b6f1f4d5cc267ceb4aa4a0f341a27024c4
+Author: Peter Williams <peter@newton.cx>
+Date:   Tue Dec 20 11:52:18 2016 -0500
+
+    Add myself (@pkgw) as a maintainer.
+    
+    As long as I need to submit a dummy commit to kick the CircleCI build ...
+
+commit 5e2e5b99aadeb987977377568aa0fb19b0093421
+Author: Peter Williams <peter@newton.cx>
+Date:   Tue Dec 20 11:36:27 2016 -0500
+
+    Start building GObject bindings.
+
+commit 49dde4a92a1a7ebba2c3d9ebb3628155008cb7eb
+Merge: 5c71008 7603f36
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Dec 7 15:19:51 2016 -0300
+
+    Merge pull request #14 from ocefpaf/move_forward_and_not_backwards
+    
+    Use conda-build 2.
+
+commit 7603f36a730aa710203daa45436e94831e612a34
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Dec 7 12:34:07 2016 -0300
+
+    re-render with auto
+
+commit d80e7033f780e230addc6ba69433fd8637d44eb7
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Dec 7 12:28:30 2016 -0300
+
+    update fontconfig pin
+
+commit 5c7100895a76de61f9f73c8b0030af14a4d096df
+Merge: c476795 9318717
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Dec 5 15:00:50 2016 -0300
+
+    Merge pull request #13 from ocefpaf/rerender
+    
+    Rerender
+
+commit 931871793bc0a5a83889c49f38e33772d5a8244a
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Dec 5 14:08:54 2016 -0300
+
+    rerender
+
+commit a8c8e499847e35ccc4b3d5d58229c9d2615c23bc
+Merge: c75eed3 c476795
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Dec 5 13:21:17 2016 -0300
+
+    Merge remote-tracking branch 'upstream/master'
+
+commit c75eed302d4f4d76cc536f719c50fc5c445d5026
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Dec 5 13:21:01 2016 -0300
+
+    WTF?
+
+commit c476795d1a2a9be608c9fd187174940a71dbbd8c
+Merge: 084829b 494ef46
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Dec 5 13:45:19 2016 -0200
+
+    Merge pull request #12 from ocefpaf/rerender
+    
+    rerender
+
+commit 494ef463e57d6b383979d2177170e1ebaec236af
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Dec 5 12:41:37 2016 -0300
+
+    rerender
+
+commit 084829b20daf7f4587f957812d98ac7b1d143484
+Merge: a03e332 38d7d9f
+Author: Carlos Cordoba <ccordoba12@gmail.com>
+Date:   Mon Dec 5 10:19:00 2016 -0500
+
+    Merge pull request #10 from ocefpaf/bump_win
+    
+    Update and build Windows packages
+
+commit 38d7d9f0ac212514d177cf9c6ef72774d6cd2934
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Dec 5 11:17:42 2016 -0300
+
+    rebase
+
+commit a03e3327d9e6b81d24467b5392d77a236d7acc04
+Merge: cc5b723 5131141
+Author: Carlos Cordoba <ccordoba12@gmail.com>
+Date:   Sun Dec 4 22:15:20 2016 -0500
+
+    Merge pull request #11 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 5131141c16f5156d82e845bcf3a297be982979de
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Mon Dec 5 01:36:35 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.6.1.
+
+commit 060dd463462a6cf27e90c72afcd73df9fbbfcafd
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Nov 24 15:48:12 2016 -0300
+
+    Comment make check out
+
+commit 2338df095e893dedc75954b21f819dfd988bfea4
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Nov 24 13:59:40 2016 -0300
+
+    Update and try Windows
+
+commit cc5b72328afac297a692b50c1d5cb0da23ca66fe
+Merge: 26f7f47 34ede3d
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Wed Nov 23 13:22:50 2016 -0500
+
+    Merge pull request #9 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 34ede3ddb2a27e4159fcd699b9a3111a503a2862
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Wed Nov 23 01:38:12 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.5.3.
+
+commit 26f7f47117413099325570ffd13d7bf0aa642a9b
+Merge: b0557b3 6b2512d
+Author: Carlos Cordoba <ccordoba12@gmail.com>
+Date:   Thu Jul 21 08:38:28 2016 -0500
+
+    Merge pull request #7 from conda-forge-admin/feedstock_version_pin_master
+    
+    MNT: Update pinned versions.
+
+commit 6b2512d8c7f284a52a6f2a69339db722a221a483
+Author: conda-forge-admin <conda-forge@googlegroups.com>
+Date:   Thu Jul 21 09:56:57 2016 +0000
+
+    MNT: Updated some of the pinned versions
+
+commit b0557b31e0a5194fc9846fa4290aa9fb0c1156ef
+Merge: b3ebbf0 2c991dc
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jun 23 08:27:16 2016 -0300
+
+    Merge pull request #6 from ocefpaf/bump
+    
+    Bump build number
+
+commit 2c991dcb2e5c070f833361961b10fb23feb9f109
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Jun 22 12:48:05 2016 -0300
+
+    Bump build number
+
+commit b3ebbf0c8c2d312c5a5a52095e62d5abd6207fef
+Merge: 8ea319d 133e57d
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Jun 22 12:43:16 2016 -0300
+
+    Merge pull request #5 from conda-forge-admin/feedstock_version_pin_master
+    
+    MNT: Update pinned versions.
+
+commit 133e57d51767086a4181d2415357826682d2c753
+Author: conda-forge-admin <conda-forge@googlegroups.com>
+Date:   Thu Jun 2 09:02:10 2016 +0000
+
+    MNT: Updated some of the pinned versions
+
+commit 8ea319d02634ed9183fb08e9d8d563715a5f063a
+Merge: 1eeefd9 27fac03
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed May 25 07:04:11 2016 -0300
+
+    Merge pull request #4 from jakirkham/pin_freetype_2
+    
+    Pin freetype (Pt. 2)
+
+commit 27fac03d577d583cd8fd66a7fc0560b15210cdbf
+Merge: 0e45542 6598939
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Wed May 25 02:53:33 2016 -0400
+
+    Merge remote-tracking branch 'conda-forge-admin/feedstock_rerender_master' into 'jakirkham/pin_freetype_2'
+
+commit 0e45542ee714ec64648975c30cdd5d310ccddb0b
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Wed May 25 01:47:40 2016 -0400
+
+    recipe: Pin `xz` correctly (though it is only used for decompression).
+
+commit 785b0b9418479e0eafb6d445f95dbf25835d5a19
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Wed May 25 01:45:48 2016 -0400
+
+    recipe: Fix Mac cairo builds by using latest `libxml2`.
+
+commit 9341075e26c9e60c569ffc353c8372614e2bf4d8
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Wed May 25 01:54:20 2016 -0400
+
+    recipe: Add `libtool`.
+
+commit a817960a83a5c800111fb2da96fc4ac1bd6ff058
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Wed May 25 01:54:06 2016 -0400
+
+    recipe: Cleanup spacing.
+
+commit e7ac8d6b16bd8f5f6827a9df8f97f7a6ed5e280c
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Tue May 24 17:33:35 2016 -0300
+
+    Pin freetype
+    
+    ?
+
+commit 6d304a16654559e2aaf20341e3b1a1070f4c850c
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Tue May 24 17:32:40 2016 -0300
+
+    rerender
+
+commit 6598939630ef78a7dcdb1dd140cf8e851ce169eb
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sun May 15 22:43:54 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit 1eeefd911ca74c230b854d958795b1d9319c6301
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Apr 29 05:15:18 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 8614a960be2691a9c5190f9b16246dd0475b4b3e
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Apr 29 05:14:46 2016 +0000
+
+    Initial commit of the cairo feedstock.

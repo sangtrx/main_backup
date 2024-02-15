@@ -1,0 +1,191 @@
+commit f1af1ee33a296eb8bf2611d7ef344f8dce92e425
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Mon Sep 27 04:53:28 2021 +0200
+
+    fix typo
+
+commit 2cf517cc86f7e78a5b5a3e003421f5344a6f1892
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Mon Sep 27 04:50:09 2021 +0200
+
+    update 0.40.0
+
+commit e1dfcfcdcfb8a1295ca2abc7c45add5f3bbd422d
+Merge: 0530754 38bd095
+Author: Kai Tietz <47363620+katietz@users.noreply.github.com>
+Date:   Thu Sep 23 17:05:30 2021 +0200
+
+    Merge pull request #1 from AnacondaRecipes/update-0.40.0
+    
+    add myself as maintainer
+
+commit 38bd09507c9479266c244d736ea0bfdf0281c766
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Thu Sep 23 16:54:05 2021 +0200
+
+    add myself as maintainer
+
+commit 053075493f5b0c6ab6ea8c7ec7bba29b066ebdac
+Author: Kai Tietz <ktietz@anaconda.com>
+Date:   Sat Aug 14 09:37:57 2021 +0200
+
+    add osx-arm64 support
+
+commit 3dfdb60e5e5e3cddda70aa8c444a1506d2407e7c
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Jun 23 10:23:16 2020 -0500
+
+    remove conda inspect commands
+
+commit bd892e57f780d69204cd14e9ad87402982bb72ec
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Jun 23 10:23:06 2020 -0500
+
+    add make as build dep on unix
+
+commit 1370a3809c72521b1cdad4a36850953aaaf5d649
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Jun 23 10:22:51 2020 -0500
+
+    0.40.0
+
+commit f750ebea7c1c43e3f3b066fb51da028d4bb6c7d3
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Mar 12 18:43:03 2019 -0500
+
+    0.38.0
+
+commit 86730e841c20beb158fd45e38b4af0ef1f109c43
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Wed Nov 8 15:22:06 2017 -0600
+
+    remove vc features (use run_exports vc pkg instead)
+
+commit b72daf1d194fefe7dcca26292ae3eaee4ddc922c
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Thu Oct 5 23:56:34 2017 -0500
+
+    add run_exports, remove python dep on win
+
+commit dd3146ba58a62298d9d4e15b50adcf6cbc97c4a9
+Author: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date:   Thu Sep 7 13:03:46 2017 -0500
+
+    Simplify recipe for CB3
+
+commit 45f0db42bd94a1ce3e131d4d65cdc1f032685873
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Aug 27 01:38:38 2017 +0100
+
+    Generalize logging
+
+commit f4428ad78652bb37be7d9135bb965a933e50000e
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Aug 23 12:26:38 2017 +0100
+
+    make in parallel and bump build number
+
+commit 1a66aa1d76e15d8978c838f24bbe76f28c403ab9
+Author: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date:   Sun Jul 23 05:54:22 2017 +0000
+
+    Make recipe cross-compile capable
+
+commit 6e92f25dbb4256faea13de15fa87a99ef25234ba
+Merge: c2bea10 a774e0f
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Nov 22 12:04:56 2016 -0300
+
+    Merge pull request #5 from ocefpaf/bump
+    
+    Update
+
+commit a774e0f4101a416bf7a08e1e0b012932febe9e87
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Tue Nov 22 11:13:15 2016 -0300
+
+    Rerender with hacked conda-smithy
+
+commit 228195dd14249e31feb7938a79a63b9a0958a649
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Nov 20 19:15:01 2016 -0300
+
+    @ccordoba12 request
+
+commit a8d3f3d82a194055eb953543d512b9f0f913d925
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Nov 20 13:44:01 2016 -0300
+
+    Older conda-smithy rocks
+
+commit b2efe3630246a9d87b794a795d7665362fedb5de
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Nov 20 12:52:17 2016 -0300
+
+    Remove m2w64-binutils
+    Latest conda-smithy requires manual edition :-(
+
+commit 65d6cf438de49210f98bc0e230e23e72dd72bbe7
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Nov 20 08:15:47 2016 -0300
+
+    Update
+
+commit c2bea10cc41db119522341a7f9d568b30665cc0a
+Merge: 5cfc638 2364c8a
+Author: Carlos Cordoba <ccordoba12@gmail.com>
+Date:   Sat Nov 19 21:21:09 2016 -0500
+
+    Merge pull request #4 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 2364c8a917f64c22ef5033c3611cb17dc0b829f5
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sun Nov 20 01:44:50 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.5.3.
+
+commit 5cfc638f5c32e2743e5541ae79ed5b4bcc353980
+Merge: 9f1bcad b4c9ba7
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Oct 6 09:17:30 2016 -0300
+
+    Merge pull request #3 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit b4c9ba7e72230ba195576cdcf50aae2cbf6ddb1a
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Thu Oct 6 08:15:00 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.3.2.
+
+commit 9f1bcad4d02d89e7f5cebebf00704523ff60f7cf
+Merge: d6aec88 c715962
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sun May 15 16:34:04 2016 -0400
+
+    Merge pull request #2 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit c715962dd314e732b36d385efce2e6379a13e817
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sun May 15 13:43:23 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit d6aec88ec5e92a0eb4e49d704dd072c56eea2342
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Thu Mar 17 08:41:08 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit fbb2cc9aade14b253a53a4c19b74562ed1aca66e
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Thu Mar 17 08:40:44 2016 +0000
+
+    Initial commit of the pixman feedstock.

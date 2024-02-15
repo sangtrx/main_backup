@@ -1,0 +1,149 @@
+commit f08ae9b94ab7504c4c1cfbffc9e13d240cac162a
+Merge: d306785 6bd0079
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Thu Oct 5 15:44:52 2017 -0500
+
+    Merge pull request #1 from msarahan/cb3
+    
+    WIP: simplify recipe for cb3
+
+commit 6bd007909d656afdd3a6b74d0c0c85830b08c023
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Sun Aug 20 18:55:36 2017 -0500
+
+    WIP: simplify recipe for cb3
+
+commit d30678563d95eeee3ef81393ad45fd4f13409b4c
+Merge: 9559bcf 16a6256
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue Feb 21 01:28:58 2017 -0500
+
+    Merge pull request #9 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 16a625628f6ce63c7495ce2f876d7c44c348ae1c
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Mon Jan 16 01:40:41 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 2.0.0.
+
+commit 9559bcf75489fc567378f5af837c435452fec358
+Merge: b79de1a c5169ea
+Author: Amir Mohammadi <183.amir@gmail.com>
+Date:   Sun Jan 8 22:16:16 2017 +0100
+
+    Merge pull request #8 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit c5169ea84f47f81c474e55f43bf7c70ed851b6a5
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Thu Jan 5 01:41:06 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.7.0.
+
+commit b79de1a39ac35e9724052c2e4f012fa79c8caae9
+Merge: 5dd5f00 a9fb604
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Sep 14 08:33:36 2016 -0300
+
+    Merge pull request #6 from 183amir/master
+    
+    Update to version 5.1.4
+
+commit a9fb6048bb69371a71763ab34d9c4d6243808d73
+Author: Amir Mohammadi <183.amir@gmail.com>
+Date:   Wed Sep 14 11:16:06 2016 +0200
+
+    [temp] temporarily disable the test
+
+commit c50a2bb061b004f0c36e1bc3c6c9eacf14b8de69
+Author: Amir Mohammadi <183.amir@gmail.com>
+Date:   Wed Sep 7 16:53:00 2016 +0200
+
+    rerender the feedstock
+
+commit 62981fe79533c89a503b1d2a73896d189a65f0ee
+Author: Amir Mohammadi <183.amir@gmail.com>
+Date:   Wed Sep 7 12:22:37 2016 +0200
+
+    Update to version 5.1.4
+    
+    Fix the test for new versions of conda-build
+
+commit 5dd5f0047196a30c114c8335a3bcf9bbccb989f4
+Merge: 0d6d734 f39bc54
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Jun 10 09:36:56 2016 -0300
+
+    Merge pull request #5 from danclewley/master
+    
+    Removed libgcc run dependency as not required.
+
+commit f39bc54926c9733f347007936c1a84562c8bcc5f
+Author: Dan Clewley <dac@pml.ac.uk>
+Date:   Fri Jun 10 13:26:08 2016 +0100
+
+    Removed libgcc run dependency as not required.
+
+commit 0d6d734e192f087d08299bd1dacf0ea27fdab5e4
+Merge: 79e761b f610c36
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri May 13 09:12:01 2016 -0300
+
+    Merge pull request #4 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit f610c365eb395a3d74cc99a71c59ce24c3671e2b
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri May 13 10:44:57 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit 79e761bc86aee20916219b9fe1d49555bd31b7f9
+Merge: 2725085 db4c759
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Apr 15 07:22:19 2016 -0300
+
+    Merge pull request #3 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit db4c75956748e8738dc275c605bb2d92c6973e83
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Apr 15 07:14:34 2016 +0100
+
+    MNT: Updated the feedstock for conda-smithy version 0.8.4.
+    
+    [ci skip]
+
+commit 2725085db24bafaea582c7e39ec521ea34322a4a
+Merge: c1f8540 9307230
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Apr 4 16:50:52 2016 -0300
+
+    Merge pull request #1 from ocefpaf/rerender
+    
+    No homebrew
+
+commit 93072304dfb61e2de0f598ddc9aa3235f6d1ecc3
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Apr 4 16:43:44 2016 -0300
+
+    No homebrew
+
+commit c1f854004df2dcf88bac7e5088a01dd3db747f5c
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sun Mar 27 11:29:18 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 7509129dc2c121c028ac553ef18093a2a6e442ac
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sun Mar 27 11:28:43 2016 +0000
+
+    Initial commit of the giflib feedstock.

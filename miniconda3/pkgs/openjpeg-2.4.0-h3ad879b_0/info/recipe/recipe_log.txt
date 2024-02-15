@@ -1,0 +1,515 @@
+commit 534648109e988ce939c8a6767987d3eb0eeea0ef
+Author: Anthony DiPietro <adipietro@anaconda.com>
+Date:   Fri Aug 27 15:47:57 2021 -0400
+
+    Adding unix selector to make.
+
+commit c9812894b6edb38701967769918ea2d6202a8b15
+Author: Anthony DiPietro <adipietro@anaconda.com>
+Date:   Fri Aug 27 15:41:53 2021 -0400
+
+    Recipe updates for 2.3.0 -> 2.4.0
+    
+    - removed CVE patch as it is fixed in mainline.
+    - update version and hash
+    - reset build number
+
+commit 28c77be425ba851dc6d350f064e49105e5e7508f
+Author: Cheng H. Lee <clee@anaconda.com>
+Date:   Wed Feb 10 13:03:28 2021 -0600
+
+    Ignore zlib run export
+
+commit 69d948e54415b2af28b477737b73380880d9aae2
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed May 23 18:59:35 2018 +0100
+
+    Fix CVE-2018-7648 and some darwin SDK issues
+
+commit 3f428e3f9dae4b592904bff8d62060301805bd14
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Wed Apr 4 16:29:36 2018 -0500
+
+    add make as build requirement
+
+commit 1560052f871e1b57d19d67c67dbae75646141ba3
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Wed Apr 4 11:15:28 2018 -0500
+
+    set build number to 0
+
+commit 5a8e492b1c8ff831edb634d5413c5b79c9c48097
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Wed Apr 4 11:15:19 2018 -0500
+
+    be explicit on conda inspect
+
+commit d0ab7ba612d4eb650d5406560cb6175ed7fcba27
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Wed Apr 4 11:14:57 2018 -0500
+
+    add comments about ABI compatibility
+
+commit 85a0e0171721a97e29769a152ee860f770b899b1
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Tue Nov 14 15:40:25 2017 -0600
+
+    fix win library naming, remove vc feature
+
+commit 91b6b30c982701a212817ac47981ce177106136d
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Oct 10 15:05:54 2017 +0100
+
+    Add verbosity
+
+commit 467b083f772507ec12587ac14a25d93318cb03a6
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Fri Oct 6 13:03:34 2017 -0500
+
+    add compilers for cb3
+
+commit eae94f60aae4af96cc31ddd94dc4c3db1f0d271c
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Thu Oct 5 17:28:08 2017 -0500
+
+    simplify with cb3
+
+commit 61c6c1ebc3ee03a27bdc2fd0c46233642af4203a
+Merge: c836b8a c682b0e
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Nov 27 14:37:27 2017 -0200
+
+    Merge pull request #30 from ocefpaf/update_pins
+    
+    update pins
+
+commit c682b0e11c549d67abb56eb546a05527635345fb
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Nov 27 13:23:40 2017 -0200
+
+    update pins
+
+commit c836b8a9b894549cb8d73edf6682054429ce0e36
+Merge: a15e114 9f6aa25
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Sat Nov 4 14:19:23 2017 +1000
+
+    Merge pull request #28 from ocefpaf/update_pins
+    
+    update pins
+
+commit 9f6aa2579659753d1e582542305aaf54c0b9e5c8
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Nov 3 13:38:35 2017 -0200
+
+    update pins
+
+commit a15e1144a73adea42aa6dfadee46ef08b303b522
+Merge: 857160e 5c2c00c
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Oct 6 10:01:36 2017 -0300
+
+    Merge pull request #27 from ocefpaf/update_to-2.3.0
+    
+    update to 2.3.0
+
+commit 5c2c00cd324dde7bac4f42bd5c5d554663d12929
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Oct 6 09:42:29 2017 -0300
+
+    update to 2.3.0
+
+commit 857160e50e28f83516dc8335bd79901ba6e65c0a
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 19:00:06 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit ddcfd4841c3ab06c18c5bc2328e4f39fa84fbf35
+Merge: 0e3aca6 435dbb0
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Aug 10 10:36:36 2017 -0300
+
+    Merge pull request #26 from ocefpaf/update_to-2.2.0
+    
+    Update to 2.2.0
+
+commit 435dbb083ddf0ca1aa5e19b52a0e83e90b52dc5a
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Thu Aug 10 09:18:45 2017 -0300
+
+    rerender with auto
+
+commit 94b338468c6215d1348a8b088ee95c62a89cf1e1
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Thu Aug 10 09:18:40 2017 -0300
+
+    update to 2.2.0
+
+commit 17568609111a4b9e18da5ca2c3a571e5db9e0951
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Thu Aug 10 09:16:00 2017 -0300
+
+    build from safe dir and use CPU_COUNT
+
+commit 806b6ec2d97cfe53c90309143423039f442bd0d6
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Thu Aug 10 09:15:06 2017 -0300
+
+    build from safe dir and run tests
+
+commit 0e3aca6cf56573d0a5c85bb79fc7cf4d4729ce2e
+Merge: c06dbe5 5303bdd
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Jun 7 09:47:48 2017 -0300
+
+    Merge pull request #25 from ocefpaf/update_libpng_pin
+    
+    Update libpng pin
+
+commit 5303bdd2450c331437d55b410115a13635428b39
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Jun 7 08:47:55 2017 -0300
+
+    pin libpng
+
+commit 5f36bd2f1c0830b7892959387c99a7c7d0c245ca
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Jun 7 08:47:53 2017 -0300
+
+    rerender with auto
+
+commit c06dbe5d4fb81d823317f9d4ed21ec463aeb61d1
+Merge: e71bc25 a32ed53
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sat Mar 4 11:35:46 2017 -0500
+
+    Merge pull request #24 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit a32ed53ebbe0631e7f166284a314bd56cbb0d1a2
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Mar 3 01:42:04 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 2.1.1.
+
+commit e71bc25eafccf887cead18b13542e7a722d5fbd4
+Merge: 62a3599 ecb93a1
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Jan 8 18:53:10 2017 -0300
+
+    Merge pull request #23 from ocefpaf/refresh
+    
+    refresh feedstock
+
+commit ecb93a1d20c9d9ae22174d6fcadf4a726cb6f69c
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Jan 8 15:33:28 2017 -0300
+
+    refresh feedstock
+
+commit 62a3599b6ad1cc0d79d0e7a0e394290f1c8ab36e
+Merge: 1a4cbb1 ca0a14d
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Jan 8 15:18:05 2017 -0300
+
+    Merge pull request #22 from jschueller/patch-1
+    
+    Use SHLIB_EXT
+
+commit 1a4cbb117ba832a043028309f5a0d54d21ec6fa0
+Merge: 79e4c06 c4fa7dc
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Jan 8 15:17:20 2017 -0300
+
+    Merge pull request #21 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit ca0a14d449ba0cb01fee6cdf7473ee64cd56eb4d
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Sun Jan 8 19:07:21 2017 +0100
+
+    Use SHLIB_EXT
+
+commit c4fa7dcc14e0730e9c0e97519e4d905830290c88
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Wed Nov 2 01:34:18 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.4.5.
+
+commit 79e4c06ead22e4ebe8b5d30990dec83b0de06176
+Merge: 7cfa1c4 eacec3f
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Oct 10 08:11:29 2016 -0300
+
+    Merge pull request #20 from ocefpaf/update_pins
+    
+    Update libpng pin
+
+commit eacec3fbc6b42007211966612afc34584c319e9d
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Oct 10 07:58:19 2016 -0300
+
+    Update libpng pin
+
+commit 7cfa1c447fd02376fce8f7b7984a7ccdcd70bc3e
+Merge: 72ad382 d4535f1
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Oct 10 07:51:47 2016 -0300
+
+    Merge pull request #19 from quintusdias/master
+    
+    Bump to v2.1.2
+
+commit d4535f1a5e800847ff0d73b24fd01472ebbdac42
+Author: John Evans <john.g.evans.ne@gmail.com>
+Date:   Sun Oct 9 17:49:28 2016 -0400
+
+    Comment out "inspect linkages" test for now
+
+commit b8cf292c1718f21e4c82e395c73a87cb422826b5
+Author: John Evans <john.g.evans.ne@gmail.com>
+Date:   Sun Oct 9 11:13:15 2016 -0400
+
+    Bump to v2.1.2
+
+commit 83213c72662f6f90ba461c264c5443a1272591b3
+Author: John Evans <john.g.evans.ne@gmail.com>
+Date:   Sun Oct 9 11:07:16 2016 -0400
+
+    MNT: Re-rendered with conda-smithy 1.3.2
+
+commit 72ad382cac74d47af777a2a266893d05aa953c8a
+Merge: df25937 e1016fc
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Aug 5 08:40:59 2016 -0300
+
+    Merge pull request #15 from conda-forge-admin/feedstock_version_pin_master
+    
+    MNT: Update pinned versions.
+
+commit e1016fca9f1d83e8b54b24b58b8562658b34610c
+Author: conda-forge-admin <conda-forge@googlegroups.com>
+Date:   Fri Aug 5 03:33:26 2016 +0000
+
+    MNT: Updated some of the pinned versions
+
+commit df259375c9fd1747dc3d5bccb6157dc5d6205f23
+Merge: eefcfaa 592182b
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sat Jun 4 16:11:03 2016 -0400
+
+    Merge pull request #13 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit 592182b39f0143076c9303c3faf18337ddbe7b24
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat May 14 21:44:16 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit eefcfaa2c68e8e91fa7e5a494de07b4f921c37b7
+Merge: dcb85f6 300f716
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Apr 28 11:51:00 2016 -0300
+
+    Merge pull request #10 from conda-forge-admin/feedstock_version_pin_master
+    
+    MNT: Update pinned versions.
+
+commit 300f71610c5e08bd2614f93df6dda2aa972513a0
+Author: conda-forge-admin <conda-forge@googlegroups.com>
+Date:   Thu Apr 28 14:35:49 2016 +0100
+
+    MNT: Updated some of the pinned versions
+
+commit dcb85f69d5201e14aaa20f4cf0cc27574f849163
+Merge: e8af277 90fe365
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Apr 25 12:34:29 2016 -0300
+
+    Merge pull request #9 from ocefpaf/pin_libtiff
+    
+    Pin libtiff
+
+commit 90fe3656b2c4dcd290c915948a81fc54b7843a97
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Apr 25 12:24:03 2016 -0300
+
+    rerender
+
+commit 7ee76574800190b7365eb4c939eb8068a9ec85ce
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Apr 25 12:22:21 2016 -0300
+
+    Pin libtiff to 4.0.6
+
+commit e8af2776a9d7eb4961652bb0d7757bd6700048ff
+Merge: 9a59ba2 c610be2
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Apr 20 12:07:09 2016 -0300
+
+    Merge pull request #8 from ocefpaf/pin
+    
+    Pin versions
+
+commit c610be2a390ae340b1a740497874bd5ab602a0dd
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Apr 20 11:24:57 2016 -0300
+
+    Pin versions
+
+commit 9a59ba2a83512e6ee48ba182f538bae25420e58e
+Merge: 6437187 ba33a68
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Apr 18 18:46:09 2016 -0300
+
+    Merge pull request #7 from ocefpaf/rebuild_with_new_libtiff
+    
+    Re-build with new libtiff
+
+commit ba33a68d8a8ebcabcdc3ab2c240a1ed1a4d8ebf7
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Apr 18 13:34:59 2016 -0300
+
+    Removed the Python test
+
+commit 73a408c5495a7ae8c34dcc63ba1775aa8f79a3af
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Apr 18 10:58:13 2016 -0300
+
+    Re-build with new libtiff
+
+commit 64371877f085b6d435f9e865a4a008f28151d2b0
+Merge: 0e4b4af 47fb12d
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Apr 9 05:40:01 2016 -0300
+
+    Merge pull request #6 from ocefpaf/md5
+    
+    Add missing md5
+
+commit 47fb12db941b9ac8d80f1a8608f78489f5f79916
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sat Apr 9 05:09:41 2016 -0300
+
+    Add missing md5
+
+commit 0e4b4af292acbecb2d23ffbc54b0cb1c7e91e500
+Merge: 646ca33 98f64f5
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Apr 2 10:02:31 2016 -0300
+
+    Merge pull request #5 from gillins/master
+    
+    ran conda-smithy to regenerate
+
+commit 98f64f58cee672efb6fe5c5d60eebe091aea1358
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Fri Apr 1 20:54:35 2016 +1000
+
+    ran conda-smithy to regenerate
+
+commit 646ca33480f9b10344e115e73bc51e859d51ba68
+Merge: 316bc64 fc6d9aa
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Mar 26 11:02:29 2016 -0300
+
+    Merge pull request #4 from gillins/master
+    
+    added Windows support
+
+commit fc6d9aa00f02c623ece34244ad54557771183e70
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Sat Mar 26 16:45:12 2016 +1000
+
+    use comment syntax for selectors
+
+commit a8b6a0c7459b9828d330a87ea8259578cb9f0afc
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Fri Mar 25 15:49:03 2016 +1000
+
+    added Windows support
+
+commit 316bc64e8bf1184e1e8e0b40308006629ea83b6b
+Merge: 33aa50f 553d443
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Fri Mar 25 05:23:25 2016 +0000
+
+    Merge pull request #2 from gillins/master
+    
+    Use Conda packages for llibtiff, libpng and zlib
+
+commit 553d443a58536489a9aa9d16a8aba7e4e510ba1f
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Fri Mar 25 12:56:51 2016 +1000
+
+    change exception to print statement for platforms we can't test linked libs for, yet
+
+commit fa3d6a266bf15a9932c12e2d63e37fce4e3bf988
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Thu Mar 24 12:16:38 2016 +1000
+
+    implementation of run_test.py using ldd on Linux [skip appveyor]
+
+commit 5ca276631a65f6935594a1fcce62b45e6da719b4
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Wed Mar 23 20:40:37 2016 +1000
+
+    Added test script to ensure libtiff, libpng and zlib are linked dynamically [skip appveyor]
+
+commit 9a6b6352dd6b2c9aeca9938e50f9be992e6caf72
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Wed Mar 23 13:07:50 2016 +1000
+
+    made cmake arguments line up vertically [skip appveyor]
+
+commit f3ff624f8a571613c8a3e46b2766004d70a6537f
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Wed Mar 23 13:00:51 2016 +1000
+
+    added gillins to recipe-maintainers [skip appveyor]
+
+commit ba0045e74560487c1959bd01e076421b4eff845e
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Wed Mar 23 12:59:23 2016 +1000
+
+    made cmake arguments in line [skip appveyor]
+
+commit 437d38e9e62f699c9bcface98fe70504009b3202
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Tue Mar 22 15:57:26 2016 +1000
+
+    Use Conda packages for llibtiff, libpng and zlib instead of building internal versions
+
+commit 33aa50ff7e4045eb80313ae69143fe0bca0fc49e
+Merge: 596d7ca 5eb0797
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Mar 17 21:12:17 2016 -0300
+
+    Merge pull request #1 from conda-forge-admin/feedstock_rerender
+    
+    MNT: Re-render the feedstock
+
+commit 5eb07976c87a3a5e66363f0e42b39df2ac49e0bc
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Wed Mar 9 19:32:50 2016 +0100
+
+    MNT: Updated the feedstock for conda-smithy version 0.5.1.
+
+commit 596d7cace23152c8edb11a64de6c87eeb6c23551
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue Mar 8 15:58:52 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit dd21b58c915d88593b4e7b07d81da4bc76417227
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue Mar 8 15:58:14 2016 +0000
+
+    Initial commit of the openjpeg feedstock.

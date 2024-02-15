@@ -1,0 +1,3 @@
+[console_scripts]
+labelme2coco = labelme2coco.cli:app
+

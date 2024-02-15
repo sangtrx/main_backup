@@ -1,0 +1,53 @@
+commit 95348beb9fd659b9d03769e5cf8bc1aeb8e90183
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Mon Dec 17 15:16:19 2018 -0600
+
+    update to 1.0.2; use numpy-base dep instead of numpy to avoid circular dep
+
+commit e91d4a979042dbb2652fdea6f546b31914fc530a
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Tue Sep 4 12:10:24 2018 -0500
+
+    replace numpy hard pin with variant
+
+commit e989607c90a400b804c14028a97b5c194c5f255b
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Jul 6 09:03:21 2018 +0000
+
+    Force numpy 1.11
+
+commit d2971792140c6e22cab8230b227f22276937b568
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Jul 3 09:10:52 2018 -0400
+
+    Not for PPC
+
+commit 702927d3db4ebe2754095e9ca735cc0a59e3cec6
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Thu Apr 26 15:32:10 2018 -0500
+
+    switch to numpy-devel to break cycle
+
+commit 2020219cfd1d77015251d63ed924cad6e5fa1f50
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Mon Apr 2 15:38:35 2018 -0500
+
+    patch for tests
+
+commit 5a0c3ee7e54a28d043ed8939617b8818c3dc1ead
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Wed Feb 28 10:36:58 2018 -0600
+
+    cb3-ize
+
+commit 5a83aac2e2ab93183b4ec0992c6325a3c5dc568a
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Dec 29 05:24:14 2017 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 636065fd9549f5d75ca88a2c323b0003648a5e97
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Dec 29 05:21:53 2017 +0000
+
+    Initial feedstock commit with conda-smithy 2.4.5.

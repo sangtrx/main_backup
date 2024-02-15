@@ -1,0 +1,118 @@
+commit 159816b502a95fc20a837acaeaddb522367771b9
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Thu Jan 17 10:45:55 2019 -0600
+
+    1.3.13
+
+commit 9b6a0623feb7c389c9c19b40f0fa5240c9b73be2
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Aug 28 09:16:49 2018 -0500
+
+    update to 1.3.12
+    
+    drop CVE-2018-7999 patch which has been included in upstream
+
+commit 05a7ae5e401cb00c0bba3f74296ebec0e18dd2a6
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed May 23 01:10:12 2018 +0100
+
+    Fix CVE-2018-7999
+
+commit e3f06307750b6c9a08500fa9921ad461b95477a6
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Tue Apr 17 13:32:50 2018 -0500
+
+    add make as build dependency
+
+commit b56e9156cff2082be77ca64afff14872ac9bc282
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Wed Jan 24 11:53:54 2018 -0600
+
+    add run_exports
+
+commit bc94696ac8d922de621fda11bbb9dc694dbc74a8
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Sep 4 08:14:56 2017 +0000
+
+    add C++ compiler
+
+commit f09ef8cc81e21c158879b8b0efdd7b9ea587fa2c
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Aug 27 01:34:16 2017 +0100
+
+    Generalize logging
+
+commit 1d27f830463d3dbdafefe9014c955ee94eba774c
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Aug 25 12:49:17 2017 +0100
+
+    Add cross-compilation support
+
+commit fde7313f064a9cd39af4cc5f208c68d37174e3f4
+Merge: 3992ea6 5623b78
+Author: Peter Williams <peter@newton.cx>
+Date:   Mon Mar 5 21:47:41 2018 -0500
+
+    Merge pull request #3 from regro-cf-autotick-bot/1.3.11
+    
+    graphite2 v1.3.11
+
+commit 5623b78ad9ae8d00f97f47f20081c4b2d22a39e0
+Author: Travis CI User <travis@example.org>
+Date:   Mon Mar 5 21:29:26 2018 +0000
+
+    updated v1.3.11
+
+commit 3992ea60d69bbbe01dbe6838dab49682c81321d6
+Merge: 5068b33 5c1dc58
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Nov 26 11:00:37 2017 -0200
+
+    Merge pull request #2 from ocefpaf/update_to_1.3.10
+    
+    Update to 1.3.10
+
+commit 5c1dc58637c2cc3f9898e5af941573b4f1997a6a
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sun Nov 26 10:47:25 2017 -0200
+
+    update to 1.3.10
+
+commit 086e770cafb89e1af3c21001cd19274018dd3b4d
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sun Nov 26 10:47:03 2017 -0200
+
+    rerender
+
+commit 5068b33f22eb29bd77a5d2174e2d7009e9cf5998
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 22:24:02 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit f598b04dcfd163a72b3ee25dbd2add0b1c36a790
+Merge: 70d6944 0c1b1b5
+Author: Peter Williams <peter@newton.cx>
+Date:   Mon Jul 31 08:47:17 2017 -0400
+
+    Merge pull request #1 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 0c1b1b5c8947a11e9b4f4cf774e21d140a0e40d7
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sun Jul 30 01:43:10 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 2.3.2.
+
+commit 70d69442443df406225dd945d92ade079116ad85
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Mar 3 11:46:08 2017 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit d57ef2112d899ac95ae9953d8257d1ef22e08267
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Mar 3 11:37:37 2017 +0000
+
+    Initial feedstock commit with conda-smithy 2.1.1.
